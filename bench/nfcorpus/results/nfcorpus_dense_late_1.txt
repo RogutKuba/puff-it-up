@@ -1,0 +1,54 @@
+============================================================
+Hybrid Benchmark: Dense + Late Interaction Rerank
+NFCorpus Dataset
+============================================================
+
+Configuration:
+  Dataset:              nfcorpus
+  Dense Namespace:      nfcorpus-dense-bench-openai
+  Late Namespace:       nfcorpus-late-bench
+  Dense Model:          openai/text-embedding-3-small
+  ColBERT Model:        jina-colbert-v2
+  ColBERT Dim:          128
+  First Stage Top K:    100
+  Final Top K:          10
+  Timestamp:            2026-01-02T14:38:14.958891
+
+Loading NFCorpus dataset...
+  Corpus:  3633 documents
+  Queries: 323
+  QRels:   323 query-relevance pairs
+
+Using existing indices:
+  Dense namespace: nfcorpus-dense-bench-openai
+  Late namespace:  nfcorpus-late-bench
+
+----------------------------------------
+Searching 323 queries (dense + late interaction rerank)...
+
+Latency Statistics (search only, excludes embedding):
+
+  First Stage (Dense ANN):
+    Average: 122.39 ms
+    P50:     114.79 ms
+    P95:     229.82 ms
+
+  Second Stage (ColBERT Rerank):
+    Average: 471.93 ms
+    P50:     336.59 ms
+    P95:     1062.03 ms
+
+  Total:
+    Average: 594.32 ms
+    P50:     453.69 ms
+    P95:     1249.88 ms
+    P99:     1732.51 ms
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.3439
+  Recall@10: 0.1608
+
+============================================================
+Benchmark Complete!
+============================================================

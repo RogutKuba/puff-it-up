@@ -1,0 +1,38 @@
+uv run late_rerank.py  
+============================================================
+Late Interaction (Two-Stage) Benchmark - SciFact Dataset
+============================================================
+
+Loading SciFact dataset...
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5183/5183 [00:00<00:00, 252018.06it/s]
+  Corpus:  5183 documents
+  Queries: 300
+  QRels:   300 query-relevance pairs
+
+Using existing index in namespace: scifact-late-bench
+  First stage top-k per token: 10
+  Second stage top-k per token: 256
+
+----------------------------------------
+Searching 300 queries (two-stage late interaction)...
+Searching: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 300/300 [06:40<00:00,  1.34s/it]
+
+Latency Statistics (search only, excludes embedding):
+  Average: 598.04 ms
+  P50:     548.61 ms
+  P95:     914.69 ms
+  P99:     1063.09 ms
+
+Candidate Statistics (first stage):
+  Average: 104.0 docs
+  Min:     37 docs
+  Max:     168 docs
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.6010
+  Recall@10: 0.7151
+
+============================================================
+Benchmark Complete!
+============================================================

@@ -1,0 +1,287 @@
+============================================================
+Dense Vector Search - Amazon Reviews Dataset
+============================================================
+
+Configuration:
+  Dataset:         amazon-reviews
+  Namespace:       amazon-reviews-dense-bench
+  Embedding Model: openai/text-embedding-3-small
+  Num Reviews:     15000
+  Batch Size:      32
+  Top K:           5
+  Num Queries:     10
+  Timestamp:       2026-01-05T15:05:58.973886
+
+----------------------------------------
+Found 1 data file(s)
+  Loading Appliances.jsonl.gz...
+  Loaded 15000 reviews
+
+----------------------------------------
+Skipping indexing (SKIP_INDEXING=True)
+Total indexing time: 0.00s
+
+----------------------------------------
+
+Searching 10 queries...
+
+======================================================================
+QUERY: quiet dishwasher that actually cleans dishes well
+======================================================================
+[Latency: 223.3ms]
+
+#1 [★★★★★]  (sim: 0.648)
+   "My favorite appliance.  Terrific cleaning, gentle to dishes, energy efficient, quiet operation."
+   I am loving this choice.  Installed over a year ago.  Gets near-daily use.<br /><br />The only thing even remotely wrong so far: a modest amount of residual soap buildup, easily solved by occasional use of readily available dishwasher cleaning products, run through as a separate cycle.  Normal for any dishwasher, I guess.<br /><br />This is an energy efficient model without a drying heater.  It does a great job of drying using residual heat after the wash/rinse cycle is done.  Once in a while a few select pieces go into the sinkside rack after the load, to finish drying, but that's nominal.  Most of the time everything is fully dry to the touch and goes directly to cupboard.<br /><br />Tip:  Read the manual and you'll really benefit from this model's features.  Learn:<br />* Which settings to use for different cleaning tasks.<br />* How to silence the beep after the load is done.<br />* Which setting selects advanced dish drying.<br />* When, how to use the Sanitize setting (short answer:  it also promotes better dish drying, so use it regularly).<br />* How to optimally load the system before washing.<br />* How to periodically check the rotary arms and the filters as recommended in the manual.  (So far, only the filters have required occasional rinse out, in my own experience.)<br /><br />This model was an upgrade from what my local appliance retailer normally stocks, but I chose it for its multi-level filtration and other upgrade features:  figuring that, for a few bucks more, you install it, then you live with your choice almost every day of your life for several years, so it makes sense to buy a good performer.  This model is.
+
+#2 [★★★★★] ✓ Verified (sim: 0.647)
+   "Very happy with this dishwasher"
+   This is a wonderful appliance and suits my needs perfectly. My kitchen doesn't have room for a built-in or a large portable dishwasher. I am thrilled with how well this unit cleans my dishes, even on the lighter cycles. I also appreciate having so many wash options, from a rinse to a full heavy wash.
+
+#3 [★★★★★] ✓ Verified (sim: 0.639)
+   "Great dishwasher for the size"
+   This product works very well (do not expect it to eat away dried or crusted on food, but most full-sized dishwashers I have had won't either). It has enough room for all I need but pots and pans, and it cleans well and works with ease. The price point is a bit high in my opinion, but the product does work as advertised and it is much better than my apartment's 15 year old POS dishwasher.
+
+#4 [★★★★☆]  (sim: 0.637)
+   "Live alone in a place with a broken full-size dishwasher"
+   Apartments...you see a dishwasher built in and think, woo-hoo, no more washing dishes by hand, right?  I don't have a clue what is wrong with that dishwasher other than it deposits rather greasy white streaks on dishes.  I tried CLR, vinegar, and a few other treatments plus talking to the apartment manager and nothing works or has been done to fix it.  I got this small countertop dishwasher and while it may not be as perfect as having a full-size one that works, it DOES work without leaving white greasy streaks on my dishes.  At least I'm not washing dishes by hand every day - this dishwasher works well for me.  It doesn't hold a great many dishes, but as one person, I don't make a ton of dishes.  I'd say this would be great for an older couple or might be good for an RV.  I am happy not to be doing dishes by hand!
+
+#5 [★★★★★] ✓ Verified (sim: 0.634)
+   "I'm a fan"
+   We actually bought this for the trailer we've had to move into after a fire in our home. At first it was kind of a lark but the machine turns out to be pretty awesome. Some of the cycles can take up to an hour and a half but it is really quiet (to the  point, where at first, I kept opening it to see if it was actually working - it was). It cleans dishes, glasses and flatware beautifully and sterilizes them. The downside is, well, it's a countertop dishwasher so it doesn't fit large dishes or pots. But circumstances being what they are, while we are rebuilding, this dishwasher is a lifesaver and I am tickled with my purchase!
+
+======================================================================
+QUERY: water filter that removes chlorine taste and is easy to install
+======================================================================
+[Latency: 73.2ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.754)
+   "Fit my fridge and removes chlorine taste"
+   We just installed this the other night and the water quality is very good. We tend to have a chlorine taste if we don't filter and this removes that. I'm very happy with the purchase.
+
+#2 [★★★☆☆] ✓ Verified (sim: 0.684)
+   "Easy to Install"
+   This is a good replacement filter that is really easy to replace. Doesn't change the taste of water at all.
+
+#3 [★★★★★] ✓ Verified (sim: 0.665)
+   "Filter works great."
+   Quickly installs, takes the chemical taste out of city water.
+
+#4 [★★★★★]  (sim: 0.664)
+   "Great tasting water."
+   I got this to replace a no name brand water filter I usually purchase on amazon. I love the taste of this water with the filter and the quality. It was easy to install. No fuss just install purge a few glasses of water and you are ready to go!
+
+#5 [★★★★★] ✓ Verified (sim: 0.649)
+   "Makes our water taste so much better!"
+   Easy to install and makes our water taste so much better.
+
+======================================================================
+QUERY: ice maker that makes ice quickly and is quiet
+======================================================================
+[Latency: 73.7ms]
+
+#1 [★★★★★]  (sim: 0.804)
+   "Quick and quiet!"
+   [[VIDEOID:d299dd05005f0dcb2e81ca7c66e0f109]] Excellent ice maker! Makes the ice very quickly and I think it's fairly quiet. It drops the ice a lot more quietly than a built in ice maker in a fridge/freezer.
+
+#2 [★★★★★] ✓ Verified (sim: 0.756)
+   "Quiet, quick, efficient ice maker"
+   This has been one of my best pandemic purchases, by far. One needs more ice than normal when spending months and months at home. It is quiet and makes ice quickly. No stress, just ice. Just what I needed.
+
+#3 [★★★★★] ✓ Verified (sim: 0.751)
+   "Effective"
+   It makes ice quickly and is reasonably quiet. Machine looks nice on countertop as well.
+
+#4 [★★★★★] ✓ Verified (sim: 0.747)
+   "Quiet, fast, perfect, ice maker!"
+   This counter top ice maker is amazing! I love that it doesn't require a water line to use! I also love that it is actually very quiet!! It makes the perfect size ice cubes, very quickly!! Another feature that I love is that is reuses the melted ice cubes to make new ones, therefore less waste! If you order this ice maker, you won't regret it!!
+
+#5 [★★★★☆]  (sim: 0.730)
+   "Quick & Quiet"
+   This compact unit produces two different sizes of ice. Operation could be more intuitive but it is fast and reasonably quiet. The ice tastes good. Remove the cubes promptly otherwise they melt and are recycled. Nice.
+
+======================================================================
+QUERY: portable dishwasher small enough for apartment but cleans well
+======================================================================
+[Latency: 74.2ms]
+
+#1 [★★★★★]  (sim: 0.738)
+   "Wonderful"
+   This portable dishwasher is amazing. Perfect for small spaces it is simple to set up and use. It does a terrific job. There are a number of settings: normal, rapid, fruit, steam and glass. ,The fruit option insures your produce is free of dirt. No detergent needed for this cycle.  It uses powdered dishwasher detergent or those dishwasher tabs. The capacity is small but it saves you from running the full sized washer. It is portable and ideal for rvs or camping. My kitchen isa disaster due to a pandemic interrupted andcpostponed rennovation. This countertop appliance makes life easier.
+
+#2 [★★★★★]  (sim: 0.702)
+   "Who wants to do dishes by hand?"
+   I have a small trailer for camping and I am so happy to have this small dishwasher that I can stow in the trailer!  It's a bit larger than is easy to stow, but I did find room for it and I'm quite happy that I did!  This small dishwasher holds more than you would think and the wash/rinse cycle does one heck of a job to clean the dishes.  I love that it does not require adding hot water - that the dishwasher can heat the water itself.  As for how it cleans - it does a very decent job though I suspect part of the reason is that for such a small space, the water jets can get to every part of the dirty dishes loaded on it!  The only thing I could wish for is that it weigh less - 30 pounds on something kind of large and bulky means I do wrestle with it when stowing it away and getting it back out to use it the next time.  Still, it does a great job of washing dishes!
+
+#3 [★★★☆☆]  (sim: 0.701)
+   "Not so compact, but works."
+   I've used portable dishwashers before and they are AWESOME for people who travel or have dietary restrictions (Kosher, for example, need separate washers for milk and meat dishes). The good news is, this actually seems like it does a decent job and even comes with some complimentary detergent and jet dry in the box, so you can get up and running right away... in some cases, at least. I say that because depending on how you hook it up, you may need additional hardware to connect to your water lines and/or sink.<br />Here's my problem with it- they claim it is a "countertop" style washer, but the thing is actually too big for my counter! I don't have enough clearance under the cabinets to fit, and it has a lot of hoses and tubing to connect as well. I was considering drilling into my counter to feed the tubes to the water supply and drain, but decided to try connecting to the sink instead when we saw it wasn't fitting well under the cabinets. But then it is too close to the sink and with the hoses etc connected, it looks like it is taking over the kitchen more than just an appliance on the counter like a toaster.<br />I've seen smaller counter-top dishwashers that would easily fit better in our space. Perhaps this one does a better job, but at this point I feel like it is too big to fit the way I intended to use it, but too small to be one we install permanently in the cabinet space. Perhaps someone else will find this size useful, I'm a little disappointed because I was so excited for this to work.
+
+#4 [★★★★★]  (sim: 0.693)
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#5 [★★★★★]  (sim: 0.691)
+   "Small Space Help"
+   This small dishwasher is ideal for small spaces. Set up was straightforward, not easy but not difficult either. It is reasonably quiet and simple to use. I use pods or tablets. It is a compact unit. If you spend a week waiting to have a full load, this is for you. One of my brothers loves the fruit/veggie washing function.  It handles standard sizes, ie., ten inch dinner plates, regular cups, but nothing extra large. Pleased so far.
+
+======================================================================
+QUERY: refrigerator filter that removes bad taste and fits easily
+======================================================================
+[Latency: 71.8ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.689)
+   "replaced the filter in the fridge."
+   The filter that came in my new LG refrigerator is just awful.  This filter works great!! no chlorine taste.
+
+#2 [★★★★★] ✓ Verified (sim: 0.681)
+   "Filters for refrigerator much cheaper then Home Depot"
+   Filters for refrigerator. Easy to install, no nasty taste no taste at all. Will buy again.
+
+#3 [★★★★☆] ✓ Verified (sim: 0.671)
+   "Fit my fridge and removes chlorine taste"
+   We just installed this the other night and the water quality is very good. We tend to have a chlorine taste if we don't filter and this removes that. I'm very happy with the purchase.
+
+#4 [★★★★★] ✓ Verified (sim: 0.667)
+   "Tastes great"
+   I have really hard water in my area and other refrigerator filters just didn't work at getting rid of the taste that the water has. This filter got rid of the taste and filtered out all of the particulates as well, so now we have perfectly flavorless water.
+
+#5 [★★★★★] ✓ Verified (sim: 0.664)
+   "Fits great, offers good filtering and great price"
+   Because I already have a very fine reverse osmosis filter on the water system before it gets to my Samsung fridge, I just needed to add a medium level filter for sediment and taste and to turn the darn "change filter" alarm off.  I have had good results with this Aquacrest model.  Changing out the filter is a snap and it fits perfectly with no leaks.  After replacing the filter and turning back on the flow, I purged out the line by running about a gallon out.  After that the water ran clear and tasted great.
+
+======================================================================
+QUERY: range hood with strong suction but quiet operation
+======================================================================
+[Latency: 74.1ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.688)
+   "Low noise level easy to install"
+   Use in kitchen above range, good suction and not too noisey
+
+#2 [★★★★☆] ✓ Verified (sim: 0.676)
+   "VERY quiet range hood!"
+   This is really a quiet range  hood. I looked for a low sone ranking....the motor is indeed quiet, and I like the variable speeds. On Quiet setting, it is really a nice, quiet hum. My only wish for improvement would be with the lighting. The lights are at the front of unit. My back burners on not lighted as much as I would like, so I usually turn on my undercounted lighting.
+
+#3 [★★★★★] ✓ Verified (sim: 0.646)
+   "Very pleased"
+   Everything we expected. Good suction, sleek and not unattractive over the island. Our range is 36" and so is the hood. The glass is nice, I have yet to tackle cleaning. The baffles are rated best in regards to filters and in my restaurant experience it seems these will be easier to clean. It is pretty quiet on medium setting. We have not decided our new lighting, and we are messy today but here's a pic.
+
+#4 [★★★★☆] ✓ Verified (sim: 0.637)
+   "Great slimline range hood"
+   I recently converted from an electric range to gas and needed a slimline range hood that could move a lot of air. This product fits the bill nicely. It looks good, works great, was relatively easy to install with a 7&#34; exhaust pipe (they recommend a minimum of 6&#34; for this airflow) and matches the new brushed stainless range very nicely. The lights work surprisingly well too. They use 430 stainless which is magnetic, so I'm assuming that it could rust if left in the wrong condition, yet I have encountered no problems to date. The only downside is that it's a bit louder than I'd like, but for 600 CFM I really can't complain. And, I mostly use the quiet setting which still allows for normal voice conversations whereas on the high setting you pretty much can't hear yourself think. Overall I'm quite satisfied with the purchase.
+
+#5 [★★★★★] ✓ Verified (sim: 0.635)
+   "Quiet and efficient! Looks great!"
+   Such an improvement! We replaced an old 42" vented hood.  It took less than an hour!<br />This model is convertible for either vented or not and has access panels for the vent on the top and the back.  We ordered one and it arrived all dented. It was replaced and we're very happy with this one. It has great suction, is quiet and the black finish is easy to clean.
+
+======================================================================
+QUERY: coffee maker that brews fast and keeps coffee hot
+======================================================================
+[Latency: 64.3ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.642)
+   "Innovative, quality, flavorful, fast cleanup, very portable"
+   Cleanup after brewing is 10 seconds. The material is very high quality and does not stain or break down from the coffee oils. This brew method definitely favors fruity coffees like Ethiopian, but all taste good. Similar to -but not exactly like- French press, but you won’t have any silt at the bottom of your cup. If you have a fast way to boil water, you and a friend can both have a cup of coffee in your hands faster than a drip or espresso machine -including cleaning the device.
+
+#2 [★★★★★] ✓ Verified (sim: 0.618)
+   "This model has been upgraded in features"
+   Out previous purchase of this K Cup coffee maker ran for many years.  This one has been upgraded in that it does not have to remain on and water kept hot.  It will make hot coffee in a couple of minutes after bring turned on.  We think this is a superior brand and model.
+
+#3 [★★★★★] ✓ Verified (sim: 0.604)
+   "Sturdy, makes great coffee, no waste"
+   I love my new coffee maker: just heat water (I nuke it, less power), pour over, a minute or two later, rinse out with sprayer and good to go for tomorrow’s cup! EZ, no waste, fast, no plastic carcinogenic cup or reservoir, no counter space! Perfect!
+
+#4 [★★★★★] ✓ Verified (sim: 0.599)
+   "Perfect cup of coffee!"
+   This little product is amazing! I love it. I will be using it every day. It's as good and fast as my electric one cup brewer that died after 6 months. I love that it makes a delicious cup of coffee in about 3-4 minutes. It is more convenient than my French press. Works perfectly for one cup at a time. For this price, you can't beat the value and usefulness. I will be purchasing more for gifts. Nice red color, too.
+
+#5 [★★★★☆] ✓ Verified (sim: 0.593)
+   "brews strong"
+   Bought to replace a non working 'upgraded' Keurig that would not work with my SFBay cups from Costco, my favorite coffee.  Lots to like about this machine: the finish, the features, the cool little compartment where the little cup is held, etc..  But the best thing is how strong coffee is brewed.  Crazy but coffee comes out much stronger than in the Keurig, so I only need one mug instead of two every morning.<br /><br />The only downside is that you have to turn it on manually, instead of it turning on automatically when you raise the cup lever.  Other than that 5 stars.
+
+======================================================================
+QUERY: garbage disposal that handles tough food scraps quietly
+======================================================================
+[Latency: 70.1ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.581)
+   "Really good choice for a low-cost disposal"
+   This is a bare-bones disposal that is working very well.  Installation was straightforward although there was one step that was confusing and has been discussed in other reviews.  There is not insulation around the body of this disposal as there is on many other models but the noise, though noticeable, is not particularly obnoxious nor pound.  We do not use the disposal heavily but for occasional, light-to-medium duty I believe this is an excellent choice.
+
+#2 [★★★★★] ✓ Verified (sim: 0.529)
+   "... keep our spoons out of the disposal and is easy to lift out"
+   Works to keep our spoons out of the disposal and is easy to lift out.  Food particles get stuck in the little holes and I have to use my hands to clean it out and rinse it down the drain but I don't mind because it saves my utensils!
+
+#3 [★★☆☆☆] ✓ Verified (sim: 0.525)
+   "Returned"
+   These don't work very well, water was going down very slowly.  If you don't want anything to go down the garbage disposal, then get this item but it actually defeats the purpose of the garbage disposal.
+
+#4 [★★★★★] ✓ Verified (sim: 0.499)
+   "Five Stars"
+   did the trick of fixing my loud and then stuck trash compactor.. has held up well since installing
+
+#5 [★★★☆☆] ✓ Verified (sim: 0.492)
+   "Fit the compactor..."
+   Our trash compactor is so old that the bags are hard to find and very expensive when you do. These fit the compactor (a Compactall by GE) and seem to be study enough to not rip apart when we compact cans, glass, bottles, and other items that when compacted and broken create sharp edges. There's bound to be some poking but with these bags it's minimal.
+
+======================================================================
+QUERY: compact refrigerator that stays cold and is energy efficient
+======================================================================
+[Latency: 74.1ms]
+
+#1 [★★★★☆]  (sim: 0.612)
+   "No frills modern necessity."
+   Replaced an old fridge about 20 years old.  The size of the new fridge meets my needs since I am single, and don't need to stock it full for a family.<br /><br />I selected the fridge based on size and energy star rating.  The fridge uses a little over 1 kilowatt per 24 hours.  This is important to me as I live off-grid with solar power, a backup generator, and batteries for night time power.  I find that this new fridge cycles less and is quieter than the old fridge.  In the short time I have had the new fridge in service, it appears to save over 3% of electricity use in a 24 hour period.  This is a huge given that batteries supply the power to it for at least 12 hours a day.<br /><br />I opted out of the icemaker, which increases the freezer capacity by about 25%.
+
+#2 [★★★★★]  (sim: 0.606)
+   "Cute looking and useful mini fridge"
+   Modern and cute looking, efficient mini fridge, which is a good size for me to hold drinks and my small food items. The mini fridge cools and warms well, using a switch on back, and is powered by a usb cord. The usb power cord works both in my car and home, making it good for my family road trips. I am very pleased with this<br />Mini fridge and recommend it.
+
+#3 [★★★★★]  (sim: 0.604)
+   "Perfect after two years."
+   I have had two of these coolers in my office and a third at home for a little over two years. They all work flawlessly.<br /><br />The compressors are a little noisy compared to a standard refrigerator. But I'm just used to it. It wont make you deaf or keep you from sleeping.<br /><br />Mine all keep constant temperatures. I keep each fridge at 34 degrees. On one occasion a can froze and exploded.<br /><br />Defrost is simple; just turn the temperature up a little and the heat from the compressor evaporates any ice when it melts. I dont like frostless drink fridges because they dont keep a constant temperature. So that's a trade off. My office and home are fully modern but our country place is a little different, and I know from staying there that frostless refrigeration does NOT keep a constant temperature and requires more electricity (more cycles of the compressor).
+
+#4 [★★★★★]  (sim: 0.593)
+   "Great 12V Fridge"
+   Works great. Temperature stays very even and no issues with some areas being too hot or too cold. I like the rotomolded construction. Durable and well insulated. Plus, if for some reason you don't have electricity to power it or there is an issue with the compressor, it also doubles as a cooler. Just put some ice in it.
+
+#5 [★★★★★] ✓ Verified (sim: 0.582)
+   "Really great quiet mini-fridge."
+   I got a copy of [[ASIN:B00KVPU108 SPT RF-244SS Compact Refrigerator, Stainless, 2.4 Cubic Feet]] to put near my wife when she was ill. She was unhappy about it for about three days.<br /><br />This is a really great refrigerator. It is nearly completely silent - it does emit a small &#34;pop&#34; when it starts to run - perfect for places where quiet is important. It takes a day of two to &#34;pump down&#34; initial contents from room temperature to the set point, but it keeps stuff cold perfectly after that.
+
+======================================================================
+QUERY: countertop dishwasher that uses less water but cleans greasy dishes
+======================================================================
+[Latency: 67.3ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.653)
+   "Saving water & time."
+   We originally uses a lot of water just to wash a few dishes, but this helps us save water and time! This counter top dishwasher is a perfect household essential item.
+
+#2 [★★★★★]  (sim: 0.610)
+   "Say bye bye to hand washing dishes"
+   If you are living in an apartment and don't have a dishwasher you might want to check this out. This is designed to sit on the countertop, draws its water source from the faucet via a included hose, and drains into the sink via provided hose. It plugs into a regular 110v outlet.<br /><br />This unit also has a fruits and veg washing setting which I found pretty interesting!  Remember to clean your filter each use.<br /><br />I wl update as the appliance gets more use
+
+#3 [★★★★☆]  (sim: 0.607)
+   "Live alone in a place with a broken full-size dishwasher"
+   Apartments...you see a dishwasher built in and think, woo-hoo, no more washing dishes by hand, right?  I don't have a clue what is wrong with that dishwasher other than it deposits rather greasy white streaks on dishes.  I tried CLR, vinegar, and a few other treatments plus talking to the apartment manager and nothing works or has been done to fix it.  I got this small countertop dishwasher and while it may not be as perfect as having a full-size one that works, it DOES work without leaving white greasy streaks on my dishes.  At least I'm not washing dishes by hand every day - this dishwasher works well for me.  It doesn't hold a great many dishes, but as one person, I don't make a ton of dishes.  I'd say this would be great for an older couple or might be good for an RV.  I am happy not to be doing dishes by hand!
+
+#4 [★★★★★]  (sim: 0.585)
+   "Who wants to do dishes by hand?"
+   I have a small trailer for camping and I am so happy to have this small dishwasher that I can stow in the trailer!  It's a bit larger than is easy to stow, but I did find room for it and I'm quite happy that I did!  This small dishwasher holds more than you would think and the wash/rinse cycle does one heck of a job to clean the dishes.  I love that it does not require adding hot water - that the dishwasher can heat the water itself.  As for how it cleans - it does a very decent job though I suspect part of the reason is that for such a small space, the water jets can get to every part of the dirty dishes loaded on it!  The only thing I could wish for is that it weigh less - 30 pounds on something kind of large and bulky means I do wrestle with it when stowing it away and getting it back out to use it the next time.  Still, it does a great job of washing dishes!
+
+#5 [★★★☆☆]  (sim: 0.584)
+   "Not so compact, but works."
+   I've used portable dishwashers before and they are AWESOME for people who travel or have dietary restrictions (Kosher, for example, need separate washers for milk and meat dishes). The good news is, this actually seems like it does a decent job and even comes with some complimentary detergent and jet dry in the box, so you can get up and running right away... in some cases, at least. I say that because depending on how you hook it up, you may need additional hardware to connect to your water lines and/or sink.<br />Here's my problem with it- they claim it is a "countertop" style washer, but the thing is actually too big for my counter! I don't have enough clearance under the cabinets to fit, and it has a lot of hoses and tubing to connect as well. I was considering drilling into my counter to feed the tubes to the water supply and drain, but decided to try connecting to the sink instead when we saw it wasn't fitting well under the cabinets. But then it is too close to the sink and with the hoses etc connected, it looks like it is taking over the kitchen more than just an appliance on the counter like a toaster.<br />I've seen smaller counter-top dishwashers that would easily fit better in our space. Perhaps this one does a better job, but at this point I feel like it is too big to fit the way I intended to use it, but too small to be one we install permanently in the cabinet space. Perhaps someone else will find this size useful, I'm a little disappointed because I was so excited for this to work.
+
+
+============================================================
+Latency Statistics:
+  Average: 86.61 ms
+  P50:     73.43 ms
+  P95:     156.23 ms
+
+============================================================
+Benchmark Complete!
+============================================================

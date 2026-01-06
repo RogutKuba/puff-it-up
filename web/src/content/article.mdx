@@ -1,0 +1,602 @@
+export const metadata = {
+  title: "Late Interaction",
+};
+
+export const tocItems = [
+  { label: "When to use", href: "#when-to-use-late-interaction" },
+  { label: "Indexing", href: "#indexing-documents" },
+  { label: "Querying", href: "#querying-documents" },
+  { label: "Quality of results", href: "#quality-of-results" },
+  { label: "Performance Analysis", href: "#performance-analysis" }
+];
+
+# Late Interaction
+
+[Traditional vector search](https://turbopuffer.com/docs/vector) compresses an entire document into a single embedding. This works well for many use cases, but important semantic details can get lost in the compression.
+
+Late interaction takes a different approach: instead of one vector per document, it generates one vector per token. At query time, each query token finds its best match among all document tokens, and the final relevance score is the sum of these individual matches. This token-level comparison preserves nuances that single-vector representations miss.
+<br/>
+```
+SINGLE DENSE VECTOR
+═══════════════════
+
+Document: "Wireless headphones with noise..."
+                    │
+                    ▼
+            ╔════════════════╗
+            ║ [0.2, 0.8, …]  ║  ◀── Entire document = 1 vector
+            ╚════════════════╝
+
+Query: "Headphones with noise cancel..."
+                    │
+                    ▼
+            ╔════════════════╗
+            ║ [0.1, 0.8, …]  ║  ◀── Entire query = 1 vector
+            ╚════════════════╝
+
+                    │
+      cosine_sim( doc_vec, query_vec )
+                    │
+                    ▼
+              ┌───────────┐
+              │   0.92    │  ◀── Final score
+              └───────────┘
+
+
+LATE INTERACTION (Multi-Vector)
+═══════════════════════════════
+
+Document: "Wireless headphones with noise..."
+            │      │      │     │
+            ▼      ▼      ▼     ▼
+          ╔════╗ ╔════╗ ╔════╗ ╔════╗
+          ║ d1 │ ║ d2 ║ ║ d3 ║ ║ d4 ║ ...  ◀── Each token = 1 vector
+          ╚════╝ ╚════╝ ╚════╝ ╚════╝
+
+Query:  "Headphones with noise cancel..."
+            │      │      │       │
+            ▼      ▼      ▼       ▼
+          ╔════╗ ╔════╗ ╔════╗ ╔════╗
+          ║ q1 │ ║ q2 ║ ║ q3 ║ ║ q4 ║      ◀── Each token = 1 vector
+          ╚════╝ ╚════╝ ╚════╝ ╚════╝
+
+                        │
+        sum the max of cosine_sim( d_i, q_j ) across
+           all combinations of vectors
+                        │
+                        ▼
+             d1     d2     d3     d4
+           ┌──────┬──────┬──────┬──────┐
+     q1    │ 0.9  │ 0.2  │ 0.3  │ 0.1  │  → max = 0.9
+           ├──────┼──────┼──────┼──────┤
+     q2    │ 0.1  │ 0.8  │ 0.7  │ 0.2  │  → max = 0.8
+           ├──────┼──────┼──────┼──────┤
+     q3    │ 0.2  │ 0.6  │ 0.9  │ 0.3  │  → max = 0.9
+           ├──────┼──────┼──────┼──────┤
+     q4    │ 0.1  │ 0.3  │ 0.2  │ 0.7  │  → max = 0.7
+           └──────┴──────┴──────┴──────┘
+                                              ─────
+                                        Sum = 3.3  ◀── Final score
+
+```
+
+## When to use late interaction
+
+Late interaction improves retrieval accuracy, but at a cost. Storing one vector per token instead of one per document 
+increases storage, and computing multiple ANN searches and MaxSim scores across all token pairs adds latency. 
+The tradeoff is straightforward: you're trading cost and speed for better results.
+
+<table className="w-full border-collapse text-sm mb-6">
+  <thead>
+    <tr className="border-b border-slate-700">
+      <th className="text-left py-3 px-4 font-semibold"></th>
+      <th className="text-left py-3 px-4 font-semibold">Dense</th>
+      <th className="text-left py-3 px-4 font-semibold">Late Interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr className="border-b border-slate-800">
+      <td className="py-3 px-4 font-semibold">Storage</td>
+      <td className="py-3 px-4">Minimal</td>
+      <td className="py-3 px-4">Higher (one vector per token)</td>
+    </tr>
+    <tr className="border-b border-slate-800">
+      <td className="py-3 px-4 font-semibold">Query latency</td>
+      <td className="py-3 px-4">Fast</td>
+      <td className="py-3 px-4">Slower (multiple ANN lookups)</td>
+    </tr>
+    <tr className="border-b border-slate-800">
+      <td className="py-3 px-4 font-semibold">Retrieval quality</td>
+      <td className="py-3 px-4">Good for general similarity</td>
+      <td className="py-3 px-4">Better for term-sensitive queries</td>
+    </tr>
+  </tbody>
+</table>
+
+Late interaction is worth considering when specific terms in a query carry significant meaning. Think legal documents, 
+medical records, compliance text, or product specifications where one word can change everything.
+
+Consider this example:
+
+- Document 1: **"Independent contractors must handle their own tax withholdings through quarterly estimated payments. No taxes are withheld by the hiring company, and contractors receive a 1099 form at year end."**
+
+- Document 2: **"Employees are entitled to minimum wage, overtime pay, and benefits. Employers must withhold taxes and provide workers' compensation coverage."**
+
+- Query: **"Tax withholding requirements for employees"**
+
+With traditional dense vector search, both documents can score similarly, as they both mention tax and employment terms.
+However, Document 2 is clearly more relevant because it specifically addresses **employee** tax obligations, not contractor arrangements.
+
+Late interaction solves this by evaluating each query token individually. When comparing "employee" against both documents, Document 2 achieves a high similarity score while Document 1 discusses the opposite classification. This token-level precision ensures that the critical distinction between worker types isn't lost when compressed into a single vector.
+
+
+## Indexing documents
+
+Unlike standard embedding models that produce a single vector per document, late interaction requires multi-vector models that 
+generate one vector per token. The examples below use [Jina ColBERT v2](https://jina.ai/news/jina-colbert-v2-multilingual-late-interaction-retriever-for-embedding-and-reranking/), a hosted multi-vector embedding API.
+
+<CodeBlock
+  defaultLanguage="typescript"
+  code={{
+    typescript: `// $ npm install @turbopuffer/turbopuffer
+import Turbopuffer from "@turbopuffer/turbopuffer";
+
+const tpuf = new Turbopuffer({
+  // Get your API key: https://turbopuffer.com/dashboard
+  apiKey: process.env.TURBOPUFFER_API_KEY,
+});
+
+const DOCUMENTS = [
+  {
+    id: "doc1",
+    text: "Thousands of movies and shows. Plan includes ads every 15 minutes.",
+  },
+  {
+    id: "doc2",
+    text: "Huge library of content. Completely ad-free streaming experience.",
+  },
+];
+
+// ===============================================
+// Jina ColBERT Embeddings
+// Returns multiple vectors per text (one per token)
+// Get your API key: https://jina.ai/embeddings
+// ===============================================
+async function getColBERTEmbeddings(
+    texts: string[],
+    inputType: "document" | "query"
+): Promise<number[][][]> {
+    const response = await fetch("https://api.jina.ai/v1/multi-vector", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: \`Bearer \${process.env.JINA_API_KEY}\`,
+      },
+      body: JSON.stringify({
+        model: "jina-colbert-v2",
+        dimensions: 128,
+        input_type: inputType,
+        embedding_type: "float",
+        input: texts,
+      }),
+    });
+
+    const data = await response.json();
+    return data.data.map((item: { embeddings: number[][] }) => item.embeddings);
+}
+
+// ===============================================
+// Indexing
+// Each token becomes its own row, linked back to the source document
+// ===============================================
+async function indexDocuments() {
+  const ns = tpuf.namespace("late-interaction");
+
+  const docTexts = DOCUMENTS.map((d) => d.text);
+  const allDocEmbeddings = await getColBERTEmbeddings(docTexts, "document");
+
+  // Flatten: one row per token, linked to source document
+  const rows: {
+    id: string;
+    doc_id: string;
+    token_index: number;
+    vector: number[];
+  }[] = [];
+
+  for (let docIdx = 0; docIdx < DOCUMENTS.length; docIdx++) {
+    const doc = DOCUMENTS[docIdx];
+    // get multi-vector representation of document
+    const tokenEmbeddings = allDocEmbeddings[docIdx]; 
+
+    for (let tokenIdx = 0; tokenIdx < tokenEmbeddings.length; tokenIdx++) {
+      rows.push({
+        id: \`\${doc.id}_token_\${tokenIdx}\`,
+        doc_id: doc.id,
+        token_index: tokenIdx,
+        vector: tokenEmbeddings[tokenIdx],
+      });
+    }
+  }
+
+  // Write all token vectors to Turbopuffer
+  // doc_id links tokens back to their source document for MaxSim scoring
+  await ns.write({
+    upsert_rows: rows,
+    distance_metric: "cosine_distance",
+    schema: {
+      doc_id: { type: "string" },
+      token_index: { type: "uint" },
+    },
+  });
+
+  console.log(\`Indexed \${rows.length} token vectors from \${DOCUMENTS.length} documents\`);
+}`,
+    python: `# $ pip install turbopuffer httpx
+import os
+import httpx
+import turbopuffer as tpuf
+
+# Get your API key: https://turbopuffer.com/dashboard
+tpuf.api_key = os.getenv("TURBOPUFFER_API_KEY")
+
+DOCUMENTS = [
+    {
+        "id": "doc1",
+        "text": "Thousands of movies and shows. Plan includes ads every 15 minutes.",
+    },
+    {
+        "id": "doc2",
+        "text": "Huge library of content. Completely ad-free streaming experience.",
+    },
+]
+
+
+# ===============================================
+# Jina ColBERT Embeddings
+# Returns multiple vectors per text (one per token)
+# Get your API key: https://jina.ai/embeddings
+# ===============================================
+def get_colbert_embeddings(
+    texts: list[str],
+    input_type: str = "document",
+) -> list[list[list[float]]]:
+    client = httpx.Client(
+        base_url="https://api.jina.ai",
+        headers={
+            "Authorization": f"Bearer {os.getenv('JINA_API_KEY')}",
+            "Content-Type": "application/json",
+        },
+        timeout=120.0,
+    )
+
+    response = client.post(
+        "/v1/multi-vector",
+        json={
+            "model": "jina-colbert-v2",
+            "dimensions": 128,
+            "input_type": input_type,
+            "embedding_type": "float",
+            "input": texts,
+        },
+    )
+    response.raise_for_status()
+    data = response.json()
+    return [item["embeddings"] for item in data["data"]]
+
+
+# ===============================================
+# Indexing
+# Each token becomes its own row, linked back to the source document
+# ===============================================
+def index_documents():
+    ns = tpuf.Namespace("late-interaction")
+
+    doc_texts = [d["text"] for d in DOCUMENTS]
+    all_doc_embeddings = get_colbert_embeddings(doc_texts, input_type="document")
+
+    # Flatten: one row per token, linked to source document
+    rows = []
+
+    for doc_idx, doc in enumerate(DOCUMENTS):
+        token_embeddings = all_doc_embeddings[doc_idx]
+
+        for token_idx, embedding in enumerate(token_embeddings):
+            rows.append({
+                "id": f"{doc['id']}_token_{token_idx}",
+                "doc_id": doc["id"],
+                "token_index": token_idx,
+                "vector": embedding,
+            })
+
+    # Write all token vectors to Turbopuffer
+    # doc_id links tokens back to their source document for MaxSim scoring
+    ns.write(
+        upsert_rows=rows,
+        distance_metric="cosine_distance",
+        schema={
+            "doc_id": {"type": "string"},
+            "token_index": {"type": "uint"},
+        },
+    )
+
+    print(f"Indexed {len(rows)} token vectors from {len(DOCUMENTS)} documents")`,
+  }}
+/>
+
+## Querying Documents
+
+Computing a full MaxSim score requires comparing every query token against every document token. This gets expensive and slow when each document has dozens or hundreds of token vectors. Running this across your entire collection of documents for every query simply isn't practical.
+
+Instead, we use a two-stage retrieval approach:
+
+1. **Candidate retrieval**: For each query token, run a vector search to find documents that have at least one similar token. This helps narrows the search space to a smaller candidate set.
+2. **MaxSim scoring**: For candidate documents only, compute the MaxSim score: `Score = Σ max(sim(q_i, d_j))` across available token pairs.
+
+<CodeBlock
+  defaultLanguage="typescript"
+  code={{
+    typescript: `import Turbopuffer from "@turbopuffer/turbopuffer";
+
+const tpuf = new Turbopuffer({ apiKey: process.env.TURBOPUFFER_API_KEY });
+
+// ===============================================
+// Tuning parameters
+// ===============================================
+// FIRST_STAGE_TOP_K: How many candidate documents to retrieve per query token.
+//   Higher = better recall (fewer missed relevant docs), but slower.
+//   Lower = faster, but may miss relevant documents.
+//   Start with 10 and increase if you're missing expected results.
+const FIRST_STAGE_TOP_K = 10;
+
+// SECOND_STAGE_TOP_K: Max token vectors to score per query token.
+//   Should be high enough to cover all tokens from your candidate documents.
+//   Higher = more accurate MaxSim scores, but slower.
+const SECOND_STAGE_TOP_K = 256;
+
+const MAX_CONCURRENT_QUERIES = 16;
+const TOP_K = 5;
+
+async function queryLateInteraction(queryText: string) {
+  const ns = tpuf.namespace("late-interaction");
+
+  // Get token embeddings for the query
+  const [queryTokenEmbeddings] = await getColBERTEmbeddings([queryText], "query");
+
+  // First stage: ANN search for each query token to get candidate doc IDs
+  const candidateDocIds = new Set<string>();
+
+  for (let i = 0; i < queryTokenEmbeddings.length; i += MAX_CONCURRENT_QUERIES) {
+    const batch = queryTokenEmbeddings.slice(i, i + MAX_CONCURRENT_QUERIES);
+
+    const response = await ns.multiQuery({
+      queries: batch.map((embedding) => ({
+        rank_by: ["vector", "ANN", embedding],
+        top_k: FIRST_STAGE_TOP_K,
+        include_attributes: ["doc_id"],
+      })),
+    });
+
+    for (const result of response.results) {
+      for (const row of result.rows) {
+        if (row.doc_id) {
+          candidateDocIds.add(row.doc_id as string);
+        }
+      }
+    }
+  }
+
+  // Second stage: Filter to candidates and compute MaxSim scores
+  const docScores = new Map<string, number>();
+
+  for (let i = 0; i < queryTokenEmbeddings.length; i += MAX_CONCURRENT_QUERIES) {
+    const batch = queryTokenEmbeddings.slice(i, i + MAX_CONCURRENT_QUERIES);
+
+    const response = await ns.multiQuery({
+      queries: batch.map((embedding) => ({
+        rank_by: ["vector", "ANN", embedding],
+        top_k: SECOND_STAGE_TOP_K,
+        include_attributes: ["doc_id", "doc_text"],
+        filters: ["doc_id", "In", Array.from(candidateDocIds)],
+      })),
+    });
+
+    // For each query token, find the max similarity per document
+    for (const result of response.results) {
+      const seenDocIds = new Set<string>();
+
+      for (const row of result.rows) {
+        const docId = row.doc_id as string;
+
+        // Only count the first (highest) match per document per query token
+        if (!seenDocIds.has(docId)) {
+          seenDocIds.add(docId);
+          const similarity = 1 - (row.$dist as number);
+          docScores.set(docId, (docScores.get(docId) ?? 0) + similarity);
+        }
+      }
+    }
+  }
+
+  // Sort by MaxSim score and return top results
+  return Array.from(docScores.entries())
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, TOP_K)
+    .map(([docId, score]) => ({ docId, score }));
+}`,
+    python: `import turbopuffer as tpuf
+from collections import defaultdict
+
+# ===============================================
+# Tuning parameters
+# ===============================================
+# FIRST_STAGE_TOP_K: How many candidate documents to retrieve per query token.
+#   Higher = better recall (fewer missed relevant docs), but slower.
+#   Lower = faster, but may miss relevant documents.
+#   Start with 10 and increase if you're missing expected results.
+FIRST_STAGE_TOP_K = 10
+
+# SECOND_STAGE_TOP_K: Max token vectors to score per query token.
+#   Should be high enough to cover all tokens from your candidate documents.
+#   Higher = more accurate MaxSim scores, but slower.
+SECOND_STAGE_TOP_K = 256
+
+MAX_CONCURRENT_QUERIES = 16
+TOP_K = 5
+
+
+def query_late_interaction(query_text: str) -> list[dict]:
+    ns = tpuf.Namespace("late-interaction")
+
+    # Get token embeddings for the query
+    query_token_embeddings = get_colbert_embeddings([query_text], input_type="query")[0]
+
+    # First stage: ANN search for each query token to get candidate doc IDs
+    candidate_doc_ids: set[str] = set()
+
+    for i in range(0, len(query_token_embeddings), MAX_CONCURRENT_QUERIES):
+        batch = query_token_embeddings[i : i + MAX_CONCURRENT_QUERIES]
+
+        results = ns.multi_query(
+            queries=[
+                {
+                    "rank_by": ["vector", "ANN", emb],
+                    "top_k": FIRST_STAGE_TOP_K,
+                    "include_attributes": ["doc_id"],
+                }
+                for emb in batch
+            ]
+        )
+
+        for result_set in results.results:
+            for row in result_set.rows:
+                doc_id = row.get("doc_id")
+                if doc_id:
+                    candidate_doc_ids.add(doc_id)
+
+    if not candidate_doc_ids:
+        return []
+
+    # Second stage: Filter to candidates and compute MaxSim scores
+    doc_scores: dict[str, float] = defaultdict(float)
+
+    for i in range(0, len(query_token_embeddings), MAX_CONCURRENT_QUERIES):
+        batch = query_token_embeddings[i : i + MAX_CONCURRENT_QUERIES]
+
+        results = ns.multi_query(
+            queries=[
+                {
+                    "rank_by": ["vector", "ANN", emb],
+                    "top_k": SECOND_STAGE_TOP_K,
+                    "include_attributes": ["doc_id", "doc_text"],
+                    "filters": ["doc_id", "In", list(candidate_doc_ids)],
+                }
+                for emb in batch
+            ]
+        )
+
+        # For each query token, find the max similarity per document
+        for result_set in results.results:
+            seen_doc_ids: set[str] = set()
+
+            for row in result_set.rows:
+                doc_id = row.get("doc_id")
+
+                # Only count the first (highest) match per document per query token
+                if doc_id and doc_id not in seen_doc_ids:
+                    seen_doc_ids.add(doc_id)
+                    similarity = 1 - row["$dist"]
+                    doc_scores[doc_id] += similarity
+
+    # Sort by MaxSim score and return top results
+    sorted_docs = sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)
+    return [{"doc_id": doc_id, "score": score} for doc_id, score in sorted_docs[:TOP_K]]`,
+  }}
+/>
+
+## Quality of Results
+
+To compare late interaction against dense embeddings, we ran both methods on 15,000 consumer appliance reviews from the [Amazon Reviews '23 Dataset](https://amazon-reviews-2023.github.io/index.html).
+
+<ResultsComparison
+  dense={{
+    query: "dishwasher quiet operation cleans well dries dishes completely",
+    results: [
+      {
+        title: "Works well, no problems",
+        snippet: "Came packaged well, and it works as well as a full-size dishwasher. Easy to use, and quieter than expected. The only thing I find lacking is a drying function. Dishes have to be dried by hand, or air-dried after each wash."
+      },
+      {
+        title: "This is a great dishwasher. Saves energy and gets the dishes very clean.",
+        snippet: "This dishwasher is doing an excellent job for us. Condensation drying is working well, except for the plastics mentioned by others. This dishwasher gets my dishes amazingly clean with no pre-washing, and is so quiet I keep checking to see if it's on."
+      },
+      {
+        title: "My favorite appliance. Terrific cleaning, gentle to dishes, energy efficient, quiet operation.",
+        snippet: "I am loving this choice. Installed over a year ago. Gets near-daily use. This is an energy efficient model without a drying heater. It does a great job of drying using residual heat after the wash/rinse cycle is done."
+      },
+    ]
+  }}
+  late={{
+    query: "dishwasher quiet operation cleans well dries dishes completely",
+    results: [
+      {
+        title: "Excellent buy",
+        snippet: "I purchased the dishwasher 1 month ago to replace a Kenmore dishwasher. The fill, rinse and wash cycles are very quiet. The dishes come out clean with no water spots. The dishwasher uses a combination of a very hot rinse cycle and Rinse Aid which results in dry spot free dishes."
+      },
+      {
+        title: "My favorite appliance. Terrific cleaning, gentle to dishes, energy efficient, quiet operation.",
+        snippet: "This is an energy efficient model without a drying heater. It does a great job of drying using residual heat after the wash/rinse cycle is done. Most of the time everything is fully dry to the touch and goes directly to cupboard."
+      },
+      {
+        title: "I like it!",
+        snippet: "Operation is easy. It's a quiet unit. I don't really notice it's running most of the time. Cleans well. Handles a reasonable amount of buildup. Great unit for a one or two person household."
+      },
+    ]
+  }}
+/>
+
+The query asks for a dishwasher that *dries dishes completely*. Dense embeddings' top result says "dishes have to be dried by hand", the opposite of what was asked. Late interaction correctly returns the review mentioning "dry spot free dishes."
+
+<ResultsComparison
+  dense={{
+    query: "water filter for refrigerator that removes chlorine taste but is cheaper than brand name",
+    results: [
+      {
+        title: "Fit my fridge and removes chlorine taste",
+        snippet: "We just installed this the other night and the water quality is very good. We tend to have a chlorine taste if we don't filter and this removes that. I'm very happy with the purchase."
+      },
+      {
+        title: "Chlorine taste and smell",
+        snippet: "Unlike other filters I have purchased for other refrigerators, this one does not work well. You'd think that the OEM would be best, and it has all 3 major certifications, but it is not working as it should. Next time I will spend less on a generic filter."
+      },
+      {
+        title: "replaced the filter in the fridge.",
+        snippet: "The filter that came in my new LG refrigerator is just awful. This filter works great!! no chlorine taste."
+      },
+    ]
+  }}
+  late={{
+    query: "water filter for refrigerator that removes chlorine taste but is cheaper than brand name",
+    results: [
+      {
+        title: "Excellent option for refrigerator water filters",
+        snippet: "This less expensive water filter for the refrigerator works perfectly to filter out bad taste and lasts over 6 months. I've been using them for years and will never again pay a small fortune for refrigerator water filters at a big box store."
+      },
+      {
+        title: "Filters for refrigerator much cheaper then Home Depot",
+        snippet: "Filters for refrigerator. Easy to install, no nasty taste no taste at all. Will buy again."
+      },
+      {
+        title: "Great Replacement Filter",
+        snippet: "They are just like the ones LG supplied with the refrigerator. The big plus is they are much cheaper through ClearWater. I will reorder when I need them."
+      },
+    ]
+  }}
+/>
+
+The query asks for filters that remove chlorine taste *and* are cheaper than brand name. Dense embeddings return a review that complains about chlorine taste (the filter doesn't work). Late interaction finds reviews that explicitly mention both requirements: removing bad taste and being cheaper than brand-name alternatives like *Home Depot* or *ClearWater*.
+
+## Performance Analysis
+
+Late interaction improves retrieval quality but requires more storage and compute. Below are benchmarks from the same 15,000-document dataset, running 100 queries through Turbopuffer.
+
+<PerformanceComparison />

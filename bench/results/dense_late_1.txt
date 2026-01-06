@@ -1,0 +1,50 @@
+uv run dense_late.py
+============================================================
+Hybrid Benchmark: Dense + Late Interaction Rerank
+SciFact Dataset
+============================================================
+
+Loading SciFact dataset...
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5183/5183 [00:00<00:00, 240242.66it/s]
+  Corpus:  5183 documents
+  Queries: 300
+  QRels:   300 query-relevance pairs
+
+Using existing indices:
+  Dense namespace: scifact-dense-bench
+  Late namespace:  scifact-late-bench
+
+Retrieval parameters:
+  First stage (dense) top-k: 100
+  Final top-k: 10
+
+----------------------------------------
+Searching 300 queries (dense + late interaction rerank)...
+Searching: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 300/300 [15:50<00:00,  3.17s/it]
+
+Latency Statistics (search only, excludes embedding):
+
+  First Stage (Dense ANN):
+    Average: 184.93 ms
+    P50:     164.72 ms
+    P95:     349.83 ms
+
+  Second Stage (ColBERT Rerank):
+    Average: 423.44 ms
+    P50:     397.78 ms
+    P95:     626.64 ms
+
+  Total:
+    Average: 608.37 ms
+    P50:     580.43 ms
+    P95:     865.36 ms
+    P99:     1046.61 ms
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.6206
+  Recall@10: 0.7386
+
+============================================================
+Benchmark Complete!
+============================================================

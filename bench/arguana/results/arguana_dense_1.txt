@@ -1,0 +1,38 @@
+============================================================
+Dense Vector Search Benchmark - ArguAna Dataset
+============================================================
+
+Configuration:
+  Dataset:         arguana
+  Namespace:       arguana-dense-bench-openai
+  Embedding Model: openai/text-embedding-3-small
+  Batch Size:      32
+  Top K:           10
+  Timestamp:       2026-01-02T15:17:52.064087
+
+Loading ArguAna dataset...
+  Corpus:  8674 documents
+  Queries: 1406
+  QRels:   1406 query-relevance pairs
+
+----------------------------------------
+Indexing 8674 documents...
+Total indexing time: 109.73s
+
+----------------------------------------
+Searching 1406 queries...
+
+Latency Statistics:
+  Average: 84.73 ms
+  P50:     78.66 ms
+  P95:     115.96 ms
+  P99:     171.74 ms
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.4085
+  Recall@10: 0.8350
+
+============================================================
+Benchmark Complete!
+============================================================

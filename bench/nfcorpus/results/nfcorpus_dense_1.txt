@@ -1,0 +1,38 @@
+============================================================
+Dense Vector Search Benchmark - NFCorpus Dataset
+============================================================
+
+Configuration:
+  Dataset:         nfcorpus
+  Namespace:       nfcorpus-dense-bench-openai
+  Embedding Model: openai/text-embedding-3-small
+  Batch Size:      32
+  Top K:           10
+  Timestamp:       2026-01-02T12:12:50.804048
+
+Loading NFCorpus dataset...
+  Corpus:  3633 documents
+  Queries: 323
+  QRels:   323 query-relevance pairs
+
+----------------------------------------
+Indexing 3633 documents...
+Total indexing time: 39.79s
+
+----------------------------------------
+Searching 323 queries...
+
+Latency Statistics:
+  Average: 79.81 ms
+  P50:     72.61 ms
+  P95:     117.40 ms
+  P99:     163.07 ms
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.3842
+  Recall@10: 0.1835
+
+============================================================
+Benchmark Complete!
+============================================================

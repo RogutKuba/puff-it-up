@@ -1,0 +1,38 @@
+============================================================
+Dense Vector Search Benchmark - SciFact Dataset
+============================================================
+
+Configuration:
+  Dataset:         scifact
+  Namespace:       scifact-dense-bench-openai
+  Embedding Model: openai/text-embedding-3-small
+  Batch Size:      32
+  Top K:           10
+  Timestamp:       2026-01-01T23:31:03.264222
+
+Loading SciFact dataset...
+  Corpus:  5183 documents
+  Queries: 300
+  QRels:   300 query-relevance pairs
+
+----------------------------------------
+Indexing 5183 documents...
+Total indexing time: 56.98s
+
+----------------------------------------
+Searching 300 queries...
+
+Latency Statistics:
+  Average: 75.43 ms
+  P50:     71.85 ms
+  P95:     100.06 ms
+  P99:     121.76 ms
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.7314
+  Recall@10: 0.8542
+
+============================================================
+Benchmark Complete!
+============================================================

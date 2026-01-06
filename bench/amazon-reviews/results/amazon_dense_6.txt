@@ -1,0 +1,412 @@
+============================================================
+Dense Vector Search - Amazon Reviews Dataset
+============================================================
+
+Configuration:
+  Dataset:         amazon-reviews
+  Namespace:       amazon-reviews-dense-bench
+  Embedding Model: openai/text-embedding-3-small
+  Num Reviews:     15000
+  Batch Size:      32
+  Top K:           5
+  Num Queries:     15
+  Timestamp:       2026-01-05T17:31:09.139624
+
+----------------------------------------
+Found 1 data file(s)
+  Loading Appliances.jsonl.gz...
+  Loaded 15000 reviews
+
+----------------------------------------
+Skipping indexing (SKIP_INDEXING=True)
+Total indexing time: 0.00s
+
+----------------------------------------
+
+Searching 15 queries...
+
+======================================================================
+QUERY: ice maker that doesn't leak water on counter
+======================================================================
+[Latency: 285.4ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.596)
+   "Portable ice maker for your countertop"
+   Great ice maker for the money. If your planning a party or just want some extra ice, this will do the job. It does require that you add water to start the cycle and when it's full, you have to use it or bag it, but I can live with that. The only problem is that it doesn't store ice. If the basket has ice in it, and you turn it off, the ice will melt back to water.
+
+#2 [★★★★★] ✓ Verified (sim: 0.577)
+   "Makes good ice"
+   This machine makes "bar quality" ice very fast. The ice is mostly clear. It drops 9 cubes about every 10 minutes, give or take a minute. It has a good size reservoir for water. You'll get at least 3 bins of ice for every refill. Cleanup is easy. It outpaces my other under-counter bar ice maker; of a well known name, and the noise level is about half that of the under-counter bar ice maker. Ice melt recycles if you do not empty the bin. Which my under-counter model just wastes. It will automatically stop when the bin is full. One word of caution. This goes for every "bar ice type" maker. Do NOT put the ice into your freezer. It will simply freeze into a big wad of ice. If you need to keep a quantity of ice then just put it into something like a styrofoam chest. All of the ice will remain as separate cubes.
+
+#3 [★★☆☆☆] ✓ Verified (sim: 0.576)
+   "It locks up several times a day"
+   I use gallons of ice each day.  I need an ice maker.  The previous one lasted for two years.  This looked like the same model.  (Frankly, all the stand-alone ice makers look alike.)  One immediately obvious difference: the previous model used a light-beam to detect a full tray; this one uses a thermometer.  Not a huge deal: it notices a full tray a little later with the thermometer.  Then I heard the click-click-click.  The ice scooper was jammed.  I un-jammed it.  Fine.  Now it jams every hour.  When it jams, it turns on the full and out-of-water lights when it is neither full nor low on water.  I don't have to un-jam it, just reset it.  I have a few days to return it.  But I need an ice maker.  (As an aside, the light beam on my previous ice maker should have been modulated on the send-side and filtered on the receive-side so that direct sunlight wouldn't have let it overfill.  Duct tape over the window solved that problem.)
+
+#4 [★★★★★] ✓ Verified (sim: 0.572)
+   "WON'T LIVE WITHOUT THIS"
+   I live in Las Vegas and drink ice water all day long. I got sick of fighting with ice cube trays. Ice doesn't come out of plastic trays, and the modern version of the metal trays our parents used are so flimsy that they break more easily than the ice they contain. I also got sick of ice in my freezer all solidifying into one massive lump. This ice maker is the perfect answer. I just leave it running around the clock. No, it doesn't keep ice frozen, but when the ice melts, the water goes back in the reservoir and is reprocessed. Several times every day, I go to my machine, and there is always ice waiting without struggling with trays or having to chisel cubes apart. If your kitchen isn't set up to allow a fridge with an ice-maker, this is definitely the next-best option. Of course, with Amazon, you know you're going to get the best, fastest delivery possible.
+
+#5 [★★★★★] ✓ Verified (sim: 0.567)
+   "Quiet, fast, perfect, ice maker!"
+   This counter top ice maker is amazing! I love that it doesn't require a water line to use! I also love that it is actually very quiet!! It makes the perfect size ice cubes, very quickly!! Another feature that I love is that is reuses the melted ice cubes to make new ones, therefore less waste! If you order this ice maker, you won't regret it!!
+
+======================================================================
+QUERY: water filter that removes bad taste but keeps minerals
+======================================================================
+[Latency: 89.2ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.669)
+   "Tastes great"
+   I have really hard water in my area and other refrigerator filters just didn't work at getting rid of the taste that the water has. This filter got rid of the taste and filtered out all of the particulates as well, so now we have perfectly flavorless water.
+
+#2 [★★★★☆] ✓ Verified (sim: 0.657)
+   "Expensive but necessary"
+   Water tastes good.  Easy to change the filter.  Rated to remove a lot of impurities that most people would prefer not to be drinking.  But expensive.
+
+#3 [★★★★☆] ✓ Verified (sim: 0.651)
+   "It is a pretty good filter"
+   The "real" problem is that there are a lot of places in the U.S. where the tap water tastes and smells like sewage. This filter takes care of the smell and the taste. However, if your water has a high percentage of calcium carbonate ;which is responsible for: (Lime scale), it will not filter that out of the water. Water systems that use underground aquifers are notorious for having high levels of calcium carbonate. It is hideously expensive for the amount of water which is filtered though.
+
+#4 [★★★★★] ✓ Verified (sim: 0.638)
+   "Excellant water filter."
+   Excellent tasting water from this filter replacement
+
+#5 [★★★★★] ✓ Verified (sim: 0.637)
+   "Works and does what it is suppose to"
+   Works and removes the bad taste from our local water
+
+======================================================================
+QUERY: dishwasher that doesn't leave white spots on glasses
+======================================================================
+[Latency: 65.0ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.575)
+   "Huzzah!  Calcium deposits and streaks FIXED with PowerHouse"
+   I was about to get rid of my old dishwasher because I couldn't stand the calcium deposits and streaks on all of my dishes, but especially the glass and stainless steel.  And then my daughter purchased this from a dollar store, and when I started putting away dishes one night after we'd used it...I was STUNNED.  The glasses were squeaky clean--no white streaks or splotches.  The utensils and cutlery and pots and pans were glistening, for the first time in ages.  I don't know what's in this stuff, but I don't have to use vinegar or any of the commercial "dishwasher refreshers" on the market.  It took care of the deposits that were gunking up my dishwasher and dishes, and I am absolutely astounded at the difference it has made.  Now, I don't have to wipe off or rewash everything before I put them on the shelves.  This stuff is amazing!
+
+#2 [★★★☆☆]  (sim: 0.569)
+   "Wishy-washy dishwasher"
+   Updated 8/4/14: I finally got a cleaner load when I switched to Cascade Platinum packets with Dawn!  A couple of times I found an undissolved packet but found if I run the hot water in the sink a few times during the auto cycle there's no problem.  I'm learning to deal with the bad rack design and can load it quicker.  Gave it 3 stars this time.<br /><br />Original post:  I didn't get this thru Amazon because another store had a good sale and they had it installed.  We were replacing a 13 year old Maytag.  I'll just mention that we had problems initially due to the installers not balancing it and when we finally got it adjusted we thought Yippeeee now we can have clean dishes! Nope! So here are some facts about this GE non-dishwasher. And I have pix showing the mess!<br />THE PROBLEMS: The recommended detergent packets don't dissolve leaving a cement hard residue and the gel just slimes everything!  And the dishes are still dirty!<br />WHAT I'VE TRIED:<br />1. Increased the water heater to 125 degrees plus I use the Wash Temp Boost option.<br />2. I've tried all of the cycle options also and still the PROBLEMS persist.<br />3. Due to its poor design, with one of the utensil holders right in front of the detergent dispenser, I spend too much time arranging the dishes and utensil so I'm not blocking it! I hang a lot of utensils from the wine glass holder on the top rack and place very few on the bottom<br />4. Since there are 2 water sprayers for the top rack and just one at the bottom for the lower rack so I have to make sure I don't even put smaller bowls in the lower row close to the detergent dispenser!<br />5. I literally have to soak and wash everything before putting them in the DW.  My next step will be to just hand wash and use the DW as a drying rack!<br />So RIP old Maytag, I wish I could resurrect you!
+
+#3 [★★★★☆]  (sim: 0.566)
+   "Live alone in a place with a broken full-size dishwasher"
+   Apartments...you see a dishwasher built in and think, woo-hoo, no more washing dishes by hand, right?  I don't have a clue what is wrong with that dishwasher other than it deposits rather greasy white streaks on dishes.  I tried CLR, vinegar, and a few other treatments plus talking to the apartment manager and nothing works or has been done to fix it.  I got this small countertop dishwasher and while it may not be as perfect as having a full-size one that works, it DOES work without leaving white greasy streaks on my dishes.  At least I'm not washing dishes by hand every day - this dishwasher works well for me.  It doesn't hold a great many dishes, but as one person, I don't make a ton of dishes.  I'd say this would be great for an older couple or might be good for an RV.  I am happy not to be doing dishes by hand!
+
+#4 [★★★★★] ✓ Verified (sim: 0.543)
+   "workss fantastic"
+   My dishwasher was leaving particles on the dishes. Husband took apart and installed. Works like new now.
+
+#5 [★☆☆☆☆]  (sim: 0.542)
+   "Worst Dishwasher I Have Ever Used"
+   Dishes always have film and food specs, regardless of the brand or type of detergent, rinse aids, vinegar rinses, vinegar in the tub, additives (washing soda, Lemi-shine, Borax) ... nothing helps.<br />My first problem with it was there wasn't enough water circulating. The repairman told me that was not possible, because there was a built in sensor that would tell me if there wasn't enough water. I asked, &#34;What do you have that tells me the sensor is broken?&#34; I had already done a test with an upright cup in the top rack to prove there wasn't enough water even to fill that cup.<br />That repairman replaced the sensor, and at least I was getting water then, but there still were filmy dishes and food specks. I took apart the bottom of the dishwasher and cleaned the gunk out of it that had collected but that was only minimally better. I'm taking it apart and cleaning out the gunk again tonight, because it's making a godawful grinding sound and everything I could find on the Net said that means something is clogged.<br />Even at the best of times, the machine takes forever to run: about 2 hours on Normal, and the Heavy setting is closer to 4 hours. It's quiet (except now, with the grinding) but I'd be quiet too if I wasn't doing anything.<br />This was a complete waste of money, and a terrible frustration. I read reviews before I bought it, thinking this would be a good machine, but out of all of the bottom line apartment dishwashers I used before I owned a home, this ranks far worse.<br />Also, the other reviewers aren't kidding about how easy it is to brush against it and turn the machine on. I had read that before I bought it and thought that was silly, but I should have listened ... it really is annoying.
+
+======================================================================
+QUERY: range hood that doesn't let cold air in during winter
+======================================================================
+[Latency: 56.3ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.571)
+   "Powerful range hood"
+   This is a very powerful range hood. It is rather noisy, but it does its job. It does allow cold air seepage during the winter, which I was not used to as I had had a Jenn-Aire stove with a downdraft vent.
+
+#2 [★★★★★] ✓ Verified (sim: 0.493)
+   "Powerful all-purpose hood"
+   I chose this hood because I needed a 42&#34; hood that would match my vintage stove.  The almond color matches perfectly, a lucky coincidence considering my stove was manufactured in the 1930's.  Once we hooked it up (an easy procedure), I was surprised at all the convenient features:  a high-speed &#34;boost&#34; button, a sensor that responds to temperature, a sensor to tell you when the filters need changing and easy-to-operate controls.  We chose to use it unvented at this time but we can always vent it later if we decide to ramp up our cooking.  The only downside that I see is that it doesn't include the duct  work for the vent.  However, the duct work is bulky and has to be designed to fit the installation.  There is an adapter for both square and round ducts included in the box.
+
+#3 [★★★★★] ✓ Verified (sim: 0.459)
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#4 [★★★★★] ✓ Verified (sim: 0.452)
+   "Range hood"
+   This hood looks great.  I didn't think to order te filters until I received the hood.  It appears to work fine but I'll get a better idea when I change the filters in the future.
+
+#5 [★★★★☆] ✓ Verified (sim: 0.452)
+   "Nice mid-quality vent hood"
+   This is a good-looking vent hood.  The fan is pretty quiet given the amount of air it moves, and the lights are excellent at illuminating the stove cooktop.  Build quality is not the best, with air leaks that need to be covered or sealed during installation, and a general slightly flimsy feel to the whole thing.  That being said, no one will ever notice once it’s installed! While it’s not a high-end piece of equipment, it isn’t priced like one, either. Way better than a cheapie vent hood… It works perfectly well.
+
+======================================================================
+QUERY: range hood powerful suction but quiet operation
+======================================================================
+[Latency: 60.8ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.676)
+   "VERY quiet range hood!"
+   This is really a quiet range  hood. I looked for a low sone ranking....the motor is indeed quiet, and I like the variable speeds. On Quiet setting, it is really a nice, quiet hum. My only wish for improvement would be with the lighting. The lights are at the front of unit. My back burners on not lighted as much as I would like, so I usually turn on my undercounted lighting.
+
+#2 [★★★★★] ✓ Verified (sim: 0.674)
+   "Low noise level easy to install"
+   Use in kitchen above range, good suction and not too noisey
+
+#3 [★★★★★] ✓ Verified (sim: 0.669)
+   "Powerful range hood"
+   This is a very powerful range hood. It is rather noisy, but it does its job. It does allow cold air seepage during the winter, which I was not used to as I had had a Jenn-Aire stove with a downdraft vent.
+
+#4 [★★★★★] ✓ Verified (sim: 0.661)
+   "Powerful and elegant range hood"
+   This is a very powerful and elegant range hood, excellent suction and illumination; it is also very good-looking.<br />On the cons side I have to say that it is a bit heavy and challenging to install.<br />Overall I am very satisfied about Chef 30” PS18 Under Cabinet Range Hood.
+
+#5 [★★★★★] ✓ Verified (sim: 0.649)
+   "Very pleased"
+   Everything we expected. Good suction, sleek and not unattractive over the island. Our range is 36" and so is the hood. The glass is nice, I have yet to tackle cleaning. The baffles are rated best in regards to filters and in my restaurant experience it seems these will be easier to clean. It is pretty quiet on medium setting. We have not decided our new lighting, and we are messy today but here's a pic.
+
+======================================================================
+QUERY: dishwasher compact size but large capacity inside
+======================================================================
+[Latency: 65.0ms]
+
+#1 [★★★★★]  (sim: 0.724)
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#2 [★★★★★]  (sim: 0.663)
+   "Small Space Help"
+   This small dishwasher is ideal for small spaces. Set up was straightforward, not easy but not difficult either. It is reasonably quiet and simple to use. I use pods or tablets. It is a compact unit. If you spend a week waiting to have a full load, this is for you. One of my brothers loves the fruit/veggie washing function.  It handles standard sizes, ie., ten inch dinner plates, regular cups, but nothing extra large. Pleased so far.
+
+#3 [★★★★★] ✓ Verified (sim: 0.657)
+   "Great dishwasher for the size"
+   This product works very well (do not expect it to eat away dried or crusted on food, but most full-sized dishwashers I have had won't either). It has enough room for all I need but pots and pans, and it cleans well and works with ease. The price point is a bit high in my opinion, but the product does work as advertised and it is much better than my apartment's 15 year old POS dishwasher.
+
+#4 [★★★★★] ✓ Verified (sim: 0.652)
+   "Love this dishwasher"
+   It's the right size on the outside, but it could be bigger on the inside. The outgoing water hose is a bit difficult to connect. But once it is connected, the machine runs beautifully. Love the "noise" level since it's very quiet!  No problems so far and Danby service is excellent.
+
+#5 [★★★☆☆]  (sim: 0.651)
+   "Not so compact, but works."
+   I've used portable dishwashers before and they are AWESOME for people who travel or have dietary restrictions (Kosher, for example, need separate washers for milk and meat dishes). The good news is, this actually seems like it does a decent job and even comes with some complimentary detergent and jet dry in the box, so you can get up and running right away... in some cases, at least. I say that because depending on how you hook it up, you may need additional hardware to connect to your water lines and/or sink.<br />Here's my problem with it- they claim it is a "countertop" style washer, but the thing is actually too big for my counter! I don't have enough clearance under the cabinets to fit, and it has a lot of hoses and tubing to connect as well. I was considering drilling into my counter to feed the tubes to the water supply and drain, but decided to try connecting to the sink instead when we saw it wasn't fitting well under the cabinets. But then it is too close to the sink and with the hoses etc connected, it looks like it is taking over the kitchen more than just an appliance on the counter like a toaster.<br />I've seen smaller counter-top dishwashers that would easily fit better in our space. Perhaps this one does a better job, but at this point I feel like it is too big to fit the way I intended to use it, but too small to be one we install permanently in the cabinet space. Perhaps someone else will find this size useful, I'm a little disappointed because I was so excited for this to work.
+
+======================================================================
+QUERY: ice maker makes ice fast but doesn't use much electricity
+======================================================================
+[Latency: 61.4ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.718)
+   "Fast little ice maker"
+   This does make new ice pretty fast and takes up very little counter space. The only reason for 4 out 5 stars is that the ice tends to melt kind of fast.  I've double checked to make sure everything is closed on the machine, and that it's not too close to the wall or anything else.
+
+#2 [★★★★☆] ✓ Verified (sim: 0.685)
+   "Makes Ice Fast"
+   Makes ice fast, and I have very little trouble with it. I only wish it has a timer built into it, so I could shut it off at a certain time, then have it start making ice again at a certain time.<br /><br />To reduce the number of times you have to clean the unit, use distilled water. This will also make your ice cubes crystal clear.
+
+#3 [★★★★★] ✓ Verified (sim: 0.683)
+   "Ice maker"
+   Really like the ease of making ice.  Once the unit is on and the refrigeration is cold, ice makes pretty fast.  The unit will stop making ice once the basket is filled, but once ice is removed it starts up.  As a kick start I made ice and bagged it in my home freezer.
+
+#4 [★★★★★]  (sim: 0.676)
+   "Makes great ice fast"
+   Our icemaker in our freezer just doesn't want to work, and making ice the old fashioned way gets old.  This allows us to either make ice on demand or make a bunch and keep in the freezer (we tend to do both--make ice when needed and make extra for in between).  The ice it makes is the hollow tube type, which is good for making quick ice and quickly melts in your beverage.<br /><br />Setup took seconds, and it's easy to drain and keep ready for the next go round.  It's not too bulky, so you can keep it out on a counter or bar, but that does mean that the compact basket needs to be periodically emptied.  It lacks any form of plumbing, but the water receptacle is plenty big.  If anything I wish that the ice basket were larger to allow it to essentially fill around the same time as the water runs out.  The other quirk is that the ice comes out wet and just barely frozen.  If you put into a freezer, it will stick to other ice and make a block of ice.  As long as I break it up in an hour or so, it stays separated.  These quirks aside, I have no complaints.<br /><br />Highly recommended
+
+#5 [★★★★★] ✓ Verified (sim: 0.674)
+   "Makes ice quickly, a secondary ice maker"
+   really great, makes ice quickly for when we run out on our fridge. The ice melts fast though, but it makes it fast so can't complain. Couldn't fill a cooler or anything though.
+
+======================================================================
+QUERY: countertop portable ice maker for RV camping road trip
+======================================================================
+[Latency: 60.0ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.730)
+   "Perfect for RV living"
+   [[VIDEOID:a9b641d44630c8ca138da61ddf123205]] We are on a 2 week trip and didn’t have enough room to make ice cubes. We lasted 3 days before we started looking for a counter top ice maker. After much debate, we ordered this one. We love it! We start it when we wake up and have a whole basket ice to add to our 2 gallon Stanley water dispenser in about an hour. We use it throughout the day to put in our and 4 kids’ waters, then turn it off before we go to bed.<br />You can not store ice in the unit for long, but we go through about a gallon worth of ice a day, so we are constantly keeping it emptied.
+
+#2 [★★★★★] ✓ Verified (sim: 0.653)
+   "Portable ice maker for your countertop"
+   Great ice maker for the money. If your planning a party or just want some extra ice, this will do the job. It does require that you add water to start the cycle and when it's full, you have to use it or bag it, but I can live with that. The only problem is that it doesn't store ice. If the basket has ice in it, and you turn it off, the ice will melt back to water.
+
+#3 [★★★★★] ✓ Verified (sim: 0.651)
+   "Works For Us"
+   We use this ice maker in our RV, and used it a lot this summer.  It has been one of the best purchases we made for our trailer.  After pouring in bottled water we let it do its thing, then bagged up the ice in freezer bags and put the bags in our 12v refrigerator.  During this past summer this Igloo ice maker has faithfully churned out the ice for us and for our dog.
+
+#4 [★★★★★] ✓ Verified (sim: 0.645)
+   "Great for RV"
+   Placed in my RV.  Tied of buying ice while traveling.  Slow but effective
+
+#5 [★★★★★] ✓ Verified (sim: 0.640)
+   "Super fast and convenient ice maker."
+   So far we are enjoying having this ice maker. We use it in our rv for our weekend getaways. It makes ice super fast. Sometimes I think the ice has a odd taste but I haven’t been able to pinpoint it to the ice maker. Could be the water. I do wish they had a drain though because we turn ours off when we leave the camper and I like to drain the water so it doesn’t just sit for days and it’s heavy to handle so a drain would be nice.
+
+======================================================================
+QUERY: Samsung french door refrigerator water filter replacement
+======================================================================
+[Latency: 81.7ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.713)
+   "Fits the food showcase french door fridge perfectly"
+   Bought this for my Samsung model  RF28JBEDBSG food showcase French door refrigerator.  Be sure to turn the water line valve off before removing your current filter, then remove & replace it with this new one.  Run several glasses of water through it after you install it to clear the line of air and remove any fine particles from the filter and you'll have clean clear water and ice cubes for another six months.
+
+#2 [★★★★★] ✓ Verified (sim: 0.685)
+   "Refrigerator Water Filter Replacement"
+   Perfect replacement for my Samsung water filter. Works great.
+
+#3 [★★★★★]  (sim: 0.685)
+   "Fit A Samsung Double Door Bottom Freezer Model RF28HFEDTSR."
+   I wasn’t sure this was the correct filter for our fridge but I looked it up online and these ended up working perfectly. I have included the model, serial and compression numbers in the photos in the hope that it will help someone. Just twist and pull the old filter out and then push and twist the new one in. Very Easy! The filter hole is in between the fruit and vegetable drawers.<br />  I read that there are a few ways to get the red filter light to go off after replacing the filter. I held the alarm button for 3-5 secs. You can also hold the water button 3-5 secs.<br />  We have well water and do not drink it due to the taste but the water tasted completely different with this filter and I would absolutely use the water out of the fridge after installing this filter.
+
+#4 [★★★★★] ✓ Verified (sim: 0.684)
+   "Great replacement filter for Samsung refrigerators."
+   My undersink filter failed, so now we use the refrigerator filter for all our drinking water. Always tastes fresh and clean. Make sure to replace it every six months.
+
+#5 [★★★★☆] ✓ Verified (sim: 0.670)
+   "Filtered water. Not rocket science."
+   If you have a Samsung fridge like we do, then you need to use their filter. There's not much you can say about this thingie. We're not heavy thru-the-door water drinkers, but it's nice to know the option to filter the water is there. I figure we get 5-6 months out of one (less during the summer months). I think it's pricey for what it does, but it is what it is. Sorry to be cliche, but it's not like you have an option of going with a superior brand for less money.
+
+======================================================================
+QUERY: dishwasher quiet operation cleans well dries dishes completely
+======================================================================
+[Latency: 60.2ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.668)
+   "Works well, no problems"
+   Came packaged well, and it works as well as a full-size dishwasher.  Easy to use, and quieter than expected.  The only thing I find lacking is a drying function.  Dishes have to be dried by hand, or air-dried after each wash.
+
+#2 [★★★★★]  (sim: 0.650)
+   "This is a great dishwasher. Saves energy and gets the dishes very clean."
+   This dishwasher is doing an excellent job for us.  I too was used to a dishwasher with a &#34;drying element&#34;, however I had turned it off due to the extreme energy usage.  Condensation drying is working well, except for the plastics mentioned by others, which would have melted in the old dishwasher with the dry cycle.  The sanitize cycle helps and only containers I reuse that food came in (like peanut butter jars) can't 'seem to take the heat.  This dishwasher gets my dishes amazingly clean with no pre-washing, and is so quiet I keep checking to see if it's on.  Times have changed since by dishwasher of 1998 and I'm glad!  I would recommend this unit and would buy it again.
+
+#3 [★★★★★]  (sim: 0.643)
+   "My favorite appliance.  Terrific cleaning, gentle to dishes, energy efficient, quiet operation."
+   I am loving this choice.  Installed over a year ago.  Gets near-daily use.<br /><br />The only thing even remotely wrong so far: a modest amount of residual soap buildup, easily solved by occasional use of readily available dishwasher cleaning products, run through as a separate cycle.  Normal for any dishwasher, I guess.<br /><br />This is an energy efficient model without a drying heater.  It does a great job of drying using residual heat after the wash/rinse cycle is done.  Once in a while a few select pieces go into the sinkside rack after the load, to finish drying, but that's nominal.  Most of the time everything is fully dry to the touch and goes directly to cupboard.<br /><br />Tip:  Read the manual and you'll really benefit from this model's features.  Learn:<br />* Which settings to use for different cleaning tasks.<br />* How to silence the beep after the load is done.<br />* Which setting selects advanced dish drying.<br />* When, how to use the Sanitize setting (short answer:  it also promotes better dish drying, so use it regularly).<br />* How to optimally load the system before washing.<br />* How to periodically check the rotary arms and the filters as recommended in the manual.  (So far, only the filters have required occasional rinse out, in my own experience.)<br /><br />This model was an upgrade from what my local appliance retailer normally stocks, but I chose it for its multi-level filtration and other upgrade features:  figuring that, for a few bucks more, you install it, then you live with your choice almost every day of your life for several years, so it makes sense to buy a good performer.  This model is.
+
+#4 [★★★★★] ✓ Verified (sim: 0.630)
+   "Amazing small dishwasher - so quiet!"
+   We use this as a second dishwasher for our cat dishes. It is quiet and gets the dishes really clean. We are a Danby repeat customer and I can highly recommend their dishwashers. This little dishwasher holds a surprising amount of dishes. I have to say again, it is very, very quiet. Our old Danby from 2004 was an 18" portable and sounded like a thunderstorm. But worked superbly for years. We are even more pleased with this new one.
+
+#5 [★★☆☆☆] ✓ Verified (sim: 0.624)
+   "poor performer"
+   as some others have indicated, this dishwasher seems to do very little, if anything, in the way of actually cleaning dishes.  :(  i don't mind the noise level a bit; i guess i grew up with noisier dishwashers than some people did. but running it at all is kind of pointless if it's not going to get the dishes clean.
+
+======================================================================
+QUERY: nugget ice maker like sonic or chick-fil-a ice
+======================================================================
+[Latency: 57.1ms]
+
+#1 [★★★★☆]  (sim: 0.676)
+   "Nuggets"
+   This ice maker is easy to use. It is fairly quiet and very efficient. It makes nugget ice. The cubes are small, soft and chewable. No odd taste. It recycles melted ice and is simple to clean. Working well so far.
+
+#2 [★★★★★]  (sim: 0.673)
+   "Nugget Ice Maker Countertop,with Soft & Chewable Ice 44 lbs"
+   if you love nugget ice this is for you. works great and fast.
+
+#3 [★★★★☆]  (sim: 0.629)
+   "Efficient"
+   This ice maker is compact. It is easy to set up and use. It is quick and not too noisy. The nugget style cubes are chewable. There are two sizes, small and large but the size difference is negligible. It has performed consistently.
+
+#4 [★★★★☆]  (sim: 0.627)
+   "Makes great ice, super easy to install"
+   Pros:<br />-Makes great ice<br />-Super easy to set up, no water line needed<br />-Easy to fill and clean<br />-Low energy drain (average 70 watts while making ice, 1 watt on standby)<br /><br />Cons:<br />-Loud during ice making<br />-Designed to fit under kitchen cabinets but we tried it in 2 kitchens and it was slightly too tall in both cases (around .25-.5 inch too tall)<br />-Proprietary filter is pretty expensive and I don't expect it to last long based on how small it is<br /><br />If you are looking for an ice maker to give you the 'good ice' you find at many restaurants and fast-food places like Sonic and Chick-fil-a.. from what I can tell this is the only consumer-grade machine that makes true nugget-style ice.  In my opinion the ice this machine makes it not quite as good as that of commercial ice makers because the nugget size is slightly bigger.. but it gets very close at a fraction of the price of a decent commercial machine.<br /><br />My parents have had a manitowoc commercial ice maker for around 20 years now and I have always wanted one myself but was never able to justify spending several thousand dollars on an ice maker.. not to mention the water line and space needed to fit a commercial machine.  So I was excited when I learned about the Opal bringing this kind of ice to a smaller countertop form-factor.  While it isn't perfect, overall I have been happy with the machine and would definitely recommend it to those who are obsessed with 'good ice'.
+
+#5 [★☆☆☆☆] ✓ Verified (sim: 0.624)
+   "Don't Waste Your Money!"
+   We really like nugget ice, so much that we would buy bags of it from Sonic, so we were excited to find the Opal Counter Top Nugget Ice Maker. It was awesome - made great, soft, nugget ice just like it was supposed to - until it didn't. Exactly one year and two weeks after purchase (right after the one-year warranty), it stopped making ice. We tried all of the trouble-shooting - reset it, unplug it and wait a few hours, clean with vinegar, check the water lines. Nothing helped. It will make about a tablespoon of ice and then quit. Disappointing that a $580 appliance is only good for one year (and two weeks). If you want to pay an average of $50/month for the good ice for about a year, go for it. Just don't be surprised when it breaks.<br /><br />Don't be fooled by all of the 5-star reviews. I would have given it a 5-star review as well for the first 12 months. Check out all of the 1-star reviews - plenty of other folks have had the same experience.
+
+======================================================================
+QUERY: clear ice cubes not cloudy white ice for cocktails
+======================================================================
+[Latency: 61.0ms]
+
+#1 [★★★★☆]  (sim: 0.568)
+   "Very nice ice maker.  quick and clear ice if you use Distilled water."
+   I have wanted clear ice cubes FOREVER.  finally with this Ice Maker.. I  can pour DIstilled water into the reservoir and it will make clear ice bullets.  Yes you can drink distilled water.. there just is no minerals in it.
+
+#2 [★★★★★]  (sim: 0.562)
+   "Ice, Ice, Baby"
+   This is a terrific machine. Easy to use it is quick and quiet. You can select different sizes of ice to suit your purpose. Large is great for cocktails, medium for smoothies and blender drinks a nab and small for keeping foods chilled. The instructions are pretty good. The ice is clear and tastes clean. Ice should be removed promptly and a scoop is included. The maker is insulated so it won't melt right away. Melted ice is recycled. It is compact and looks good on the countertop. Nice.
+
+#3 [★★★★★] ✓ Verified (sim: 0.559)
+   "which ice cubes was seperated"
+   the cubes stay stuck together so you have to break them apart it would be better if they were dispense individually
+
+#4 [★★★★★]  (sim: 0.549)
+   "Love it"
+   I've been using it a few months now. For extra clear ice, use distilled water
+
+#5 [★★★★★] ✓ Verified (sim: 0.531)
+   "Clean fresh ice !"
+   Ooh this is everything. I have the Berkey Water purifier; I love it and wanted my ice to taste just as good. I also go this because I spent $40 on ice for a cooler for a party. I don't want to do that again! I pour the berkey water in and bam, I got the perfect ice for my cocktails!
+
+======================================================================
+QUERY: looking for a portable countertop dishwasher that works in small apartment without permanent installation hooks up to sink faucet
+======================================================================
+[Latency: 57.6ms]
+
+#1 [★★★☆☆]  (sim: 0.703)
+   "Not so compact, but works."
+   I've used portable dishwashers before and they are AWESOME for people who travel or have dietary restrictions (Kosher, for example, need separate washers for milk and meat dishes). The good news is, this actually seems like it does a decent job and even comes with some complimentary detergent and jet dry in the box, so you can get up and running right away... in some cases, at least. I say that because depending on how you hook it up, you may need additional hardware to connect to your water lines and/or sink.<br />Here's my problem with it- they claim it is a "countertop" style washer, but the thing is actually too big for my counter! I don't have enough clearance under the cabinets to fit, and it has a lot of hoses and tubing to connect as well. I was considering drilling into my counter to feed the tubes to the water supply and drain, but decided to try connecting to the sink instead when we saw it wasn't fitting well under the cabinets. But then it is too close to the sink and with the hoses etc connected, it looks like it is taking over the kitchen more than just an appliance on the counter like a toaster.<br />I've seen smaller counter-top dishwashers that would easily fit better in our space. Perhaps this one does a better job, but at this point I feel like it is too big to fit the way I intended to use it, but too small to be one we install permanently in the cabinet space. Perhaps someone else will find this size useful, I'm a little disappointed because I was so excited for this to work.
+
+#2 [★★★★★]  (sim: 0.693)
+   "Wonderful"
+   This portable dishwasher is amazing. Perfect for small spaces it is simple to set up and use. It does a terrific job. There are a number of settings: normal, rapid, fruit, steam and glass. ,The fruit option insures your produce is free of dirt. No detergent needed for this cycle.  It uses powdered dishwasher detergent or those dishwasher tabs. The capacity is small but it saves you from running the full sized washer. It is portable and ideal for rvs or camping. My kitchen isa disaster due to a pandemic interrupted andcpostponed rennovation. This countertop appliance makes life easier.
+
+#3 [★★★★★]  (sim: 0.690)
+   "Say bye bye to hand washing dishes"
+   If you are living in an apartment and don't have a dishwasher you might want to check this out. This is designed to sit on the countertop, draws its water source from the faucet via a included hose, and drains into the sink via provided hose. It plugs into a regular 110v outlet.<br /><br />This unit also has a fruits and veg washing setting which I found pretty interesting!  Remember to clean your filter each use.<br /><br />I wl update as the appliance gets more use
+
+#4 [★★★★★]  (sim: 0.678)
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#5 [★★★★★]  (sim: 0.653)
+   "The full size dishwasher in my home quit working"
+   I live alone and rent this house.  I have explained to the owner that the dishwasher does not work but they have no interest in buying a new one and having the old one removed and a new one put in just for me.  This came at the perfect time.  I don't mind washing dishes by hand but nobody wants to wash every dish by hand every day forever and ever.  This mini-dishwasher was easy enough to set up on the counter and while it may not wash but a quarter of the dishes a full size dishwasher can do, but considering I don't make a family's amount of dishes in a day, this countertop dishwasher works fine.  It is easy to use and while it makes maybe the same amount of noise as a regular dishwasher, I can't complain about it.  My dishes are clean when they come out of it and the best part is, I didn't have to wash them!  I am thinking of getting a smaller RV to travel in and think this little dishwasher will probably come with me, I like it so much!
+
+======================================================================
+QUERY: need a water filter for refrigerator that removes chlorine taste and odor but is cheaper than the brand name filter
+======================================================================
+[Latency: 68.4ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.689)
+   "Fit my fridge and removes chlorine taste"
+   We just installed this the other night and the water quality is very good. We tend to have a chlorine taste if we don't filter and this removes that. I'm very happy with the purchase.
+
+#2 [★★☆☆☆] ✓ Verified (sim: 0.679)
+   "Chlorine taste and smell"
+   Unlike other filters I have purchased for other refrigerators, this one does not work well.  You'd think that the OEM would be best, and it has all 3 major certifications, but it is not working as it should.<br /><br />Next time I will spend less on a generic filter and hope it works better.
+
+#3 [★★★★★] ✓ Verified (sim: 0.671)
+   "replaced the filter in the fridge."
+   The filter that came in my new LG refrigerator is just awful.  This filter works great!! no chlorine taste.
+
+#4 [★★★★★] ✓ Verified (sim: 0.660)
+   "Much Cheaper"
+   This water filter has performed just fine and was about $30 cheaper than going back to the appliance store where we bought the refrigerator.
+
+#5 [★★★★★]  (sim: 0.656)
+   "Water tastes great!"
+   I was using the branded product in my refrigerator water filter, and the water tasted just fine. This one, the water tastes just a notch cleaner and nicer than the other filter when brand-new and fresh. It fit into the fridge just as it should and was easy to install. I do think it is worthwhile to pay a little bit more for the higher end filtration, as I do notice a taste difference.
+
+======================================================================
+QUERY: want an ice maker that makes the good nugget ice like you get at sonic drive-in not the regular hollow bullet shaped cubes
+======================================================================
+[Latency: 63.1ms]
+
+#1 [★★★★★]  (sim: 0.641)
+   "Outstanding"
+   This is a great addition to any kitchen, especially if you don't have an ice-maker in the freezer. Setting it up is simple, as is the initial cleaning (it mostly self-cleans). The ice it produces is perfect: smaller, cylindrical cubes that are not overly-solid. It is like the ice you would find at Sonic and some other fast food places. It makes ice quickly and always keeps the drawer full. It's just great.
+
+#2 [★★★★☆]  (sim: 0.635)
+   "Nuggets"
+   This ice maker is easy to use. It is fairly quiet and very efficient. It makes nugget ice. The cubes are small, soft and chewable. No odd taste. It recycles melted ice and is simple to clean. Working well so far.
+
+#3 [★★★★★]  (sim: 0.625)
+   "Nugget Ice Maker Countertop,with Soft & Chewable Ice 44 lbs"
+   if you love nugget ice this is for you. works great and fast.
+
+#4 [★★★★☆]  (sim: 0.623)
+   "Makes great ice, super easy to install"
+   Pros:<br />-Makes great ice<br />-Super easy to set up, no water line needed<br />-Easy to fill and clean<br />-Low energy drain (average 70 watts while making ice, 1 watt on standby)<br /><br />Cons:<br />-Loud during ice making<br />-Designed to fit under kitchen cabinets but we tried it in 2 kitchens and it was slightly too tall in both cases (around .25-.5 inch too tall)<br />-Proprietary filter is pretty expensive and I don't expect it to last long based on how small it is<br /><br />If you are looking for an ice maker to give you the 'good ice' you find at many restaurants and fast-food places like Sonic and Chick-fil-a.. from what I can tell this is the only consumer-grade machine that makes true nugget-style ice.  In my opinion the ice this machine makes it not quite as good as that of commercial ice makers because the nugget size is slightly bigger.. but it gets very close at a fraction of the price of a decent commercial machine.<br /><br />My parents have had a manitowoc commercial ice maker for around 20 years now and I have always wanted one myself but was never able to justify spending several thousand dollars on an ice maker.. not to mention the water line and space needed to fit a commercial machine.  So I was excited when I learned about the Opal bringing this kind of ice to a smaller countertop form-factor.  While it isn't perfect, overall I have been happy with the machine and would definitely recommend it to those who are obsessed with 'good ice'.
+
+#5 [★★★★☆]  (sim: 0.615)
+   "Efficient"
+   This ice maker is compact. It is easy to set up and use. It is quick and not too noisy. The nugget style cubes are chewable. There are two sizes, small and large but the size difference is negligible. It has performed consistently.
+
+
+============================================================
+Latency Statistics:
+  Average: 79.49 ms
+  P50:     61.36 ms
+  P95:     148.07 ms
+
+============================================================
+Benchmark Complete!
+============================================================

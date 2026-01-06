@@ -1,0 +1,2564 @@
+============================================================
+Late Interaction Search - Amazon Reviews Dataset
+============================================================
+
+Configuration:
+  Dataset:            amazon-reviews
+  Namespace:          amazon-reviews-late-bench
+  Jina Model:         jina-colbert-v2
+  Embedding Dim:      128
+  Num Reviews:        15000
+  Batch Size:         8
+  Top K:              5
+  First Stage Top K:  50
+  Second Stage Top K: 256
+  Num Queries:        100
+  Timestamp:          2026-01-05T19:49:37.447903
+
+----------------------------------------
+Found 1 data file(s)
+  Loading Appliances.jsonl.gz...
+  Loaded 15000 reviews
+
+----------------------------------------
+Skipping indexing (SKIP_INDEXING=True)
+Total indexing time: 0.00s
+
+----------------------------------------
+
+Searching 100 queries...
+
+======================================================================
+QUERY: ice maker that doesn't leak water on counter
+======================================================================
+[Client: 2122.7ms | Server: 224ms | Tokens: 32 | Candidates: 548]
+
+#1 [★★★★★] ✓ Verified
+   "Ice Maker for countertop"
+   We love this ice maker so much  We recommend it for sure.
+
+#2 [★★★★★] ✓ Verified
+   "Great ice maker"
+   We love this ice maker; it is easy to use and let's you know when we need to add more water
+
+#3 [★★★★★] ✓ Verified
+   "Portable ice maker for your countertop"
+   Great ice maker for the money. If your planning a party or just want some extra ice, this will do the job. It does require that you add water to start the cycle and when it's full, you have to use it or bag it, but I can live with that. The only problem is that it doesn't store ice. If the basket has ice in it, and you turn it off, the ice will melt back to water.
+
+#4 [★★★★★] ✓ Verified
+   "replacement for ice maker"
+   this was a direct replacement for our ice maker; works well
+
+#5 [★★★★☆] ✓ Verified
+   "Great Ice"
+   Love this ice maker. It can be tricky. Don't overfill!
+
+======================================================================
+QUERY: water filter that removes bad taste but keeps minerals
+======================================================================
+[Client: 2326.8ms | Server: 217ms | Tokens: 32 | Candidates: 511]
+
+#1 [★★★★★] ✓ Verified
+   "Filter works great."
+   Quickly installs, takes the chemical taste out of city water.
+
+#2 [★★★★★] ✓ Verified
+   "A great vslue"
+   A filter that makes the water tastes great. Easy to replace
+
+#3 [★★★★★] ✓ Verified
+   "Great Water Filter"
+   This filter keeps our city well water tasting good.  I would never go without.
+
+#4 [★★★★★] ✓ Verified
+   "Slean and no chemical taste"
+   Excellent water filter for clean filtered water and ice from my refrigerator
+
+#5 [★★★★★] ✓ Verified
+   "great tasting water filter"
+   water tastes great, and using a much cheaper filter too!
+
+======================================================================
+QUERY: dishwasher that doesn't leave white spots on glasses
+======================================================================
+[Client: 1183.8ms | Server: 214ms | Tokens: 32 | Candidates: 496]
+
+#1 [★★★★★] 
+   "Excellent buy"
+   I purchased the dishwasher 1 month ago to replace a Kenmore dishwasher.<br />Pros: The dishwasher is very well constructed. The fill, rinse and wash cycles are very quiet. The dishes come out clean with no water spots. Thee dishwasher uses a combination of a very hot rinse cycle and Rinse Aid which results in dry spot free dishes.<br />Cons: None
+
+#2 [★★★★★] ✓ Verified
+   "BEST DISHWASHER EVER"
+   I bought this dishwasher in October of 2014 and it has worked PERFECTLY for us for the past 4 years.
+
+#3 [★★★★★] ✓ Verified
+   "Worked well in my dishwasher"
+   I have a Bosch dishwasher in the house we just bought and the silverware basket was missing. I put this one along the side and it works fine.
+
+#4 [★★★★★] ✓ Verified
+   "Needed for bosch 800 series dishwasher"
+   Bought a new 800 series dishwasher(check my order history) and needed this for it. No leaks so far.
+
+#5 [★★★★★] ✓ Verified
+   "Huzzah!  Calcium deposits and streaks FIXED with PowerHouse"
+   I was about to get rid of my old dishwasher because I couldn't stand the calcium deposits and streaks on all of my dishes, but especially the glass and stainless steel.  And then my daughter purchased this from a dollar store, and when I started putting away dishes one night after we'd used it...I was STUNNED.  The glasses were squeaky clean--no white streaks or splotches.  The utensils and cutlery and pots and pans were glistening, for the first time in ages.  I don't know what's in this stuff, but I don't have to use vinegar or any of the commercial "dishwasher refreshers" on the market.  It took care of the deposits that were gunking up my dishwasher and dishes, and I am absolutely astounded at the difference it has made.  Now, I don't have to wipe off or rewash everything before I put them on the shelves.  This stuff is amazing!
+
+======================================================================
+QUERY: range hood that doesn't let cold air in during winter
+======================================================================
+[Client: 804.2ms | Server: 217ms | Tokens: 32 | Candidates: 478]
+
+#1 [★★★★★] ✓ Verified
+   "Powerful range hood"
+   This is a very powerful range hood. It is rather noisy, but it does its job. It does allow cold air seepage during the winter, which I was not used to as I had had a Jenn-Aire stove with a downdraft vent.
+
+#2 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#3 [★★★★★] ✓ Verified
+   "Excellent Range Hood"
+   Excellent Range hood and easy to install.  Love that is has 3 settings for both fan speed and lights.
+
+#4 [★★★★★] ✓ Verified
+   "It doesn't get any easier or cheaper!!"
+   If you're looking for a matching SS hood, this one gets it done as inexpensively and nicely as possible. The only thing I DIDN'T like was the small black plastic cover included to cover the vent for those who don't have a duct.
+
+#5 [★★★★☆] ✓ Verified
+   "Helps with the heating bill during the winter."
+   Something I have been using for a long time.  These newer ones do not want to hold the flap open as easily as the ones I purchased before these.
+
+======================================================================
+QUERY: refrigerator that doesn't make loud humming noise at night
+======================================================================
+[Client: 1426.1ms | Server: 216ms | Tokens: 32 | Candidates: 549]
+
+#1 [★★☆☆☆] ✓ Verified
+   "Works Great, But Makes Loud Popping Noises"
+   Worked flawlessly for a few weeks, but have had this unit for several months now, and unit makes frequent loud banging or pop noises. Apparently this is normal, and part of the defroster or something. Not very happy because the popping has awakened my wife and I in the middle of the night. I have no other place to put it, or I would move it out of our bedroom, which was the whole reason I bought it in the first place.<br /><br />Other than the noise, the fridge works great, has a lot of room, and doesn't build up any ice in the freezer compartment. I would recommend this frige to those who are very soumd sleepers, or for people who won't be using it in the bedroom, or other sleeping areas.
+
+#2 [★★★★★] 
+   "Best refrigerator ever"
+   We’ve owned this refrigerator for 16 months and it is by far the best refrigerator we have ever owned. It does what you would expect from a $3,000 refrigerator like keeping everything cold but we are extremely pleased that it doesn’t have any of the problems we’ve had with other refrigerators like Samsung. It is extremely quiet which is important to us since it’s located in a kitchen/living room combination room—the Samsung we had before was at times so loud we had to turn up the volume on the living room TV. It makes an abundance of ice cubes without freezing them into clumps and jamming the dispenser and it dispenses ice without it flying everywhere. The ice tray is easy to access and remove. The middle drawer is spacious for storing drinks and having ready access to other regular use items like cheese, cold cuts and yogurt. The door-in-door is great for quickly grabbing items without having to open the main compartment—we use it for eggs, butter, creamer, salad dressing and water and wine carafes. The bottom freezer is large with an upper drawer and lower compartment. The French doors and middle and freezer drawers are a bit heavy so it takes a little more than a gentle push to close them but that’s a minor issue considering how great the refrigerator performs.
+
+#3 [★★★★★] ✓ Verified
+   "Ice Ice baby"
+   I bought the retro fridge and now purchased this to match.  Its not overly loud but it does make a small amount of noise, nothing that is overly distracting.  Pumps out the ice rather quickly.  Still one month in, will circle back here with another review after a few months.
+
+#4 [★★★★★] ✓ Verified
+   "Buy this freezer  I would highly recommend this product!"
+   I have two wine refrigerators that are in the office and both of them are loud when I cycle on and off. I had to put this item closer to where I sleep and was afraid that it would wake me up in the night. But I never hear this thing cycle on and off it is the quietest mini fridge/freezer I’ve ever owned. I would highly recommend this product
+
+#5 [★★★★★] ✓ Verified
+   "Gotta Love it!"
+   I reviewed tons and tons of these things before I made a choice and i must say I am beyond happy with my selection!! I've had it for over a year and haven't had any problems at all!! I bought mines for my office at work during pregnancy so I could keep healthy snacks juices and water near by and it comes in handy for breastfeeding purposes as well being a working mom and all.  there is plenty of space and I mostly love that the freezer section is separate from the fridge! doesnt make any noise and it keeps all of my stuff nice and fresh!! Love it!! two thumbs up!!!
+
+======================================================================
+QUERY: freezer that doesn't frost up and need manual defrosting
+======================================================================
+[Client: 1119.2ms | Server: 220ms | Tokens: 32 | Candidates: 567]
+
+#1 [★★★★★] ✓ Verified
+   "LOVE IT"
+   Since  installing, my freezer no longer needs to be defrosted every week.  Installed on a Maytag Refrigerator.<br />Maytag should have done a recall, as the small rubber gasket was always freezing up, I found out about this product by &#34;google searching&#34;<br />why my frost free freezer always needed defrosting.  I highly recommend this item for others who may be having freezer freezing up issues.<br />This part saved me from having to buy a new refrigerator/freezer, and or calling for a repair man.
+
+#2 [★★★★★] ✓ Verified
+   "Good Freezer"
+   It works good, a little small but still works good.
+
+#3 [★★★★★] ✓ Verified
+   "Defrosting again!"
+   My GE top freezer GTS22JBPCRWW friege is once again defrosting perfectly, thanks to replacing the old  fan with this one.  This model of GE , I've found on repair sites, has a fan that tends to wear out after several years.  This is a fairly easy repair if you're at all handy with appliance repairs.<br />FYI, if your fridge (at least this model) is cooling and freezing normally, and the defrost cycle is running normally, but you've got ice building up in the freezer, including frozen droplets of water hanging from the top of the freezer compartment  and heavy frost buildup on your frozen stuff - it's probably the freezer fan.  The fan is not running fast enough to evaporate the water, which then refreezes.  This is a very reasonably priced fix for an expensive fridge.
+
+#4 [★★★★★] ✓ Verified
+   "If you need something frozen but not enough room in your freezer"
+   This is perfect for the area needed. Easy to move. Easy setup.
+
+#5 [★★★★★] ✓ Verified
+   "If you need something frozen but not enough room in your freezer"
+   This is perfect for the area needed. Easy to move. Easy setup.
+
+======================================================================
+QUERY: microwave that doesn't have a loud beep you can't turn off
+======================================================================
+[Client: 869.4ms | Server: 227ms | Tokens: 32 | Candidates: 617]
+
+#1 [★★★☆☆] ✓ Verified
+   "Fits alot"
+   It does what it's for but microwave selteralizer is so much more convinient for me personally
+
+#2 [★★☆☆☆] ✓ Verified
+   "Did not fit well"
+   It dont fit right sets hi and wabbles when microwave is in .
+
+#3 [★★★★☆] ✓ Verified
+   "works"
+   I did have to bend the contacts slightly in order to get it to sit flush on the oven, but other than that.. working good.
+
+#4 [★★★★☆] ✓ Verified
+   "works"
+   I did have to bend the contacts slightly in order to get it to sit flush against the oven, but other than that.. no issues.
+
+#5 [★★★★★] ✓ Verified
+   "Seems fine"
+   Seems to be just fine. Bought one of those cheaper ones, it was loud and didn't last a year. This one is quiet and seems a ok.
+
+======================================================================
+QUERY: blender that doesn't leak from the bottom seal
+======================================================================
+[Client: 634.0ms | Server: 219ms | Tokens: 32 | Candidates: 586]
+
+#1 [★★★★★] ✓ Verified
+   "Works great!"
+   So much more cost effective then the name brand ones and work just as well. Does not leak, fits perfectly and no weird taste!
+
+#2 [★★★★★] ✓ Verified
+   "Excellent! GLAD I FOUND IT"
+   Works perfectly. No more leaking behind my crisper trays
+
+#3 [★★★★★] ✓ Verified
+   "easy to use"
+   fit perfect in my k cups and have a lip so grounds don't spill over making a mess.
+
+#4 [★★★★☆] ✓ Verified
+   "Works for the price"
+   Perfect fit no leaking. Fresh taste good after 30 days though
+
+#5 [★★★★☆] ✓ Verified
+   "The work well with no leaks and no funny taste Cons"
+   Pros: The work well with no leaks and no funny taste<br /><br />Cons: They don't last quite as long as the originals but for the price, I can buy several of these<br /><br />Overall: Fourth time I've bought these.
+
+======================================================================
+QUERY: coffee maker that doesn't drip after pouring
+======================================================================
+[Client: 738.5ms | Server: 217ms | Tokens: 32 | Candidates: 585]
+
+#1 [★★★★★] ✓ Verified
+   "Works perfect"
+   Works great with the Moccamaster Coffee maker. I love it!
+
+#2 [★★★★★] ✓ Verified
+   "Truly an outstanding coffee maker!"
+   I have used many a coffee maker, Chemex's, Moka Pot's, French Presses, and Siphon styles. This may not be quite my favorite as the Siphon, but it is excellent. I thought when I got it "This has got to be overhyped, it's just a thick plastic-y thing!" but it really is as good as people say. Looks are deceiving. It is wonderful to use, and dead simple. Put your filter in, put the grounds in, put the water in, stir it a bit, put the plunger on, and plunge. It makes excellent coffee, very full bodied, but still with good clarity due to the paper filter. Absolutely no sediment at the bottom of the cup either! Clean up is a breeze, just take the filter holder off, and pop the filter and most of the grounds out with the plunger, rinse, and it's clean. It's so simple and easy, absolutely zero fuss! I recommend this maker for anyone wanting for a quick and easy to clean maker, or for getting into manual coffee making. It requires very little skill, but it has alot you can do, so you'll never truly master it. I bought one, and recommended it highly enough that a friend of mine did too.
+
+#3 [★★★★★] ✓ Verified
+   "Great buy"
+   I like this filter it fits and works perfect in my keurig. No dripping  No. Coffee grains falling out. . Just perfect
+
+#4 [★★★★★] ✓ Verified
+   "Bunn Coffee maker"
+   These are the only ones that fit out Bunn Coffee maker they are deep and do not over flow when the hot water fills the coffee chamber to flow through. I was unable to find them locally and they come fast
+
+#5 [★★★☆☆] ✓ Verified
+   "Three Stars"
+   Works better than the brew and save, but the keurig still gets plugged easy
+
+======================================================================
+QUERY: toaster that doesn't burn edges while leaving center underdone
+======================================================================
+[Client: 677.8ms | Server: 223ms | Tokens: 32 | Candidates: 721]
+
+#1 [★★★★★] ✓ Verified
+   "Quick and Easy!"
+   Every Rosewill product I've bought has always been phenomenal.<br />This one also lives up to its reputation.<br />It's simple to use and heats up very quickly.<br />It's also super easy to clean and portable.<br />I highly recommend this.<br /><br />Update: I bought a second one for hotpot. It gets hot really fast. This thing is a BEAST
+
+#2 [★★★★★] ✓ Verified
+   "Recommend"
+   Very easy to cut and fit. So easy to clean and they do not get hot or burn near my flame when cooking. I would highly recommend.
+
+#3 [★★★★☆] ✓ Verified
+   "👍"
+   Easy to install, looks great, and no more food spilled in the gap!
+
+#4 [★★★★☆] ✓ Verified
+   "No problems for a while"
+   This worked great for about 8 month.<br />I would still recommend it.<br />I have ordered most of the options on Amazon , and this model worked the best by far.
+
+#5 [★★★★★] ✓ Verified
+   "Works great"
+   First one we received was broken, but they replaced it immediately and it works great
+
+======================================================================
+QUERY: vacuum that doesn't lose suction over time
+======================================================================
+[Client: 652.8ms | Server: 216ms | Tokens: 32 | Candidates: 578]
+
+#1 [★★★★☆] ✓ Verified
+   "Awsome"
+   New filters kept me from having to purchase a new vacuum.  The suction is back and cleans better than ever.
+
+#2 [★★★★★] ✓ Verified
+   "Five Stars"
+   Great product, cuts down on cleaning time and odors.
+
+#3 [★★★★★] ✓ Verified
+   "Loved whenI found this value pack!"
+   I needed replacements for my handheld cordless vacuum and this are compatible and fitted very well
+
+#4 [★★★★★] ✓ Verified
+   "Great tool"
+   these filters hold up well with no leakage.Price is reasonable.
+
+#5 [★★★★★] ✓ Verified
+   "Five Stars"
+   Easy to install and very affordable. The suction is stronger than expected. A good buy.
+
+======================================================================
+QUERY: air purifier that doesn't produce ozone smell
+======================================================================
+[Client: 684.3ms | Server: 219ms | Tokens: 32 | Candidates: 527]
+
+#1 [★★★☆☆] ✓ Verified
+   "Works ok"
+   Doesn’t seem to absorb odors as well as the name brand filters. However it is much cheaper than the name brand ones. Don’t think I would buy again
+
+#2 [★★★★★] ✓ Verified
+   "Five Stars"
+   Great product, cuts down on cleaning time and odors.
+
+#3 [★★★★★] ✓ Verified
+   "Awesome"
+   For my SMALL Whirlpool air purifier.<br />So much more convenient, cut right, you don't sigh when it's time to change.
+
+#4 [★★★★★] ✓ Verified
+   "Five Stars"
+   Works perfect. Eliminates all odors from a roughly 36 cubic foot area.
+
+#5 [★★★★★] ✓ Verified
+   "Best air works"
+   I can say it does work and it is concerted so it lasts. I have used this for a while and it does do the job and has a very pleasant smell ! I also purchased one more
+
+======================================================================
+QUERY: dehumidifier that doesn't make the room too cold
+======================================================================
+[Client: 968.9ms | Server: 217ms | Tokens: 32 | Candidates: 565]
+
+#1 [★★★★★] ✓ Verified
+   "Works well"
+   I have 2 evaporative humidifiers for when the air gets really dry - these are perfect - make sure to change them out frequently since they do get moldy after a while
+
+#2 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#3 [★★★★★] ✓ Verified
+   "Even Makes My Humidifier Work Better!"
+   Been using this for several years and would not be without it!
+
+#4 [★★★★★] ✓ Verified
+   "How good it works"
+   Love it.  Its quiet and is like all humidifiers has to be filled every day but this one really put the moisture in the air.
+
+#5 [★★★★★] ✓ Verified
+   "Winter help"
+   I buy this product every year for my humidifier for the winter months.  Great product.
+
+======================================================================
+QUERY: space heater that doesn't trip the circuit breaker
+======================================================================
+[Client: 1302.4ms | Server: 219ms | Tokens: 32 | Candidates: 588]
+
+#1 [★★★☆☆] ✓ Verified
+   "A great price it wasn't a direct fit."
+   Had to rework the connectors and the mounting bracket it was not a direct fit. Heats fine.
+
+#2 [★★★★★] ✓ Verified
+   "Works as advertised"
+   Current should flow freely through unit. Nearly identical one being replaced. No issues so far.
+
+#3 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#4 [★★★★★] ✓ Verified
+   "Perfect"
+   It was the exact part that I needed for my unit. We were back warm as soon as installing it with no issues!
+
+#5 [★★★★☆] ✓ Verified
+   "Good replacement"
+   Very inexpensive yet makes a world of difference.  Good quality.  Plug in hole larger than original equipment but still does the job.<br />Should have bought more.
+
+======================================================================
+QUERY: fan that doesn't wobble or make clicking sounds
+======================================================================
+[Client: 1002.5ms | Server: 221ms | Tokens: 32 | Candidates: 446]
+
+#1 [★★★★★] ✓ Verified
+   "simple replacement"
+   Purchased this to replace a very noisy fan. Simple to install and fan works great. Not any quieter but does the job.<br />Well worth replacing just this part than a whole fan.
+
+#2 [★★★★★] ✓ Verified
+   "Perfect"
+   The fit was perfect, all necessary hardware that could possibly be needed and instructions were included.  The fan is very quiet in operation.
+
+#3 [★★★★★] ✓ Verified
+   "Vent fan motor"
+   Works great and looks like picture. Hasn't had any problems with it so far. Also they sent direction to install it too.
+
+#4 [★★☆☆☆] ✓ Verified
+   "Does not fit"
+   The knob is similar to the original but the shaft sleeve is not wide enough to fit the fan shaft.
+
+#5 [★★★★★] ✓ Verified
+   "Works perfect"
+   Same as the original fan and the box works like new again. It takes a little bit to get to it but it could be much worse but can be done in just a few minutes.
+
+======================================================================
+QUERY: washing machine that doesn't vibrate during spin cycle
+======================================================================
+[Client: 1229.1ms | Server: 220ms | Tokens: 32 | Candidates: 472]
+
+#1 [★★★★★] ✓ Verified
+   "Great little washing machine!"
+   Arrived fast. Great machine. Quiet. Spins clothes almost dry. Perfect for my small items, sun dresses etc.
+
+#2 [★★☆☆☆] 
+   "Washer moves on spin"
+   It's good for moving around since it IS a PORTABLE washer (I have the HLP23E) but when the washer is spinning it moves and shakes a lot more than with its original legs, these wheels should be made of rubber.
+
+#3 [★★★★★] ✓ Verified
+   "While it do much for my noise issues it did great stopping the washer from jumping around when it changed ..."
+   This product is very well made and  helped a lot with my washers issues.While it do much for my noise issues it did great stopping the washer from jumping around when it changed cycles which was my biggest issue.My washer may need some serviceing to deal with my noise when its in a spin cycle and  I would recomend this product to everyone,
+
+#4 [★★★★☆] ✓ Verified
+   "Laundry Alternative works well for me!!"
+   The Laundry Alternative machine is a cute product and I love the mint green color! It is performing well for me as it does laundry.  Takes small amount of detergent, (or softener); operates by turning a level to spin tub around on its stand.  Instructions provided which suggest minutes to spin, alternating front & back spins, based on load size.<br /><br />If your wash load is only lightly dirty you can remove that load and put aside for rinsing and place another load in your Laundry Alternative and proceed with washing process in the same detergent.  This will save on your water bill and detergent as well.<br /><br />Following the washing cycle I use a spin machine that removes excess water; therefore, eliminating having to use hands to squeeze water out of each piece.<br /><br />Time it takes clothes to dry after hanging up is surprisingly short, especially on a sunny day.<br /><br />I hope you enjoy your new Laundry Alternative as much as I do! IMO the<br />whole process of using the Laundry Alternative isn’t lengthy and it saves money.
+
+#5 [★★★★★] 
+   "UPDATE WITH IMPORTANT INFORMATION!"
+   Fantastic! I wish I'd known about it sooner!<br /><br />UPDATE:<br />I ordered the green unit and it developed a problem so the company replaced it with an orange one. It arrived yesterday and there was an instruction sheet for those 2 bobbles on the rear of the unit. I didn't get that paper with the first one.<br /><br />After you place the unit in your bucket, tuck in those 2 bobbles. No shaking during the cycle. None! You won't have to sit there and hold the unit steady.<br /><br />This company stands behind their product. You can order with confidence. Remember to tuck in your bobbles!
+
+======================================================================
+QUERY: dryer that doesn't shrink clothes on normal setting
+======================================================================
+[Client: 873.0ms | Server: 219ms | Tokens: 32 | Candidates: 527]
+
+#1 [★★★★★] ✓ Verified
+   "Good one"
+   Fit perfectly.  Very happy with quality and price. So much less than ordering from dryer company.
+
+#2 [★★★★★] ✓ Verified
+   "Fit and works"
+   Fit like ad said for name of dryer . Working great at this time .
+
+#3 [★★★★★] ✓ Verified
+   "Great Compact Dryer"
+   Absolutely great product, times itself, quiet, it's wonderful
+
+#4 [★★★★★] 
+   "really good machine"
+   we've had it for 2 years now, very happy.... unlike it's mate the washing machine :(  But if you need a front loading dryer that's stylish and easy to run, this is the one.  (like that rhyme?)
+
+#5 [★★★★★] ✓ Verified
+   "You may need this someday..."
+   This 33 yr old Maytag Dryer is a prehistoric monster and odds are yours will need these parts too...they do the job
+
+======================================================================
+QUERY: garbage disposal that doesn't jam easily
+======================================================================
+[Client: 674.8ms | Server: 220ms | Tokens: 32 | Candidates: 562]
+
+#1 [★★★★★] ✓ Verified
+   "Great Buy !"
+   This one works well !!  Easy to put in and it doesn't leak !
+
+#2 [★★★★★] ✓ Verified
+   "Its great!"
+   No issues found! Strains very well, doesn't tear or sag easily, and doesn't add weird smells or flavors
+
+#3 [★★★★★] ✓ Verified
+   "Easy peasy"
+   Easily stays on dishwasher and doesn’t move when I slide to change the status.
+
+#4 [★★★★☆] ✓ Verified
+   "works."
+   cheaper than the store's I saw when shopping. works just fine, easy to clean, tapped against waste basket and emptied almost completely.
+
+#5 [★★★★★] ✓ Verified
+   "These work great"
+   The ones I had were similar but coffee was sticking along the sides, making them difficult to clean. Coffee grains were also silpping through.<br /><br />These took care of those issues and the price was great.<br /><br />Highly recommend
+
+======================================================================
+QUERY: water heater that doesn't run out of hot water quickly
+======================================================================
+[Client: 663.9ms | Server: 221ms | Tokens: 32 | Candidates: 633]
+
+#1 [★★★★☆] ✓ Verified
+   "Four Stars"
+   Works very well. Will eliminate most slow water flow issues.
+
+#2 [★★★★☆] ✓ Verified
+   "Four Stars"
+   Works just fine. Easy to replace and heats much faster than the one it replaced.
+
+#3 [★★★★★] ✓ Verified
+   "Same as GE Original"
+   No complaints here.  Water comes out super fast and tastes great!  A+++
+
+#4 [★★★★★] ✓ Verified
+   "Five Stars"
+   Easy to install. Does not leak. Water tastes great.
+
+#5 [★★☆☆☆] ✓ Verified
+   "Poor!"
+   For some reason with this one our water does not get cooled down!
+
+======================================================================
+QUERY: air conditioner that doesn't drip water inside
+======================================================================
+[Client: 636.0ms | Server: 223ms | Tokens: 32 | Candidates: 595]
+
+#1 [★★★★★] ✓ Verified
+   "Great replacement product."
+   fits like a glove, now I have ice and no water leaks
+
+#2 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#3 [★★★★★] ✓ Verified
+   "Five Stars"
+   IT WORKS GREAT WITH THE ESSICK AIR HUMIDIFIER AS IT IS MEANT TO DO
+
+#4 [★★★★★] ✓ Verified
+   "Even Makes My Humidifier Work Better!"
+   Been using this for several years and would not be without it!
+
+#5 [★★★★★] ✓ Verified
+   "Yup. This works."
+   Easy to install. Doesn't leak. Hooks over my utility sink and drains the water out of my washing machine.<br /><br />After my initial installation, I put a bucket underneath the connection, just in case it leaked. It didn't.
+
+======================================================================
+QUERY: range hood powerful suction but quiet operation
+======================================================================
+[Client: 667.7ms | Server: 215ms | Tokens: 32 | Candidates: 415]
+
+#1 [★★★★★] ✓ Verified
+   "Great design."
+   The best range hood on the market. Good suction power and fairly quiet. Looks good in the modern kitchen. Little pricey but it’s a long time investment.
+
+#2 [★★★★☆] ✓ Verified
+   "looks good and works good"
+   range hood looks very good...suction is strong, on the lowest setting its already stronger than the range/microwave that came with the house on the strongest setting...<br /><br />installation was painful though...if only they had a way to make it easier to get to the holes a that are in the back corner...template helps a lot but in the end it is still very difficult to get to those corner holes
+
+#3 [★★★★★] ✓ Verified
+   "Quiet and efficient! Looks great!"
+   Such an improvement! We replaced an old 42" vented hood.  It took less than an hour!<br />This model is convertible for either vented or not and has access panels for the vent on the top and the back.  We ordered one and it arrived all dented. It was replaced and we're very happy with this one. It has great suction, is quiet and the black finish is easy to clean.
+
+#4 [★★★★★] 
+   "Five Stars"
+   Great looking, very sleek Range Hood.  Lighting choices were exceptionally good & fan is pretty quiet.
+
+#5 [★★★★★] ✓ Verified
+   "Powerful range hood"
+   This is a very powerful range hood. It is rather noisy, but it does its job. It does allow cold air seepage during the winter, which I was not used to as I had had a Jenn-Aire stove with a downdraft vent.
+
+======================================================================
+QUERY: dishwasher compact size but large capacity inside
+======================================================================
+[Client: 660.7ms | Server: 212ms | Tokens: 32 | Candidates: 459]
+
+#1 [★★★★★] 
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#2 [★★★★★] 
+   "Wonderful"
+   This portable dishwasher is amazing. Perfect for small spaces it is simple to set up and use. It does a terrific job. There are a number of settings: normal, rapid, fruit, steam and glass. ,The fruit option insures your produce is free of dirt. No detergent needed for this cycle.  It uses powdered dishwasher detergent or those dishwasher tabs. The capacity is small but it saves you from running the full sized washer. It is portable and ideal for rvs or camping. My kitchen isa disaster due to a pandemic interrupted andcpostponed rennovation. This countertop appliance makes life easier.
+
+#3 [★★★★★] ✓ Verified
+   "Five Stars"
+   Size was great, needed to put under a new dishwasher installation in my remodeled kitchen. Very happy
+
+#4 [★★★★★] ✓ Verified
+   "Best Dishwashers Ever"
+   Wonderful product!!!  These dishwasher drawers are the best!  Energy efficient, cleans well, extremely quiet.  It is so quiet that I forget it's on!  Large capacity!  GREAT product!!!
+
+#5 [★★★★★] ✓ Verified
+   "Perfect Fix"
+   Perfect fit for my Whirlpool dishwasher and about half the price from Whirlpool!
+
+======================================================================
+QUERY: ice maker makes ice fast but doesn't use much electricity
+======================================================================
+[Client: 661.1ms | Server: 219ms | Tokens: 32 | Candidates: 542]
+
+#1 [★★★★★] ✓ Verified
+   "Effective"
+   It makes ice quickly and is reasonably quiet. Machine looks nice on countertop as well.
+
+#2 [★★★★★] ✓ Verified
+   "ICE MAKER"
+   I'm happy with the product,fast making ice. I would recommend this product.
+
+#3 [★★★★☆] ✓ Verified
+   "Fast little ice maker"
+   This does make new ice pretty fast and takes up very little counter space. The only reason for 4 out 5 stars is that the ice tends to melt kind of fast.  I've double checked to make sure everything is closed on the machine, and that it's not too close to the wall or anything else.
+
+#4 [★★★★★] ✓ Verified
+   "Very happy with item"
+   This is way to easy to use and it makes ice super fast
+
+#5 [★★★★☆] ✓ Verified
+   "Makes Ice Fast"
+   Makes ice fast, and I have very little trouble with it. I only wish it has a timer built into it, so I could shut it off at a certain time, then have it start making ice again at a certain time.<br /><br />To reduce the number of times you have to clean the unit, use distilled water. This will also make your ice cubes crystal clear.
+
+======================================================================
+QUERY: blender powerful motor but lightweight and portable
+======================================================================
+[Client: 667.5ms | Server: 217ms | Tokens: 32 | Candidates: 442]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   This is a good quality...convenient...lightweight machine that works great in my tiny apt. Good investment.
+
+#2 [★★★★★] ✓ Verified
+   "This is the winner"
+   This machine is definitely a keeper. It’s a little more expensive than the other similar models but it’s worth it. I bought it for a guest room and it fits in the closet perfectly. And it fits inside the bathtub perfectly as well. It’s very compact and light to carry. A winner.
+
+#3 [★★★★★] ✓ Verified
+   "Small but powerful"
+   This is just what I needed for my apartment.  Lightweight, small and super powerful.  Really surprised me.  I love it!
+
+#4 [★★★★★] ✓ Verified
+   "Quick and Easy!"
+   Every Rosewill product I've bought has always been phenomenal.<br />This one also lives up to its reputation.<br />It's simple to use and heats up very quickly.<br />It's also super easy to clean and portable.<br />I highly recommend this.<br /><br />Update: I bought a second one for hotpot. It gets hot really fast. This thing is a BEAST
+
+#5 [★★★★★] 
+   "Great little ice maker"
+   This machine is very handy when we entertain friends and family. It makes ice cubes quickly in two sizes, small and large in under 20 minutes. The large ice cube size is actually average size cubes. The machine makes a little humming sound but it is not loud.<br /><br />It is easy to install and operate. It fits in well sitting on the kitchen counter and looks awesome with stainless steel finish. It's not heavy and certainly portable. You can carry this in an RV or when you are traveling or camping. But there is no direct line connection to water source.<br /><br />The package was delivered on time and the product was intact. I have rated five stars for overall satisfaction.
+
+======================================================================
+QUERY: vacuum strong suction but easy to push on carpet
+======================================================================
+[Client: 659.6ms | Server: 214ms | Tokens: 32 | Candidates: 483]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   Easy to install and very affordable. The suction is stronger than expected. A good buy.
+
+#2 [★★★★☆] ✓ Verified
+   "works great and the suction cups on the bottom work great."
+   works great and the suction cups on the bottom work great.
+
+#3 [★★★★☆] ✓ Verified
+   "Awsome"
+   New filters kept me from having to purchase a new vacuum.  The suction is back and cleans better than ever.
+
+#4 [★★★★★] ✓ Verified
+   "Worked for me"
+   Maybe a tad too flexible, you need a little stiffness to push it through vent, but it did the job for me.  You'll do better to accompany this with a vacuum.
+
+#5 [★★★★★] ✓ Verified
+   "Does the job at an excellent price"
+   Does the job well. Has a sturdy wire that doesn't easily bend when reaching for those spaces to clean.
+
+======================================================================
+QUERY: air purifier covers large room but small footprint
+======================================================================
+[Client: 671.3ms | Server: 233ms | Tokens: 32 | Candidates: 551]
+
+#1 [★★★☆☆] 
+   "A Bit Much"
+   As many other reviewers have pointed out, this is a rather ginormous appliance that takes up quite a bit of space. For that reason alone, it probably isn't the best choice for most people. It weighs a ton when it is filled with water and isn't easy to cart around when it's empty, either.<br /><br />I would say that this unit would probably be appropriate in very large, open areas like a garage or perhaps a very large living room. It is really overkill for someplace like a bedroom though. Assuming that you have such a large area, the product works fairly well. The large amount of water it holds means that you will not need to refill it for several hours at a time, which can be a problem with the smaller devices.<br /><br />Due to potential mold build-up you will need to rinse this unit out occasionally, which is a bit of a chore. Just picking it up and lugging it around is quite a chore. There are no handles or other easy way to grasp the device. I would recommend only using distilled water in this device in order to minimize how often you will need to clean it.<br /><br />I certainly can't complain that the product does not work as intended. It is just a bit more than most people need and not worth the extra upkeep to me.
+
+#2 [★★★★★] ✓ Verified
+   "Five Stars"
+   Works perfect. Eliminates all odors from a roughly 36 cubic foot area.
+
+#3 [★★★★★] 
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#4 [★★★★★] 
+   "Clean Machine"
+   This is a terrific little machine for small spaces. I got this for our downstairs apartment and it is terrific. The wheels make it easy to move. Set up is simple and it is very easy to use.I've had no issues with leaking or performance. It does a great job with clothes and they come out fairly dry not dripping wet. More importantly, they come out clean and fresh. The unit is small and sleek. I love that it can be rolled away out of sight til the next use. Great small space solution.
+
+#5 [★★★★★] ✓ Verified
+   "Great buy"
+   I love this. It is easy to use doesn’t take up a lot of space. Perfect for a apartment or tiny space.?
+
+======================================================================
+QUERY: coffee maker brews fast but keeps coffee hot for hours
+======================================================================
+[Client: 735.5ms | Server: 246ms | Tokens: 32 | Candidates: 630]
+
+#1 [★★★★★] ✓ Verified
+   "Nice little coffee maker!"
+   Works as advertised and makes pretty good tasting coffee.
+
+#2 [★★★★★] ✓ Verified
+   "Works perfect"
+   Works great with the Moccamaster Coffee maker. I love it!
+
+#3 [★★★★★] ✓ Verified
+   "Coffee maker"
+   I love that I no longer waste half pots qof coffee. One cup at a time. So convenient!
+
+#4 [★★★★★] ✓ Verified
+   "Excellent"
+   Love my new way of making coffee, this does the job.
+
+#5 [★★★★★] ✓ Verified
+   "Five Stars"
+   Great price, arrived quickly, makes coffee taste better and keeps coffee maker clear.
+
+======================================================================
+QUERY: toaster oven large capacity but heats up quickly
+======================================================================
+[Client: 867.4ms | Server: 226ms | Tokens: 32 | Candidates: 594]
+
+#1 [★★★★★] ✓ Verified
+   "Quick and Easy!"
+   Every Rosewill product I've bought has always been phenomenal.<br />This one also lives up to its reputation.<br />It's simple to use and heats up very quickly.<br />It's also super easy to clean and portable.<br />I highly recommend this.<br /><br />Update: I bought a second one for hotpot. It gets hot really fast. This thing is a BEAST
+
+#2 [★★★★☆] ✓ Verified
+   "Four Stars"
+   Works just fine. Easy to replace and heats much faster than the one it replaced.
+
+#3 [★★★★★] ✓ Verified
+   "Works great"
+   Ours fits perfectly in our GE oven and has lasted for years.
+
+#4 [★★★★☆] ✓ Verified
+   "good value"
+   looks a little weird next to the OEM burners, but heats up just fine.
+
+#5 [★★★★★] ✓ Verified
+   "Just what I needed!"
+   Works great and was an excellent price. Fast shipping too!
+
+======================================================================
+QUERY: microwave high wattage but energy efficient
+======================================================================
+[Client: 654.8ms | Server: 217ms | Tokens: 32 | Candidates: 471]
+
+#1 [★★★☆☆] ✓ Verified
+   "Fits alot"
+   It does what it's for but microwave selteralizer is so much more convinient for me personally
+
+#2 [★★★★★] ✓ Verified
+   "Five Stars"
+   Perfect fit for an out of production microwave that I have very happy
+
+#3 [★★★★★] ✓ Verified
+   "TOTALLY WORTH THE MONEY!  BEAUTIFUL BLUE FLAMES."
+   Smooth and manageable knobs.<br />Love the sealed burners - much more efficient and super easy to clean.<br />Excellent product support.<br />What more could I ask?  Oh, wait - huge money-off coupon too.  😁
+
+#4 [★★★★★] ✓ Verified
+   "Works perfectly."
+   Bought this twice for my microwave. I know it wasn't the fuse that is the problem. I knocked out the first one by causing a surge and the second time I had to replace it after a huge thunderstorm.
+
+#5 [★★★★☆] ✓ Verified
+   "Four Stars"
+   Works just fine. Easy to replace and heats much faster than the one it replaced.
+
+======================================================================
+QUERY: refrigerator spacious inside but slim profile for small kitchen
+======================================================================
+[Client: 701.7ms | Server: 216ms | Tokens: 32 | Candidates: 480]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   neat small, hold a lot fit my counter well and look nice
+
+#2 [★★★☆☆] 
+   "Temperamental fridge with too many flaws for the price"
+   I have had this fridge for about four years (the same family of appliances, E522B), and the verdict is that its looks, efficient use of space and small footprint (which is a must if you have limited space) are almost outweighed by flaws that are unforgivable for this price range. First, the<br /><br />PROs:<br />Small footprint<br />Great looks, clean, classy, angular<br />Efficient use of space<br />Lots of nifty features and nice touches you'd expect for the price<br />Acceptably energy-efficient<br /><br />BUT here come the<br /><br />CONS:<br />Dents easily - out of nowhere, it's enough for someone to walk by it<br />It's mechanically unreliable - the ice tray quit working years ago, the screen is erratic and either works, works partially or not at all, some compartment doors snapped out within the first six months, etc.<br />It's expensive to fix, even a service diagnostic call will cost you a bundle<br />Fisher & Paykel customer service is horrid<br /><br />Bottom line: if you can find a similar size fridge from someone else, buy it - you'll save a lot of money, headaches and frustration. It is a shame really because I really do love my fridge - but it's been a thorn in my side for most of the time I've owned it,
+
+#3 [★★★☆☆] 
+   "Temperamental fridge with too many flaws for the price"
+   I have had this fridge for about four years (the same family of appliances, E522B), and the verdict is that its looks, efficient use of space and small footprint (which is a must if you have limited space) are almost outweighed by flaws that are unforgivable for this price range. First, the<br /><br />PROs:<br />Small footprint<br />Great looks, clean, classy, angular<br />Efficient use of space<br />Lots of nifty features and nice touches you'd expect for the price<br />Acceptably energy-efficient<br /><br />BUT here come the<br /><br />CONS:<br />Dents easily - out of nowhere, it's enough for someone to walk by it<br />It's mechanically unreliable - the ice tray quit working years ago, the screen is erratic and either works, works partially or not at all, some compartment doors snapped out within the first six months, etc.<br />It's expensive to fix, even a service diagnostic call will cost you a bundle<br />Fisher & Paykel customer service is horrid<br /><br />Bottom line: if you can find a similar size fridge from someone else, buy it - you'll save a lot of money, headaches and frustration. It is a shame really because I really do love my fridge - but it's been a thorn in my side for most of the time I've owned it,
+
+#4 [★★★☆☆] 
+   "Temperamental fridge with too many flaws for the price"
+   I have had this fridge for about four years (the same family of appliances, E522B), and the verdict is that its looks, efficient use of space and small footprint (which is a must if you have limited space) are almost outweighed by flaws that are unforgivable for this price range. First, the<br /><br />PROs:<br />Small footprint<br />Great looks, clean, classy, angular<br />Efficient use of space<br />Lots of nifty features and nice touches you'd expect for the price<br />Acceptably energy-efficient<br /><br />BUT here come the<br /><br />CONS:<br />Dents easily - out of nowhere, it's enough for someone to walk by it<br />It's mechanically unreliable - the ice tray quit working years ago, the screen is erratic and either works, works partially or not at all, some compartment doors snapped out within the first six months, etc.<br />It's expensive to fix, even a service diagnostic call will cost you a bundle<br />Fisher & Paykel customer service is horrid<br /><br />Bottom line: if you can find a similar size fridge from someone else, buy it - you'll save a lot of money, headaches and frustration. It is a shame really because I really do love my fridge - but it's been a thorn in my side for most of the time I've owned it,
+
+#5 [★★★★★] 
+   "Small, but perfect for our needs."
+   We’ve been looking for a small freezer for 2 people that would allow us to free up space in our jammed frig/freezer, hoping to use it for frozen veggies, Lean Cuisine type lunch items etc.  This item fits the bill for our purpose. Yes, it’s small but we the design is great as we can tuck it in a small corner and because of the great design, front opening and options of which way the door swings open, you can even use it as a side table with a lamp on it.  It also fits flush against the wall, making it ideal for small spaces.<br /><br />The unit is energy efficient, has adjustable temps, and there is even a lock in case you have little ones.  I’m very happy with this item.
+
+======================================================================
+QUERY: freezer chest style capacity but upright convenience
+======================================================================
+[Client: 651.8ms | Server: 221ms | Tokens: 32 | Candidates: 492]
+
+#1 [★★★★★] ✓ Verified
+   "Good quality and durable."
+   Didnt fit in the space I needed it foe, so I had to return.. However the quality and durability was good.. Had a 5ft cubic foot deep freezer on it.
+
+#2 [★★★★★] ✓ Verified
+   "Perfect for my needs"
+   Very happy with this purchase. I needed a little extra freezer space and this was exactly what I needed. It is quiet, has a small footprint, and still holds plenty of food.
+
+#3 [★★★★☆] ✓ Verified
+   "Chest freezer"
+   Perfect except for deep dents on front right former and face
+
+#4 [★★★★★] ✓ Verified
+   "Is great little freezer."
+   Use this as an overflow freezer. Works great. Very little noise. Keeps a decent temperature. Would recommend.
+
+#5 [★★★★★] ✓ Verified
+   "Good Freezer"
+   It works good, a little small but still works good.
+
+======================================================================
+QUERY: washing machine large drum but uses less water
+======================================================================
+[Client: 663.6ms | Server: 224ms | Tokens: 32 | Candidates: 541]
+
+#1 [★★★★★] ✓ Verified
+   "It fits my machine"
+   Factory specs and my washing machine is very quite again
+
+#2 [★★★★★] ✓ Verified
+   "Yup. This works."
+   Easy to install. Doesn't leak. Hooks over my utility sink and drains the water out of my washing machine.<br /><br />After my initial installation, I put a bucket underneath the connection, just in case it leaked. It didn't.
+
+#3 [★★★★★] ✓ Verified
+   "Washer now agitates like new."
+   These were easy to install after watching a YouTube video.<br />Much easier and cheaper than having to replace the whole washing machine.
+
+#4 [★★★★☆] 
+   "A Good Choice"
+   I've been using this in my apartment for a couple of weeks now and I am very happy with it.<br />There was almost nothing to install and the machine works very well. The only slight drawback is that it's difficult to maneuver with the 2 small wheels included on the unit, so I purchased a dolly platform for it. It's also a large machine for the relatively small capacity of the washing drum.<br />Aside from those minor cosmetic slights, I think it's a really solid portable washing machine. It is well-made, is holding up well to regular use, and appears to be built to last.
+
+#5 [★★★★★] ✓ Verified
+   "It works!"
+   Bought this unit to do felting so I didn't have to use my washing machine.  It worked very well and took less time  and water than using the washer.  Very happy with this product.
+
+======================================================================
+QUERY: dryer fast drying but gentle on delicate fabrics
+======================================================================
+[Client: 730.7ms | Server: 213ms | Tokens: 32 | Candidates: 473]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   the dryer is wonderful and does a great job of drying clothes
+
+#2 [★★★★★] ✓ Verified
+   "Good product"
+   Works in the dryer quite well, and I am very satisfied.
+
+#3 [★★★★★] ✓ Verified
+   "This thing is a good little dryer"
+   It does a great job of drying the clothes at about the same timing as a load of laundry washes
+
+#4 [★★★★★] ✓ Verified
+   "Five Stars"
+   works as expected got my drier to start drying again and for only a few bucks
+
+#5 [★★★★★] ✓ Verified
+   "Got dry clothes?"
+   Am happy with this dryer hoes and will order again.
+
+======================================================================
+QUERY: fan powerful airflow but whisper quiet at night
+======================================================================
+[Client: 670.6ms | Server: 221ms | Tokens: 32 | Candidates: 493]
+
+#1 [★★★★★] ✓ Verified
+   "HUGE IMPROVEMENT"
+   This is so much better than my old one.  Lights are bright (I used LED) and the fan is quiet.  Pushed plenty of air.
+
+#2 [★★★★★] ✓ Verified
+   "Perfect"
+   The fit was perfect, all necessary hardware that could possibly be needed and instructions were included.  The fan is very quiet in operation.
+
+#3 [★★★★☆] ✓ Verified
+   "good price, works well"
+   This is not a big fancy fan. Two speeds, high and low.  On low (good enough for when you are simmering something, just to keep the excess moisture out of the house), it's quiet.  On high it is a bit loud, but is powerful enough to remove oven smoke.<br />This is good enough for the average homeowner, cook and baker.  I got it on Amazon because it was half the price at the local stores.
+
+#4 [★★★★★] ✓ Verified
+   "love it! it has a quiet button"
+   love it!  it has a quiet button, lighting was fine, but I have lots of kitchen lights.  only feature I noticed is that you have to press 2 buttons to turn on fan.  looks amazing
+
+#5 [★★★★★] ✓ Verified
+   "really like that both fan and light have high and low ..."
+   Very quiet fan, really like that both fan and light have high and low settings.
+
+======================================================================
+QUERY: space heater heats room fast but stays cool to touch
+======================================================================
+[Client: 682.1ms | Server: 224ms | Tokens: 32 | Candidates: 618]
+
+#1 [★★★★★] ✓ Verified
+   "Quick and Easy!"
+   Every Rosewill product I've bought has always been phenomenal.<br />This one also lives up to its reputation.<br />It's simple to use and heats up very quickly.<br />It's also super easy to clean and portable.<br />I highly recommend this.<br /><br />Update: I bought a second one for hotpot. It gets hot really fast. This thing is a BEAST
+
+#2 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#3 [★★★★☆] ✓ Verified
+   "Four Stars"
+   Works just fine. Easy to replace and heats much faster than the one it replaced.
+
+#4 [★★★★★] ✓ Verified
+   "works perfectly"
+   I have an older stove and this heating element works great
+
+#5 [★★★★★] ✓ Verified
+   "It works"
+   It does exactly what it is supposed to do. For me it sits under a couch and routes hot/cold air into the room. It does that well. It's sufficiently sturdy.<br />My only complaint is that it costs more than it should. A failure of capitalism to create a competitor to a simple product is not their fault, however.
+
+======================================================================
+QUERY: dehumidifier removes lots of moisture but quiet for bedroom
+======================================================================
+[Client: 737.0ms | Server: 219ms | Tokens: 32 | Candidates: 501]
+
+#1 [★★★★★] ✓ Verified
+   "How good it works"
+   Love it.  Its quiet and is like all humidifiers has to be filled every day but this one really put the moisture in the air.
+
+#2 [★★★★★] ✓ Verified
+   "Good humidifier for small house"
+   This humidifier is great for a small home. It is quiet and provides the right humidity that can be controlled by a dial<br />I hired a technician... conveniently arranged by Amazon for installation.<br />Humidifier is easy to use to turn on in winter and off in summer. Dial controls amount of humidity you want
+
+#3 [★★★★★] ✓ Verified
+   "Even Makes My Humidifier Work Better!"
+   Been using this for several years and would not be without it!
+
+#4 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#5 [★★★★★] ✓ Verified
+   "It's as good as advertized"
+   It only took a few minutes to in stall.I hav used it all winter long for moistness in the air for a big area on one floor and it has performed well.
+
+======================================================================
+QUERY: air conditioner cools fast but low electricity bill
+======================================================================
+[Client: 733.6ms | Server: 218ms | Tokens: 32 | Candidates: 503]
+
+#1 [★★★★☆] ✓ Verified
+   "Works good for the price"
+   Works good, can be used with some air conditioners.
+
+#2 [★★★★★] ✓ Verified
+   "Moves Air Quietly"
+   Moves a fair amount of air with little noise and small current draw.
+
+#3 [★★★★★] ✓ Verified
+   "Good buy. Even better fix for my AC unit!"
+   This little part has extended the life of my air conditioning unit. Inexpensive fix and I am so glad!
+
+#4 [★★★★☆] ✓ Verified
+   "Helps with the heating bill during the winter."
+   Something I have been using for a long time.  These newer ones do not want to hold the flap open as easily as the ones I purchased before these.
+
+#5 [★★★★★] ✓ Verified
+   "Works great"
+   and does the job for $8....GE website wanted $64.  Packaged well, arrived fast.  I did have to have help installing it, but it just took a few minutes.
+
+======================================================================
+QUERY: water filter removes contaminants but fast flow rate
+======================================================================
+[Client: 1589.6ms | Server: 230ms | Tokens: 32 | Candidates: 481]
+
+#1 [★★★★★] ✓ Verified
+   "Great"
+   Easy to replace, eliminates the chemicals and other bad items from the water. Seems like they improved the water flow it’s way much faster/stronger
+
+#2 [★☆☆☆☆] 
+   "Does not reduce Total Dissolved Solids (TDS)"
+   You may find reviews discounting the importance of a TDS measurement talking about what it doesn't measure.  Those miss the point.  Ok, there might be some other bad stuff that might get removed that is not part of a TDS measurement.  That's great.  However, that doesn't change the fact that TDS is measuring OTHER CONTAMINANTS THAT STILL REMAIN.<br /><br />The Environmental Protection Agency's (EPA's) National Secondary Drinking Water Regulations (NSDWRs) limit TDS to 500mg/L.  This filter does not reduce TDS below this level.<br /><br />From the Environmental Protection Agency's Website:<br /><br />National Secondary Drinking Water Regulations (NSDWRs)<br />NSDWRs (or secondary standards) are non-enforceable guidelines regulating contaminants that may cause cosmetic effects (such as skin or tooth discoloration) or aesthetic effects (such as taste, odor, or color) in drinking water. EPA recommends secondary standards to water systems but does not require systems to comply with the standard. However, states may choose to adopt them as enforceable standards<br /><br />List of National Secondary Drinking Water Regulations<br />Contaminant Secondary Standard<br />Aluminum 0.05 to 0.2 mg/L<br />Chloride 250 mg/L<br />Color 15 (color units)<br />Copper 1.0 mg/L<br />Corrosivity noncorrosive<br />Fluoride 2.0 mg/L<br />Foaming Agents 0.5 mg/L<br />Iron 0.3 mg/L<br />Manganese 0.05 mg/L<br />Odor 3 threshold odor number<br />pH 6.5-8.5<br />Silver 0.10 mg/L<br />Sulfate 250 mg/L<br />Total Dissolved Solids 500 mg/L<br />Zinc 5 mg/L
+
+#3 [★★★★★] ✓ Verified
+   "Great product"
+   This water filter has been installed for a week now and it is doing a great job so far.
+
+#4 [★★★★★] ✓ Verified
+   "Filter works great."
+   Quickly installs, takes the chemical taste out of city water.
+
+#5 [★★★★★] ✓ Verified
+   "Slean and no chemical taste"
+   Excellent water filter for clean filtered water and ice from my refrigerator
+
+======================================================================
+QUERY: garbage disposal powerful grind but quiet operation
+======================================================================
+[Client: 1253.2ms | Server: 217ms | Tokens: 32 | Candidates: 503]
+
+#1 [★★★★★] ✓ Verified
+   "Love it!"
+   This machine is a life saver! Works great fits on my tiny counter and is very quiet! Well, except for when it drains into the sink but that doesn't really bother anyone, just sounds like somebody is dumping water. I recommend this to anyone on the fence about it! It saves me so much time.
+
+#2 [★★★★★] ✓ Verified
+   "Quiet and efficient"
+   Very quiet and efficient.  Cleans larger loads than I expected. Having a little difficulty with discharge hose but I will figure it out.
+
+#3 [★★★★☆] ✓ Verified
+   "Really good choice for a low-cost disposal"
+   This is a bare-bones disposal that is working very well.  Installation was straightforward although there was one step that was confusing and has been discussed in other reviews.  There is not insulation around the body of this disposal as there is on many other models but the noise, though noticeable, is not particularly obnoxious nor pound.  We do not use the disposal heavily but for occasional, light-to-medium duty I believe this is an excellent choice.
+
+#4 [★★★★★] ✓ Verified
+   "An excellent purchase."
+   Although i am  not a trained plumber i had no problems installing the unit even though I have custom cabinets with granite counters.  The unit is extremely quiet, and the two drawer model works perfectly.  One plus is that I do not have to bend down to load and unload.  A great advantage for someone with arthritis.
+
+#5 [★★★★★] ✓ Verified
+   "I like it!"
+   Everything installed easily. Comes with everything you need to set it up.<br />Operation is easy. Power on, select your cycle and hit start.<br />It's a quiet unit.  I don't really notice it's running most of the time.<br />Cleans well.  Handles a reasonable amount of buildup.<br />Great unit for a one or two person household.<br />Only one VERY SLIGHT con, don't expect fully dried dishes as soon as it's done. You might need to wipe a bit off, but coming from someone who has done dishes by hand for 40 years this is not an inconvenience!
+
+======================================================================
+QUERY: food processor powerful but easy to clean
+======================================================================
+[Client: 1533.7ms | Server: 224ms | Tokens: 32 | Candidates: 535]
+
+#1 [★★★★★] ✓ Verified
+   "Worth the money"
+   Easy to use works as described, I use a filter with this for easy clean up.
+
+#2 [★★★★★] ✓ Verified
+   "Enhances the flavor!!"
+   Easy to use, keeps the pod clean and enhances the flavor
+
+#3 [★★★★☆] ✓ Verified
+   "GREAT CHOICE 👍"
+   Great long lasting, easy to clean", "easy to use" and "consistently great flavor"
+
+#4 [★★★★★] ✓ Verified
+   "Easy to Use and Clean"
+   Works well, easy to use and clean, and environmentally- and budget-friendly!
+
+#5 [★★★★★] ✓ Verified
+   "Best. Ever."
+   Very pleased I purchased this! It works perfectly and is easy to clean.
+
+======================================================================
+QUERY: countertop portable ice maker for RV camping road trip
+======================================================================
+[Client: 1063.1ms | Server: 217ms | Tokens: 32 | Candidates: 504]
+
+#1 [★★★★★] 
+   "Great little ice maker"
+   This machine is very handy when we entertain friends and family. It makes ice cubes quickly in two sizes, small and large in under 20 minutes. The large ice cube size is actually average size cubes. The machine makes a little humming sound but it is not loud.<br /><br />It is easy to install and operate. It fits in well sitting on the kitchen counter and looks awesome with stainless steel finish. It's not heavy and certainly portable. You can carry this in an RV or when you are traveling or camping. But there is no direct line connection to water source.<br /><br />The package was delivered on time and the product was intact. I have rated five stars for overall satisfaction.
+
+#2 [★★★★★] ✓ Verified
+   "Great for RV"
+   Placed in my RV.  Tied of buying ice while traveling.  Slow but effective
+
+#3 [★★★★★] 
+   "Nice Ice"
+   This appliance is terrific. Fast and easy to use it produces bullet shaped ice. It fits easily on the counter and would be at home in a camper or rv. It has a semi automatic self clean feature. It is a time saver and works well. This ice maker is not excessively noisy. Completely satisfied.
+
+#4 [★★★★★] ✓ Verified
+   "My Son Loves It."
+   We purchased one of these for our RV and use it constantly. Our son wanted one for his RV and we surprised him with this one.  He uses it every day and has thanked us for it.  It dumps a load of  ice about every 7 minutes.  After several loads we dump the ice in a ziplock and store in the fridge's freezer.  This portable ice maker will not keep ice frozen.  It would have to be a much larger unit and would not be portable if it could do that.  This ice maker has been one of the best purchases for our RVs, and has become invaluable during hot, humid southwest summers.  We and our son are extremely happy with this purchase.
+
+#5 [★★★★★] ✓ Verified
+   "Works well and as advertised."
+   [[VIDEOID:df1aa2e9b375653c5a5e63633d4e459c]] I purchased this machine as I always run out of ice at my dinner parties or BBQ's. I love this 13" tall ( 14" deep ) portable Ice Maker Machine as it is easy to move wherever I need it to be. Also fits nicely on my kitchen counter or home bar if you have one.<br />Just fill in the reservoir with regular water (or spring water) set the desired ice size, and you will have ice cubs coming within 8 minutes!<br />This machine knocks out ice cubes faster than my GE refrigerator. The holding bin holds about 1.5 - 2lbs at a time, but makes up to 26lbs in 24 hours. Overall, great for anyone needing ice at anytime. Most important, the ice doesn't have flavored aftertaste. Great for any home, office, trailer, or outdoor party. Uses 110v standard 3 prong built in power cord. If you found my review or pictures interesting or helpful,<br />please rate it as "helpful." I always enjoy writing reviews of products and try to give honest opinions. I base most of my purchases on reviews from others.<br />I know that honest and helpful reviews can make all the difference in a purchasing decision.
+
+======================================================================
+QUERY: Samsung french door refrigerator water filter replacement
+======================================================================
+[Client: 767.4ms | Server: 216ms | Tokens: 32 | Candidates: 403]
+
+#1 [★★★★★] ✓ Verified
+   "PERFECT Replacement filter for Samsung refrigerator model number RFG297"
+   The Waterdrop DA29-00003G is an EXACT match to my Samsung french door refrigerator filter model #RFG297 , purchased 10 years ago.<br /><br />After purchasing a "Samsung " replacement filter a few days ago, which was NOT a match,  I started researching this filter #..... it appears a lot of consumers are experiencing difficulties finding the correct version for their "out dated" fridge.  Many people have even created creative alterations to make it fit.<br /><br />Save yourself some money,  time,  frustration,  etc. ; THIS WATERDROP REPLACEMENT REPLACEMENT FILTER; IT FITS AND IT WORKS !<br /><br />NO I AM NOT AFFILIATED,  NOR DID I RECEIVE A FREE PROMOTION TO WRITE THIS REVIEW.
+
+#2 [★★★★★] ✓ Verified
+   "Refrigerator Water Filter Replacement"
+   Perfect replacement for my Samsung water filter. Works great.
+
+#3 [★★★★★] ✓ Verified
+   "It's a Filter"
+   Appears to be a standard Samsung refrigerator water filter just like the one's they sell at Home Depot and Lowes for more $$$.
+
+#4 [★★★★★] ✓ Verified
+   "Product exactly as stated"
+   Fits in our Samsung fridge perfectly. It replaces DA-29-00020A/B exactly as stated and seems to be working fine a month later. We only had to flush out 9 glasses; I've had filters in our previous fridge that required much more. This product saves a couple bucks and works just fine. I'd definitely rec!
+
+#5 [★★★★★] 
+   "Samsung water filter"
+   This is a very good water replacement filter.  Functions exactly as stated.
+
+======================================================================
+QUERY: dishwasher quiet operation cleans well dries dishes completely
+======================================================================
+[Client: 786.3ms | Server: 217ms | Tokens: 32 | Candidates: 499]
+
+#1 [★★★★★] 
+   "Excellent buy"
+   I purchased the dishwasher 1 month ago to replace a Kenmore dishwasher.<br />Pros: The dishwasher is very well constructed. The fill, rinse and wash cycles are very quiet. The dishes come out clean with no water spots. Thee dishwasher uses a combination of a very hot rinse cycle and Rinse Aid which results in dry spot free dishes.<br />Cons: None
+
+#2 [★★★★★] 
+   "My favorite appliance.  Terrific cleaning, gentle to dishes, energy efficient, quiet operation."
+   I am loving this choice.  Installed over a year ago.  Gets near-daily use.<br /><br />The only thing even remotely wrong so far: a modest amount of residual soap buildup, easily solved by occasional use of readily available dishwasher cleaning products, run through as a separate cycle.  Normal for any dishwasher, I guess.<br /><br />This is an energy efficient model without a drying heater.  It does a great job of drying using residual heat after the wash/rinse cycle is done.  Once in a while a few select pieces go into the sinkside rack after the load, to finish drying, but that's nominal.  Most of the time everything is fully dry to the touch and goes directly to cupboard.<br /><br />Tip:  Read the manual and you'll really benefit from this model's features.  Learn:<br />* Which settings to use for different cleaning tasks.<br />* How to silence the beep after the load is done.<br />* Which setting selects advanced dish drying.<br />* When, how to use the Sanitize setting (short answer:  it also promotes better dish drying, so use it regularly).<br />* How to optimally load the system before washing.<br />* How to periodically check the rotary arms and the filters as recommended in the manual.  (So far, only the filters have required occasional rinse out, in my own experience.)<br /><br />This model was an upgrade from what my local appliance retailer normally stocks, but I chose it for its multi-level filtration and other upgrade features:  figuring that, for a few bucks more, you install it, then you live with your choice almost every day of your life for several years, so it makes sense to buy a good performer.  This model is.
+
+#3 [★★★★★] ✓ Verified
+   "I like it!"
+   Everything installed easily. Comes with everything you need to set it up.<br />Operation is easy. Power on, select your cycle and hit start.<br />It's a quiet unit.  I don't really notice it's running most of the time.<br />Cleans well.  Handles a reasonable amount of buildup.<br />Great unit for a one or two person household.<br />Only one VERY SLIGHT con, don't expect fully dried dishes as soon as it's done. You might need to wipe a bit off, but coming from someone who has done dishes by hand for 40 years this is not an inconvenience!
+
+#4 [★★★★★] 
+   "This is a great dishwasher. Saves energy and gets the dishes very clean."
+   This dishwasher is doing an excellent job for us.  I too was used to a dishwasher with a &#34;drying element&#34;, however I had turned it off due to the extreme energy usage.  Condensation drying is working well, except for the plastics mentioned by others, which would have melted in the old dishwasher with the dry cycle.  The sanitize cycle helps and only containers I reuse that food came in (like peanut butter jars) can't 'seem to take the heat.  This dishwasher gets my dishes amazingly clean with no pre-washing, and is so quiet I keep checking to see if it's on.  Times have changed since by dishwasher of 1998 and I'm glad!  I would recommend this unit and would buy it again.
+
+#5 [★★★★★] ✓ Verified
+   "Very happy with this dishwasher"
+   This is a wonderful appliance and suits my needs perfectly. My kitchen doesn't have room for a built-in or a large portable dishwasher. I am thrilled with how well this unit cleans my dishes, even on the lighter cycles. I also appreciate having so many wash options, from a rinse to a full heavy wash.
+
+======================================================================
+QUERY: Whirlpool top load washer agitator heavy duty
+======================================================================
+[Client: 1100.1ms | Server: 218ms | Tokens: 32 | Candidates: 470]
+
+#1 [★★★★★] 
+   "Excellent quality washer with a few minor drawbacks"
+   Purchased locally from BBuy, used for 6 months prior to giving a review.<br /><br />Pros:<br />1. Very water efficient. I was switching from the 5-yr old top-loader Whirlpool. This Samsung weights each load to determine the optimal amount of water.<br />2. Washes great even with cold water! (save on energy)<br />3. Easy to use, very intuitive.<br /><br />Drawbacks:<br />1. I placed the washer in the pan (to avoid flooding the floor in case of machine breakdown - paid $20 some dollars at HomeDepot). The pan limits how wide the drain compartment door opens and as a result makes draining and filter cleaning somewhat inconvenient. (Cleaning is required every couple of months. I cleaned once, but there was so little debris/dirt in the filter. Given this and the inconvenience of cleaning, I will clean it again in 6 months. Clean the pockets to minimize the dirt in the filter.<br /><br />2. Some water is being accumulated in the rubber sealant ring around the cover door - I am talking good couple of ounces. As I can imagine, if it's left unwiped, the moisture can grow into mildew. No big deal to wipe it off after each use, but I thought it was worth warning.<br /><br />3. I searched left and right for the stacking kit for this washer and compatible dryer, but the only place that is selling them is samsung autorized part distributor - samsungparts.com. I went to Sears but they refused to sell me the kit cause they didn't sell me the washer/dryer. BestBuy did not have any in stock anywhere in the MidAtlantic region. Had to call samsung directly and was directed to the above mentioned website.<br />*************** I uploaded a bunch of pictures with notes - make sure you check them out **************
+
+#2 [★☆☆☆☆] 
+   "Hate It"
+   I’m having a difficult time putting into words how much I despise this washer. HATE IT. REALLY HATE IT.<br />If I can spare one person the pain this washer has caused me...at least my experience will be worth something.<br />I chose this washer because I wanted something reliable in a top load model without a bunch of bells and whistles that could break or cause problems. I wanted a good, solid washer that I could depend on. This isn’t it.<br /><br />This washer has a mind of its own. It will fill with water, refuse to begin agitating, and then randomly empty itself dry. This isn’t due to user error. The machine is poorly designed. I’ve had the machine  empty randomly immediately after filling it on multiple occasions under entirely different scenarios. It’s infuriating and wastes tons of time and water. Infuriating. Especially when you’re in a rush or have multiple loads to wash.<br /><br />If this temperamental washer does make it through the cycle, expect to find your clothes wrapped and twisted around the agitator in some sort of hellish Gordian knot. Maybe not with every cycle, but often enough to be maddening. Horrible design.<br /><br />Looking forward to the day I can be rid of this thing. I’ll never buy another GE washer.
+
+#3 [★★★★★] ✓ Verified
+   "Great replacement part for whirlpool washer"
+   Exactly what I needed, great value, and quick shipping
+
+#4 [★★★★★] ✓ Verified
+   "So far we look and sound good"
+   This was the perfect fit for my whirlpool.  No issues so far.  Washer sounds new again.
+
+#5 [★★★★★] ✓ Verified
+   "Works"
+   Perfect fit for a speed queen top load washing machine. Quick shipping.
+
+======================================================================
+QUERY: LG front load dryer steam refresh wrinkle free
+======================================================================
+[Client: 2160.6ms | Server: 219ms | Tokens: 32 | Candidates: 483]
+
+#1 [★★★★★] ✓ Verified
+   "Great price"
+   Works on my LG dryer and at this price it is definitely worth using.
+
+#2 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#3 [★★★★★] ✓ Verified
+   "Great buy"
+   Works just like the original part and very eaSY TO INSTALL
+
+#4 [★★☆☆☆] ✓ Verified
+   "Doesn't work very well"
+   Only works for little wrinkles nothing set in. Hard to maneuver without burning yourself. Might be operator error. Only useful for travel to freshen up previously ironed clothing.<br />Also only holds enough water for a couple dress shirts.
+
+#5 [★★★★☆] ✓ Verified
+   "Looks like an exact fit"
+   Fits our LG dryer exactly. Relatively easy to clean.
+
+======================================================================
+QUERY: Vitamix blender smoothie ice crush professional grade
+======================================================================
+[Client: 1177.5ms | Server: 222ms | Tokens: 32 | Candidates: 510]
+
+#1 [★★★★★] 
+   "great machine!"
+   [[VIDEOID:8833d77b66a356f7d450726db6ee7913]] UPDATE:<br />Almost a year later and it is still working great.  No issues at all!<br /><br />ORIGINAL REVIEW:<br />Simple and easy to use.  I ran the cleaning cycle and then made ice.  My machine seems to average 7 minutes per batch and then pops out 10 "cubes".  That is around 85/86 "cubes" per hour.  I ended up making ice while I was home.  I just baby sat the machine. I could hear the ice drop.  I then transferred it to a ziplock bag in our freezer.  However, aside from having a distinctive dropping noise, it is really quiet.<br /><br />I chose this because we do not have an ice maker.  I actually haven't had an ice maker in my life for several years. Ice cube trays just never worked for us in terms of space used in our freezer.  I am excited, now I can enjoy iced coffee and also ice bath our hard boiled eggs after cooking them.  It is the little things in life.<br /><br />This is pretty space efficient.  Not ugly.  Works well for its size.  Easy to use.  I am super happy to have it.  No complaints of regrets.
+
+#2 [★★★★★] ✓ Verified
+   "Best Buy of 2021"
+   This machine is sleek, space conscious, and SUPER efficient!<br /><br />Better still, it’s literally plug and play!  It is dummy proof and the ice is the perfect size!<br /><br />I couldn’t be happier!
+
+#3 [★★★★☆] ✓ Verified
+   "Works great"
+   I love how fast this works my only complaint about this is the ice that stays in the basket on the inside of the machine melts very quickly
+
+#4 [★★★★★] ✓ Verified
+   "Five Stars"
+   it works amazing and makes ice fast I loooooooove it!!!!
+
+#5 [★★★★★] ✓ Verified
+   "Effective"
+   It makes ice quickly and is reasonably quiet. Machine looks nice on countertop as well.
+
+======================================================================
+QUERY: Keurig coffee maker single serve pod reusable filter
+======================================================================
+[Client: 1544.7ms | Server: 215ms | Tokens: 32 | Candidates: 474]
+
+#1 [★★★★★] ✓ Verified
+   "i needed these."
+   These reusable generic Keurig filters are a mandatory BUY with a single serve coffee maker.<br />They will pay for themselves quickly.
+
+#2 [★★★★★] ✓ Verified
+   "Great filters"
+   These are great to use in our Keurig Coffee maker when using your own coffee.
+
+#3 [★★★★★] ✓ Verified
+   "Great product"
+   This is a great extra filter to have for the Keurig
+
+#4 [★★★★★] ✓ Verified
+   "Keurig coffee filters.."
+   Fits perfect. Works great great coffee no grounds. Awesome
+
+#5 [★★★★★] ✓ Verified
+   "Keurig coffee filters"
+   Works perfect.. Love them.. So handy. Fresh coffee everyone
+
+======================================================================
+QUERY: Instant Pot pressure cooker slow cooker air fryer combo
+======================================================================
+[Client: 1090.6ms | Server: 223ms | Tokens: 32 | Candidates: 532]
+
+#1 [★★★★★] ✓ Verified
+   "Fit perfectly"
+   Looks great. Have my instant pot and air fryer on it, on my glasstop stove.
+
+#2 [★☆☆☆☆] ✓ Verified
+   "Disappointing"
+   After weeks of research I decided that this was the unit to get and while I had high expectations I was let down.<br /><br />My main criteria was it’s ability to remove smoke, steam and odors while cooking. I followed all the instructions, have a great custom duct, etc. the reality is that If I stir fry on high heat or use a grill pan to grill a steak I still have to open all my windows of the house gets smokey.<br /><br />This unit is easy to install<br /><br />This unit looks nice<br /><br />This unit has an annoying chime<br /><br />This unit is very loud<br /><br />This unit doesn’t move smoke and fumes as well as I would like.
+
+#3 [★★★★★] ✓ Verified
+   "I like it!"
+   Everything installed easily. Comes with everything you need to set it up.<br />Operation is easy. Power on, select your cycle and hit start.<br />It's a quiet unit.  I don't really notice it's running most of the time.<br />Cleans well.  Handles a reasonable amount of buildup.<br />Great unit for a one or two person household.<br />Only one VERY SLIGHT con, don't expect fully dried dishes as soon as it's done. You might need to wipe a bit off, but coming from someone who has done dishes by hand for 40 years this is not an inconvenience!
+
+#4 [★★★★★] ✓ Verified
+   "Perfect!"
+   This seems to be perfect.  Works great so far and WAAAAY cheaper then going through over rated sears.<br />Thank you.
+
+#5 [★★★★★] ✓ Verified
+   "Worked perfectly :)"
+   The same part was listed on another appliance parts website for $60, this was a great value when I purchased it for just under $15. It worked perfectly.
+
+======================================================================
+QUERY: Ninja blender food processor single serve cups
+======================================================================
+[Client: 915.5ms | Server: 221ms | Tokens: 32 | Candidates: 432]
+
+#1 [★★★★★] ✓ Verified
+   "easy to use"
+   fit perfect in my k cups and have a lip so grounds don't spill over making a mess.
+
+#2 [★★☆☆☆] 
+   "Not that Great"
+   This kit MIGHT be useful if it were better designed. Unfortunately, this has a few strikes against it.<br /><br />Reusable Cups – These are like MANY reusable cups I’ve seen. They can be used with the filter or without. They do filter out the grounds, but only allow for ONE cup at a time use – meaning, if you’re brewing more than one – you have to clean it out.<br /><br />Filters – these do not have a “paper lid” (see the ones for the Perfect Pod system). This causes the grounds to STICK to the top of the cup, much like the grounds sticking to the sides of the provided cup.<br /><br />When using the filters with the cups – you get less coffee per “cup”. Without the filter? You have a HUGE mess to clean up.<br /><br />The only thing good was the scoop. I loved the adorable heart at the end.<br /><br />Honestly, I’d prefer using the Perfect Pod system as it definitely works, even with the Keurig machine I got back in 2011 (yes, over 10+ years ago).<br /><br />The cups are expensive, but I’ve been using mine since about that long. The filters? You can find cheaper ones.<br /><br />While this is a cheaper set by virtue of price, it is “pass it by” kind of thing.
+
+#3 [★★★★★] ✓ Verified
+   "Five Stars"
+   Fit reusable cups perfectly.  Keeps grounds out of cup.
+
+#4 [★★★★★] ✓ Verified
+   "game changer"
+   good for the planet easy to wash/rinse doesnt affect flavor
+
+#5 [★★★★★] ✓ Verified
+   "Great product. It is advertised as 2"
+   Great product. It is advertised as 2, so when you order, you already know you are getting 2. But then they send you an email saying that they are sending an extra one...no, you are not. We already knew we were getting 2, otherwise we would not have spent 18 bucks. I would recommend this, as it really allows flavors into the cup that paper filters screen out. It also delivers a clear, clean cup without sediment. I don't like the pushiness to sugmit a review. Received 2 emails about it. Not necessary - great products make the rounds.
+
+======================================================================
+QUERY: KitchenAid stand mixer bread dough pasta attachment
+======================================================================
+[Client: 1119.9ms | Server: 215ms | Tokens: 32 | Candidates: 458]
+
+#1 [★★★★★] ✓ Verified
+   "Great buy"
+   Works just like the original part and very eaSY TO INSTALL
+
+#2 [★★★★★] 
+   "UPDATE WITH IMPORTANT INFORMATION!"
+   Fantastic! I wish I'd known about it sooner!<br /><br />UPDATE:<br />I ordered the green unit and it developed a problem so the company replaced it with an orange one. It arrived yesterday and there was an instruction sheet for those 2 bobbles on the rear of the unit. I didn't get that paper with the first one.<br /><br />After you place the unit in your bucket, tuck in those 2 bobbles. No shaking during the cycle. None! You won't have to sit there and hold the unit steady.<br /><br />This company stands behind their product. You can order with confidence. Remember to tuck in your bobbles!
+
+#3 [★★★☆☆] ✓ Verified
+   "It does work."
+   Liked that it fi- sorta.  The 3 hoses reached and were easy to disattach/reattach.<br />Did not like that it was no where near an exact replacement.  I cannot attach the mounting frame  it to the refrigerator body.  Just left it where the old one was.  Price was right.  For an item marketed as retrofitting a KitchenAid, here is a LOT of room for improvement.  I would not buy again.
+
+#4 [★★★★★] ✓ Verified
+   "Good deal"
+   Fit well and seems to work fine. A much better price than in store at Home Depot.
+
+#5 [★★★★★] ✓ Verified
+   "Perfect and works well"
+   Does the job perfectly. Not complaints at all here. Would buy again.
+
+======================================================================
+QUERY: Breville espresso machine built in grinder milk frother
+======================================================================
+[Client: 1017.5ms | Server: 218ms | Tokens: 32 | Candidates: 461]
+
+#1 [★★★★★] ✓ Verified
+   "Works well - -have to adjust grind to not overpower pump"
+   allows individual coffee choice and grind.  foil covers expensive.
+
+#2 [★★★★★] ✓ Verified
+   "Great product 😊"
+   Easy in, easy out. You don't have to put it in a certain way, just drop it in.  Works well with regular grounds or espresso.
+
+#3 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#4 [★★★★★] ✓ Verified
+   "Perfect for at-home espresso!"
+   Perfect for my small at-home espresso drink and froth making needs!
+
+#5 [★★★★★] ✓ Verified
+   "performs as advertised at much lower cost than factory brand"
+   performs as advertised at much lower cost than factory brand
+
+======================================================================
+QUERY: Cuisinart food processor slicing shredding disc
+======================================================================
+[Client: 972.6ms | Server: 218ms | Tokens: 32 | Candidates: 459]
+
+#1 [★★★★☆] ✓ Verified
+   "Same as original."
+   Seems to be a perfect replacement for the Cuisinart product.
+
+#2 [★★★★☆] ✓ Verified
+   "Don't get it confused with the full size one"
+   If you are buying based off the infomercials, you might be disappointed.  This does not have the same air flow and you will need to flip your food half way through the process.  That being said.  It works well and browns the meat.<br /><br />One annoying thing is that the plexiglass middle seems to separate from the top piece that has the handle too easily.  It is supposed to come apart for washing it, but mine tends to come off whenever I take my food out.  Otherwise, it probably would have been 5/5 stars.
+
+#3 [★★★★★] ✓ Verified
+   "I like it!"
+   Everything installed easily. Comes with everything you need to set it up.<br />Operation is easy. Power on, select your cycle and hit start.<br />It's a quiet unit.  I don't really notice it's running most of the time.<br />Cleans well.  Handles a reasonable amount of buildup.<br />Great unit for a one or two person household.<br />Only one VERY SLIGHT con, don't expect fully dried dishes as soon as it's done. You might need to wipe a bit off, but coming from someone who has done dishes by hand for 40 years this is not an inconvenience!
+
+#4 [★★★★★] ✓ Verified
+   "Works like the OEM!"
+   Great value for the price. No issues at all. Works really well and no weird taste!
+
+#5 [★★★★★] 
+   "great machine!"
+   [[VIDEOID:8833d77b66a356f7d450726db6ee7913]] UPDATE:<br />Almost a year later and it is still working great.  No issues at all!<br /><br />ORIGINAL REVIEW:<br />Simple and easy to use.  I ran the cleaning cycle and then made ice.  My machine seems to average 7 minutes per batch and then pops out 10 "cubes".  That is around 85/86 "cubes" per hour.  I ended up making ice while I was home.  I just baby sat the machine. I could hear the ice drop.  I then transferred it to a ziplock bag in our freezer.  However, aside from having a distinctive dropping noise, it is really quiet.<br /><br />I chose this because we do not have an ice maker.  I actually haven't had an ice maker in my life for several years. Ice cube trays just never worked for us in terms of space used in our freezer.  I am excited, now I can enjoy iced coffee and also ice bath our hard boiled eggs after cooking them.  It is the little things in life.<br /><br />This is pretty space efficient.  Not ugly.  Works well for its size.  Easy to use.  I am super happy to have it.  No complaints of regrets.
+
+======================================================================
+QUERY: Dyson cordless vacuum hardwood floors pet hair
+======================================================================
+[Client: 982.8ms | Server: 221ms | Tokens: 32 | Candidates: 510]
+
+#1 [★★★★☆] ✓ Verified
+   "Seems great so far! Some reviews are misleading, but still, works really well."
+   WORKS GREAT! What follows is mostly a review of the reviews and the product description.<br /><br />Some of the reviews said it's silent. Maybe it's silent if you are in the other room or if you are blasting music? I stood next to this during its first couple washes because I was nervous I hooked something up incorrectly and if a hose popped off I wanted to be right there. (The instructions were good--it was easy--I just doubt myself with this stuff). I CERTAINLY could tell when it was on, and what type of cycle it was on, but again, I was RIGHT next to it. However, as I get used to this I could see not noticing the sound--it's not loud, but it's not silent.<br /><br />Maybe my apartment doesn't have the standard cabinet heights, but I couldn't use this under my kitchen cabinet. Again, this is working ok for me and my purposes but I just wanted to note that maybe "standard" isn't always as standard as one would assume.<br /><br />It was delivered quickly without issues. It looks nice despite being bigger than I had imagined (not a ding on the product, just my imagination).<br /><br />DIshes came out clean as a whistle, set up was pretty simple, I'm good with the size for what it does. 10/10 I would recommend to someone in my situation.
+
+#2 [★★★★☆] ✓ Verified
+   "Good replacement"
+   Very inexpensive yet makes a world of difference.  Good quality.  Plug in hole larger than original equipment but still does the job.<br />Should have bought more.
+
+#3 [★★★★★] ✓ Verified
+   "Funciona y es liviana"
+   [[VIDEOID:e0f1c38908eaf3f439077df538e4297f]] Doy mi opinión ahora, porque la compre en julio del 2020, me sigue funcionando lavado y secado, es ligera y muy cómoda para apartamento, el ruido es poco y lo fundamental no ocupa espacio. Gracias
+
+#4 [★★☆☆☆] ✓ Verified
+   "Not good"
+   Horrible. Absolutely junk. I don't know how this gets good reviews.<br />Maybe I just got a broken one... But it doesn't form a good seal. It has openings in the seal.<br />It arrived filthy dirty with something white burned onto the cord.<br />I literally wasted about twenty five shrink wrap bags with this.<br />I do not recommend at all
+
+#5 [★★★★☆] ✓ Verified
+   "Did not last long"
+   Bought this replacement part February 5 2022. Needed another by July 7 2022.<br />Pay a little more and buy an actual OEM. It’ll last longer.<br /><br />Edit* Seller contacted me and gave me a refund. I thought that was excellent customer service!<br />I changed my review from 1 star to 4 stars because of that. The seller did not ask me to change anything but I figured I would since i was refunded.<br />So now you guys know that if it does fail the seller will make it right!
+
+======================================================================
+QUERY: Roomba robot vacuum self emptying smart mapping
+======================================================================
+[Client: 938.9ms | Server: 224ms | Tokens: 32 | Candidates: 470]
+
+#1 [★★★★★] ✓ Verified
+   "Simple and quick"
+   Very simple to operate. Quiet small footprint really for the money you can't beat it.
+
+#2 [★★★★☆] ✓ Verified
+   "Seems great so far! Some reviews are misleading, but still, works really well."
+   WORKS GREAT! What follows is mostly a review of the reviews and the product description.<br /><br />Some of the reviews said it's silent. Maybe it's silent if you are in the other room or if you are blasting music? I stood next to this during its first couple washes because I was nervous I hooked something up incorrectly and if a hose popped off I wanted to be right there. (The instructions were good--it was easy--I just doubt myself with this stuff). I CERTAINLY could tell when it was on, and what type of cycle it was on, but again, I was RIGHT next to it. However, as I get used to this I could see not noticing the sound--it's not loud, but it's not silent.<br /><br />Maybe my apartment doesn't have the standard cabinet heights, but I couldn't use this under my kitchen cabinet. Again, this is working ok for me and my purposes but I just wanted to note that maybe "standard" isn't always as standard as one would assume.<br /><br />It was delivered quickly without issues. It looks nice despite being bigger than I had imagined (not a ding on the product, just my imagination).<br /><br />DIshes came out clean as a whistle, set up was pretty simple, I'm good with the size for what it does. 10/10 I would recommend to someone in my situation.
+
+#3 [★★★★★] ✓ Verified
+   "Funciona y es liviana"
+   [[VIDEOID:e0f1c38908eaf3f439077df538e4297f]] Doy mi opinión ahora, porque la compre en julio del 2020, me sigue funcionando lavado y secado, es ligera y muy cómoda para apartamento, el ruido es poco y lo fundamental no ocupa espacio. Gracias
+
+#4 [★★★★★] 
+   "UPDATE WITH IMPORTANT INFORMATION!"
+   Fantastic! I wish I'd known about it sooner!<br /><br />UPDATE:<br />I ordered the green unit and it developed a problem so the company replaced it with an orange one. It arrived yesterday and there was an instruction sheet for those 2 bobbles on the rear of the unit. I didn't get that paper with the first one.<br /><br />After you place the unit in your bucket, tuck in those 2 bobbles. No shaking during the cycle. None! You won't have to sit there and hold the unit steady.<br /><br />This company stands behind their product. You can order with confidence. Remember to tuck in your bobbles!
+
+#5 [★★★★★] ✓ Verified
+   "Works Great"
+   Does exactly what I needed.  Easy to clean.  Well worth the money .
+
+======================================================================
+QUERY: Shark steam mop hardwood laminate tile floors
+======================================================================
+[Client: 883.8ms | Server: 217ms | Tokens: 32 | Candidates: 522]
+
+#1 [★★★★★] ✓ Verified
+   "Works Great"
+   Does exactly what I needed.  Easy to clean.  Well worth the money .
+
+#2 [★★★★★] ✓ Verified
+   "Great product Great Price"
+   Much less expensive than the name brand and does a great job.
+
+#3 [★★★★★] ✓ Verified
+   "Funciona y es liviana"
+   [[VIDEOID:e0f1c38908eaf3f439077df538e4297f]] Doy mi opinión ahora, porque la compre en julio del 2020, me sigue funcionando lavado y secado, es ligera y muy cómoda para apartamento, el ruido es poco y lo fundamental no ocupa espacio. Gracias
+
+#4 [★★★★★] ✓ Verified
+   "Works great!"
+   I have purchased these several times and they work great.
+
+#5 [★★★★★] ✓ Verified
+   "Great deal and works great"
+   Fit perfect. Love the price and my water is flowing fast.
+
+======================================================================
+QUERY: Honeywell air purifier HEPA filter large room allergies
+======================================================================
+[Client: 1281.0ms | Server: 217ms | Tokens: 32 | Candidates: 546]
+
+#1 [★★★★☆] ✓ Verified
+   "Seems great so far! Some reviews are misleading, but still, works really well."
+   WORKS GREAT! What follows is mostly a review of the reviews and the product description.<br /><br />Some of the reviews said it's silent. Maybe it's silent if you are in the other room or if you are blasting music? I stood next to this during its first couple washes because I was nervous I hooked something up incorrectly and if a hose popped off I wanted to be right there. (The instructions were good--it was easy--I just doubt myself with this stuff). I CERTAINLY could tell when it was on, and what type of cycle it was on, but again, I was RIGHT next to it. However, as I get used to this I could see not noticing the sound--it's not loud, but it's not silent.<br /><br />Maybe my apartment doesn't have the standard cabinet heights, but I couldn't use this under my kitchen cabinet. Again, this is working ok for me and my purposes but I just wanted to note that maybe "standard" isn't always as standard as one would assume.<br /><br />It was delivered quickly without issues. It looks nice despite being bigger than I had imagined (not a ding on the product, just my imagination).<br /><br />DIshes came out clean as a whistle, set up was pretty simple, I'm good with the size for what it does. 10/10 I would recommend to someone in my situation.
+
+#2 [★★★★★] ✓ Verified
+   "better"
+   fits perfectly, seems to allow more hunidity into the air and is the staying cleaner longer than the previous one
+
+#3 [★★★★★] ✓ Verified
+   "Five Stars"
+   Works perfect. Eliminates all odors from a roughly 36 cubic foot area.
+
+#4 [★★★★★] ✓ Verified
+   "Fits perfect."
+   I had to replace my filter and this one fits and works perfectly.
+
+#5 [★★★★☆] ✓ Verified
+   "so far it seems to be working good, does not seem to have the flow through ..."
+   the packaging it is shipped in could be a little more protective of the product, but it came undamaged.<br />It is narrower than the original but fit. so far it seems to be working good, does not seem to have the flow through<br />as the original, but works and so far has not leaked.
+
+======================================================================
+QUERY: Frigidaire window air conditioner 8000 BTU remote control
+======================================================================
+[Client: 1788.5ms | Server: 222ms | Tokens: 32 | Candidates: 454]
+
+#1 [★★★★★] ✓ Verified
+   "Works flawless"
+   Excellent quality. Installed it my self and it work perfect very happy with the purchased.
+
+#2 [★★★★★] ✓ Verified
+   "works perfect"
+   very fast delivery after order, came very well packaged with good instructions for its installation. I have installed it and it is working perfectly. I would recommend this product and seller to anyone looking for this part.
+
+#3 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#4 [★★★★★] ✓ Verified
+   "Great buy"
+   Works just like the original part and very eaSY TO INSTALL
+
+#5 [★★★★★] ✓ Verified
+   "Just right!"
+   Installed perfectly the first time and is working great!<br /><br />Edit: Purchased for the 2nd time. Still easy peasy and works great!
+
+======================================================================
+QUERY: De'Longhi portable air conditioner no window vent hose
+======================================================================
+[Client: 1950.4ms | Server: 215ms | Tokens: 32 | Candidates: 502]
+
+#1 [★★★☆☆] ✓ Verified
+   "Good. Not great."
+   The hose doesn't easily get into the vent.  But does work ok. More effort than I thought it would be.
+
+#2 [★☆☆☆☆] ✓ Verified
+   "Waste of time and money."
+   This thing is junk!<br /><br />Its super flimsy, and even with vent tape leaks air.  It looked like a great space saver, but in reality was a pain in the but to mesure, cut and install at the correct height.  Once installed and tested it leaked worse than a soaker hose.<br /><br />Save your money, and stick with regular vent hose.  I think there is a reason why no brick and mortar store sells these.
+
+#3 [★★★★★] ✓ Verified
+   "Great  Product, Works Great"
+   This is my first time using this kind of device and it works pretty well so far. My only complaint is that it was a little hard putting it on my dryer. Other than that it's  a great product when you don't  have a wall vent.
+
+#4 [★★★★★] ✓ Verified
+   "A yes, buy it!"
+   Really nice vent attachment.  The negative comments about it being able to come off can be fixed by an additional screw through both inner and outer ring after installation.<br /><br />I would buy it again!
+
+#5 [★★★★☆] ✓ Verified
+   "Works"
+   We had to alter this product to fit our vent cover but other than that it works as well as can be expected.
+
+======================================================================
+QUERY: GE Profile refrigerator ice maker water dispenser
+======================================================================
+[Client: 1373.7ms | Server: 224ms | Tokens: 32 | Candidates: 491]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   Arrived on time. Worked perfectly with my GE Refrigerator.
+
+#2 [★★★★★] ✓ Verified
+   "Good product"
+   Works great so far.  Less than one week so far.  Fit our GE fridge perfectly. Simple to install and use.
+
+#3 [★★★★★] ✓ Verified
+   "Yes!"
+   Works in a ge profile fridge! Wonderful water & ice!
+
+#4 [★★★★★] ✓ Verified
+   "Great"
+   Love this !  Easy to install and works like a champ. I now have ice that comes out of the refrigerator.
+
+#5 [★★★★★] ✓ Verified
+   "fits our fridge well"
+   this fit our Amana fridge and works well to filter the water supply line that is used for the dispenser and ice maker
+
+======================================================================
+QUERY: Bosch dishwasher third rack stainless steel tub
+======================================================================
+[Client: 852.9ms | Server: 217ms | Tokens: 32 | Candidates: 433]
+
+#1 [★☆☆☆☆] 
+   "Should have stayed with my contractor installed cheap dishwasher"
+   I did not buy through Amazon, so I'll keep this short.<br /><br />Good: it's stainless steel so looks modern.<br /><br />Bad: top rack is crap as others note. The mechanism is loose, and the wheels are all broken so my rack dislodges and drops at times. it's all plastic, so I got what I paid for.\<br /><br />Bad: as others noted, I do at times wonder if the top rack even ran.<br /><br />Bad: does not have powerful jets. Tons of stuck on food when cycles are done. This has caused me to have to pre-wash my dishes.<br /><br />Bad: an LED in the control bar burnt out two months in, and requires the whole control bar to be replaced if I want it fixed...what kinda scam is that??????<br /><br />All in all, hella disappointed in this thing.
+
+#2 [★★☆☆☆] ✓ Verified
+   "Front panel fragile, easily damaged/dented."
+   Great dishwasher, but very poorly implemented construction for the front panel. I didn't even get a chance to install the dishwasher; the stainless steel panel was dented on arrival(like other reviews have mentioned). Poor quality control or packaging.
+
+#3 [★★★★★] ✓ Verified
+   "As described"
+   Product received matched the description and worked with my Bosch dishwasher
+
+#4 [★★★★★] ✓ Verified
+   "Nice for wide handled silverware"
+   Nice fit for Bosch dishwasher and seems sturdy.  Wanted something that would hold wide handled silverware and larger kitchen utensils.
+
+#5 [★★★☆☆] ✓ Verified
+   "Three Stars"
+   This part revived my Maytag Dishwasher (P/N mdb7749awb1).  Wish it was cheaper.
+
+======================================================================
+QUERY: nugget ice maker like sonic or chick-fil-a ice
+======================================================================
+[Client: 969.6ms | Server: 218ms | Tokens: 32 | Candidates: 474]
+
+#1 [★★★★★] ✓ Verified
+   "Worth EVERY PENNY and AMAZING!"
+   This product IS WONDERFUL!!! Met my expectations and then some. Comes with app, programmable, and the ice are little round nuggets JUST like Sonic. Best purchase I've made this year! At the time of purchase, it was $589.00. It has since come down, but I really would pay even more for this amazing product. I've had it over a month now and my sister and mom want one, also. I don't post many reviews at all, but I just had to about this product. It isn't a bogus review.  If you are on fence or worried it is not worth the money, I PROMISE you will love it. I have an ice-maker on my fridge door, but this is just SO much better. So EASY! Pour water in and voila! That is it. Just a great, GREAT PRODUCT!
+
+#2 [★☆☆☆☆] ✓ Verified
+   "Don't Waste Your Money!"
+   We really like nugget ice, so much that we would buy bags of it from Sonic, so we were excited to find the Opal Counter Top Nugget Ice Maker. It was awesome - made great, soft, nugget ice just like it was supposed to - until it didn't. Exactly one year and two weeks after purchase (right after the one-year warranty), it stopped making ice. We tried all of the trouble-shooting - reset it, unplug it and wait a few hours, clean with vinegar, check the water lines. Nothing helped. It will make about a tablespoon of ice and then quit. Disappointing that a $580 appliance is only good for one year (and two weeks). If you want to pay an average of $50/month for the good ice for about a year, go for it. Just don't be surprised when it breaks.<br /><br />Don't be fooled by all of the 5-star reviews. I would have given it a 5-star review as well for the first 12 months. Check out all of the 1-star reviews - plenty of other folks have had the same experience.
+
+#3 [★★★★★] ✓ Verified
+   "Great"
+   Fits perfectly and now I'm making ice again. Great product
+
+#4 [★★★★★] ✓ Verified
+   "Effective"
+   It makes ice quickly and is reasonably quiet. Machine looks nice on countertop as well.
+
+#5 [★★★★☆] 
+   "Nuggets"
+   This ice maker is easy to use. It is fairly quiet and very efficient. It makes nugget ice. The cubes are small, soft and chewable. No odd taste. It recycles melted ice and is simple to clean. Working well so far.
+
+======================================================================
+QUERY: clear ice cubes not cloudy white ice for cocktails
+======================================================================
+[Client: 1130.4ms | Server: 220ms | Tokens: 32 | Candidates: 468]
+
+#1 [★★★★★] ✓ Verified
+   "Exceeded Expectations"
+   Worked exactly as advertised. Makes lots of CLEAR drink ice quickly and has a small footprint. It is a screaming deal at the price.
+
+#2 [★★★★★] 
+   "Love it"
+   I've been using it a few months now. For extra clear ice, use distilled water
+
+#3 [★★★★☆] 
+   "Very nice ice maker.  quick and clear ice if you use Distilled water."
+   I have wanted clear ice cubes FOREVER.  finally with this Ice Maker.. I  can pour DIstilled water into the reservoir and it will make clear ice bullets.  Yes you can drink distilled water.. there just is no minerals in it.
+
+#4 [★★★★☆] ✓ Verified
+   "Great cubes, smaller capacity than expected"
+   The best gift I gave this year, the recipient loved it!! Some pro's and con's to note for anyone who is deciding on this product...<br /><br />Pro: 2 sizes of cubes, they are the donut shaped cubes so they are really great for mixed drinks and everyday use.<br />Con: It doesn't make the ice as quickly as depicted. The water reservoir is small so to make a lot of ice it is an all day experience.<br />Pro: It is a quiet machine, only thing you really hear is the ice being dropped.<br />Con: Once the ice is dropped, you want to get it into the freezer. Your new ice will begin to melt together and become one big cube if you leave it go too long.<br /><br />It definitely deserves 4 stars, we love the machine!! If you need a ton of ice, begin early or use backup methods. ENJOY!!
+
+#5 [★☆☆☆☆] ✓ Verified
+   "Total Dissatisfaction"
+   This was one of the most disappointing purchases I have ever made. Very noisy. Ice is wet and not solid so it melts quickly watering down drinks. Made my husband a cocktail and within just a couple of minutes all the ice was melted.<br />Nice design and easy to use. Do not recommend.<br />I would return but packaging was damaged and I don’t want the hassle.
+
+======================================================================
+QUERY: coffee maker that makes coffee like Starbucks drip
+======================================================================
+[Client: 1038.6ms | Server: 219ms | Tokens: 32 | Candidates: 495]
+
+#1 [★★★★★] ✓ Verified
+   "Great coffee brewer."
+   Where do I start. The aeropress is an amazing piece of equipment. Anyone who is looking for a really great cup of coffee, that tastes amazing and has a low impact on the environment then this is for you. You have the single serve convenience of a keurig, yet not all the wastefulness of the k-cups and all the packaging. Especially if you get yourself the &#34;Able Brewing Disk&#34; (do yourself a favor and buy them both at once). The idea of purchasing a manual coffee maker such as this may seem a little daunting, but after about a week of using it you won't even notice the slight bit of extra work you have to put into making your morning coffee. And trust me, the enhancement in flavor over anything you have brewed with in the past will blow you away, and make up for the little extra work you have to do. Not only is this a genius solution for making yourself a single cup of coffee with out wasting an entire pot, but it's a great solution for making a delicious iced coffee. Just brew it directly into a cup of ice, the heat from the brewing coffee will melt the ice and you will have a perfectly balanced cup of iced coffee. So if you want a great cup of coffee without leaving your house, this is the simplest solution.
+
+#2 [★★★★★] ✓ Verified
+   "Truly an outstanding coffee maker!"
+   I have used many a coffee maker, Chemex's, Moka Pot's, French Presses, and Siphon styles. This may not be quite my favorite as the Siphon, but it is excellent. I thought when I got it "This has got to be overhyped, it's just a thick plastic-y thing!" but it really is as good as people say. Looks are deceiving. It is wonderful to use, and dead simple. Put your filter in, put the grounds in, put the water in, stir it a bit, put the plunger on, and plunge. It makes excellent coffee, very full bodied, but still with good clarity due to the paper filter. Absolutely no sediment at the bottom of the cup either! Clean up is a breeze, just take the filter holder off, and pop the filter and most of the grounds out with the plunger, rinse, and it's clean. It's so simple and easy, absolutely zero fuss! I recommend this maker for anyone wanting for a quick and easy to clean maker, or for getting into manual coffee making. It requires very little skill, but it has alot you can do, so you'll never truly master it. I bought one, and recommended it highly enough that a friend of mine did too.
+
+#3 [★★★★★] ✓ Verified
+   "...Aeropress is totally the best"
+   I have been an Aeropress person for 9 years.  It consistently makes an amazing cup of coffee.  The filters are excellent.
+
+#4 [★★★★★] ✓ Verified
+   "Makes amazing coffee!"
+   Seriously best coffee coffee maker out there and the paper filters do a better job than the metal reusable ones for fine grinds.
+
+#5 [★★★★★] ✓ Verified
+   "Better than my expensive Keurig"
+   Using same k cup brands and cup sizes, this coffee maker makes a stronger brew than my last two Keurig machines.
+
+======================================================================
+QUERY: blender that can make Jamba Juice style smoothies
+======================================================================
+[Client: 1202.6ms | Server: 217ms | Tokens: 32 | Candidates: 493]
+
+#1 [★★★★★] ✓ Verified
+   "Absolutely my favorite kitchen gadget beside blendtec"
+   I will only make coffee in this it beats every coffee maker and live it because it won’t break like the glass ones
+
+#2 [★★★★★] ✓ Verified
+   "Enhances the flavor!!"
+   Easy to use, keeps the pod clean and enhances the flavor
+
+#3 [★★★★☆] ✓ Verified
+   "Great cubes, smaller capacity than expected"
+   The best gift I gave this year, the recipient loved it!! Some pro's and con's to note for anyone who is deciding on this product...<br /><br />Pro: 2 sizes of cubes, they are the donut shaped cubes so they are really great for mixed drinks and everyday use.<br />Con: It doesn't make the ice as quickly as depicted. The water reservoir is small so to make a lot of ice it is an all day experience.<br />Pro: It is a quiet machine, only thing you really hear is the ice being dropped.<br />Con: Once the ice is dropped, you want to get it into the freezer. Your new ice will begin to melt together and become one big cube if you leave it go too long.<br /><br />It definitely deserves 4 stars, we love the machine!! If you need a ton of ice, begin early or use backup methods. ENJOY!!
+
+#4 [★★★★★] ✓ Verified
+   "LOVE my Phin!"
+   My first phin was the screw-down type, and I absolutely love it, but sometimes you just want one less step. After looking into gravity models, this is the one I chose.<br />Boy, am I happy! It may not offer as much tweak room, but still makes an incredible Vietnamese coffee, drop by drop.<br />My Vietnamese friends pretty much prefer the other type, and when I really want to control the grounds, so do I, but when I want quick, well as quick as one can make a drink with a phin, I reach for this. Cleanup is also easier.
+
+#5 [★★★★★] ✓ Verified
+   "Make It Your Way..."
+   Works really well for your own special coffee blend!
+
+======================================================================
+QUERY: ice cream maker like Dairy Queen soft serve
+======================================================================
+[Client: 1052.9ms | Server: 218ms | Tokens: 32 | Candidates: 520]
+
+#1 [★★★★☆] ✓ Verified
+   "Great Ice"
+   Love this ice maker. It can be tricky. Don't overfill!
+
+#2 [★★★★★] ✓ Verified
+   "Ice Maker for countertop"
+   We love this ice maker so much  We recommend it for sure.
+
+#3 [★★★★★] 
+   "Great little ice maker"
+   This machine is very handy when we entertain friends and family. It makes ice cubes quickly in two sizes, small and large in under 20 minutes. The large ice cube size is actually average size cubes. The machine makes a little humming sound but it is not loud.<br /><br />It is easy to install and operate. It fits in well sitting on the kitchen counter and looks awesome with stainless steel finish. It's not heavy and certainly portable. You can carry this in an RV or when you are traveling or camping. But there is no direct line connection to water source.<br /><br />The package was delivered on time and the product was intact. I have rated five stars for overall satisfaction.
+
+#4 [★★★★★] ✓ Verified
+   "ICE MAKER"
+   I'm happy with the product,fast making ice. I would recommend this product.
+
+#5 [★★★★★] ✓ Verified
+   "Great ice maker"
+   We love this ice maker; it is easy to use and let's you know when we need to add more water
+
+======================================================================
+QUERY: air fryer that makes food crispy like deep fried
+======================================================================
+[Client: 1217.0ms | Server: 222ms | Tokens: 32 | Candidates: 633]
+
+#1 [★★★★★] ✓ Verified
+   "Fit perfectly"
+   Looks great. Have my instant pot and air fryer on it, on my glasstop stove.
+
+#2 [★★★★★] ✓ Verified
+   "Quick and Easy!"
+   Every Rosewill product I've bought has always been phenomenal.<br />This one also lives up to its reputation.<br />It's simple to use and heats up very quickly.<br />It's also super easy to clean and portable.<br />I highly recommend this.<br /><br />Update: I bought a second one for hotpot. It gets hot really fast. This thing is a BEAST
+
+#3 [★☆☆☆☆] ✓ Verified
+   "Disappointing"
+   After weeks of research I decided that this was the unit to get and while I had high expectations I was let down.<br /><br />My main criteria was it’s ability to remove smoke, steam and odors while cooking. I followed all the instructions, have a great custom duct, etc. the reality is that If I stir fry on high heat or use a grill pan to grill a steak I still have to open all my windows of the house gets smokey.<br /><br />This unit is easy to install<br /><br />This unit looks nice<br /><br />This unit has an annoying chime<br /><br />This unit is very loud<br /><br />This unit doesn’t move smoke and fumes as well as I would like.
+
+#4 [★★★★☆] ✓ Verified
+   "Don't get it confused with the full size one"
+   If you are buying based off the infomercials, you might be disappointed.  This does not have the same air flow and you will need to flip your food half way through the process.  That being said.  It works well and browns the meat.<br /><br />One annoying thing is that the plexiglass middle seems to separate from the top piece that has the handle too easily.  It is supposed to come apart for washing it, but mine tends to come off whenever I take my food out.  Otherwise, it probably would have been 5/5 stars.
+
+#5 [★★★★★] ✓ Verified
+   "Works perfect for my Kenmore"
+   Perfect and about a quarter of the cost from local dealer
+
+======================================================================
+QUERY: toaster that makes bagels crispy outside soft inside
+======================================================================
+[Client: 2619.1ms | Server: 222ms | Tokens: 32 | Candidates: 675]
+
+#1 [★★★★★] ✓ Verified
+   "Works great"
+   Don't buy the off brands, they DO NOT WORK.  This one works great
+
+#2 [★★★★★] ✓ Verified
+   "Quick and Easy!"
+   Every Rosewill product I've bought has always been phenomenal.<br />This one also lives up to its reputation.<br />It's simple to use and heats up very quickly.<br />It's also super easy to clean and portable.<br />I highly recommend this.<br /><br />Update: I bought a second one for hotpot. It gets hot really fast. This thing is a BEAST
+
+#3 [★★★★★] 
+   "So far, so good"
+   We purchased the Samsung RSG257AARS a week ago to replace our old Whirlpool (around 25 years old) that chugged along like a locomotive and sounded like one too.<br /><br />It's still early, but thus far I have to give the Samsung a big thumbs up.<br /><br />Pluses:<br />1) Very attractive design inside and out.<br />2) The interior theatre lighting is a nice touch.<br />3) Very effective cooling.<br />4) Exceptionally quiet.<br />5) Simple-to-use controls<br /><br />Minuses:<br />1) The shelving has limited adjustment capability.<br />2) The crisper drawers pull out only half-way, so access is a little compromised.<br />3) The freezer should have a special slot for pizza boxes to be stored upright.<br /><br />Side note: This model has a stainless steel finish and a great cleaner to use is Weiman's Stainless Steel Cleaner and Polish.<br /><br />EDIT:  (7/18/12)  We've now owned this Samsung for nearly three years and are very happy with the purchase.  The 5 stars rating remains accurate insofar as our experience is concerned.  We've had zero problems with this product.  It's super quiet.  Keeps food consistently cold.  And, for us at least, the ice maker works well.<br /><br />EDIT (3/27/13) Still lovin' the fridge.  Zero problems.  Quiet.  Nice.<br /><br />Edit (2/9/14) Going on 5 years now, and absolutely no trouble.  Sorry to read about some of the problems others have experienced.  Maybe we just got lucky.  Maybe Samsung has quality control problems.  Maybe all refrigerators have their supporters and critics.  All I can say is our Samsung has been trouble-free.
+
+#4 [★★★★★] ✓ Verified
+   "Works perfect for my Kenmore"
+   Perfect and about a quarter of the cost from local dealer
+
+#5 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+======================================================================
+QUERY: rice cooker that makes sushi rice perfectly sticky
+======================================================================
+[Client: 2046.3ms | Server: 221ms | Tokens: 32 | Candidates: 565]
+
+#1 [★★★★☆] ✓ Verified
+   "Same as original."
+   Seems to be a perfect replacement for the Cuisinart product.
+
+#2 [★★★★★] ✓ Verified
+   "Works perfect for my Kenmore"
+   Perfect and about a quarter of the cost from local dealer
+
+#3 [★★★★★] ✓ Verified
+   "Five Stars"
+   it works amazing and makes ice fast I loooooooove it!!!!
+
+#4 [★★★★★] ✓ Verified
+   "very cool"
+   bigger than I expected. Cooks popcorn great (and a lot of it!) Glad I got this over an air popper.
+
+#5 [★★★★☆] ✓ Verified
+   "Don't get it confused with the full size one"
+   If you are buying based off the infomercials, you might be disappointed.  This does not have the same air flow and you will need to flip your food half way through the process.  That being said.  It works well and browns the meat.<br /><br />One annoying thing is that the plexiglass middle seems to separate from the top piece that has the handle too easily.  It is supposed to come apart for washing it, but mine tends to come off whenever I take my food out.  Otherwise, it probably would have been 5/5 stars.
+
+======================================================================
+QUERY: bread maker that makes artisan crusty loaves
+======================================================================
+[Client: 1470.5ms | Server: 222ms | Tokens: 32 | Candidates: 630]
+
+#1 [★★★★☆] ✓ Verified
+   "as described"
+   as described and easy to install on my set up, but a little to big but will work okay
+
+#2 [★★★★★] ✓ Verified
+   "Perfect"
+   Easy to install and works perfect.... much better price than buying direct
+
+#3 [★★★★☆] ✓ Verified
+   "Same as original."
+   Seems to be a perfect replacement for the Cuisinart product.
+
+#4 [★★★★★] ✓ Verified
+   "I recommend!"
+   Worked perfectly and much less expensive than at big box stores.
+
+#5 [★★★★★] ✓ Verified
+   "Easy to use!"
+   Easy to install and cheaper than buying from Whirlpool.
+
+======================================================================
+QUERY: waffle maker that makes Belgian style deep pockets
+======================================================================
+[Client: 1276.3ms | Server: 226ms | Tokens: 32 | Candidates: 704]
+
+#1 [★★★★★] 
+   "Tastes great"
+   It's a UKF8001 replacement.<br /><br />All good.<br /><br />As advertised.
+
+#2 [★★★★★] ✓ Verified
+   "Well made"
+   Were well made. Exactly as described. Look very nice. Well packaged. No scratches or dents. Very well satisfied!
+
+#3 [★★★★★] ✓ Verified
+   "excellent."
+   i have an old Kenmore 70 series.<br />good fit, good quality, made in usa.<br />and shipped fast.
+
+#4 [★★★★★] ✓ Verified
+   "I recommend!"
+   Worked perfectly and much less expensive than at big box stores.
+
+#5 [★★★★★] ✓ Verified
+   "Easy to install"
+   Very easy to install! Good quality & great value for the money!
+
+======================================================================
+QUERY: popcorn maker that makes movie theater style popcorn
+======================================================================
+[Client: 1182.5ms | Server: 224ms | Tokens: 32 | Candidates: 634]
+
+#1 [★★★★★] ✓ Verified
+   "Works great"
+   Don't buy the off brands, they DO NOT WORK.  This one works great
+
+#2 [★★★★★] ✓ Verified
+   "Absolutely my favorite kitchen gadget beside blendtec"
+   I will only make coffee in this it beats every coffee maker and live it because it won’t break like the glass ones
+
+#3 [★★★★★] 
+   "Tastes great"
+   It's a UKF8001 replacement.<br /><br />All good.<br /><br />As advertised.
+
+#4 [★★★★☆] ✓ Verified
+   "Works for the price"
+   Perfect fit no leaking. Fresh taste good after 30 days though
+
+#5 [★★★★★] 
+   "So far, so good"
+   We purchased the Samsung RSG257AARS a week ago to replace our old Whirlpool (around 25 years old) that chugged along like a locomotive and sounded like one too.<br /><br />It's still early, but thus far I have to give the Samsung a big thumbs up.<br /><br />Pluses:<br />1) Very attractive design inside and out.<br />2) The interior theatre lighting is a nice touch.<br />3) Very effective cooling.<br />4) Exceptionally quiet.<br />5) Simple-to-use controls<br /><br />Minuses:<br />1) The shelving has limited adjustment capability.<br />2) The crisper drawers pull out only half-way, so access is a little compromised.<br />3) The freezer should have a special slot for pizza boxes to be stored upright.<br /><br />Side note: This model has a stainless steel finish and a great cleaner to use is Weiman's Stainless Steel Cleaner and Polish.<br /><br />EDIT:  (7/18/12)  We've now owned this Samsung for nearly three years and are very happy with the purchase.  The 5 stars rating remains accurate insofar as our experience is concerned.  We've had zero problems with this product.  It's super quiet.  Keeps food consistently cold.  And, for us at least, the ice maker works well.<br /><br />EDIT (3/27/13) Still lovin' the fridge.  Zero problems.  Quiet.  Nice.<br /><br />Edit (2/9/14) Going on 5 years now, and absolutely no trouble.  Sorry to read about some of the problems others have experienced.  Maybe we just got lucky.  Maybe Samsung has quality control problems.  Maybe all refrigerators have their supporters and critics.  All I can say is our Samsung has been trouble-free.
+
+======================================================================
+QUERY: pizza oven that makes Neapolitan wood fired style pizza
+======================================================================
+[Client: 1234.5ms | Server: 222ms | Tokens: 32 | Candidates: 480]
+
+#1 [★★★☆☆] ✓ Verified
+   "Wont work here"
+   Returned to Amazon.  Realized it wouldnt work. Stove is higher than counter.
+
+#2 [★★★★★] ✓ Verified
+   "exact replacement"
+   Works as designed.  It was the perfect replacement piece for my Kenmore oven.
+
+#3 [★★★★★] ✓ Verified
+   "Good product, good fit, fast shipping"
+   Worked like a charm, perfect fit for one of my tenants old GE ovens. Came super quick, much more efficien than having to take the drive to sears
+
+#4 [★★★★★] ✓ Verified
+   "Solid replacement"
+   Perfect fit. Was exactly what our oven needed to fix it. While this isn't an OEM part, it does match and work.
+
+#5 [★★★★★] ✓ Verified
+   "One in the oven..."
+   Fit and works perfectly for a lot less money than others that I've purchased.
+
+======================================================================
+QUERY: espresso machine that makes crema like Italian cafe
+======================================================================
+[Client: 1150.8ms | Server: 213ms | Tokens: 32 | Candidates: 451]
+
+#1 [★★★★★] ✓ Verified
+   "Same for Baristas"
+   I purchased this for my home espresso machine. It works just like the one at the coffee shop! And now I'm an a barista at home too!
+
+#2 [★★★★★] ✓ Verified
+   "Perfect for at-home espresso!"
+   Perfect for my small at-home espresso drink and froth making needs!
+
+#3 [★★★★★] ✓ Verified
+   "Great product 😊"
+   Easy in, easy out. You don't have to put it in a certain way, just drop it in.  Works well with regular grounds or espresso.
+
+#4 [★★★★★] ✓ Verified
+   "Excellent budget-grade milk-frothing pitcher"
+   The pitcher just arrived. It's packaged in a box, wrapped in a plastic bag. This would only be a problem if the carrier mishandles it or, if like mine, Amazon included no stuffing or bubble wrap. (Mine arrived in good condition.)<br /><br />The pitcher is clearly labelled on the inside and fits my thermometer just fine. The intended use is for making lattes and cappuccinos in the mornings. I bought this to replace an 8 oz. X-Chef pitcher which turns out to be too small for my espresso machine, which has a very powerful steam wand.<br /><br />As usual, I washed both pitchers before using, towel-drying the outside, and letting it air dry. No rust, so far, and the stainless looks nice.<br /><br />I will supplement this review after I've used it for a while, and will note any deterioration in the pitcher or if it has other failings.<br /><br />Update: I’ve had this pitcher for several months now. There are no signs whatsoever of rust or any other defects. I use it daily, hand washing and air drying it after each use. It’s perfect for steaming 8 oz of milk, with plenty of room for foam and it makes pouring easy.
+
+#5 [★★★★☆] ✓ Verified
+   "Perfect for traditional macchiatos"
+   *This is a tiny pitcher!!*<br />This is only meant for traditional macchiatos, or to add a bit of cream to coffees or espressos. Very tiny, very cute. Still easy to steam milk in. I love mine :)
+
+======================================================================
+QUERY: meat grinder that handles venison and game meat
+======================================================================
+[Client: 1224.4ms | Server: 218ms | Tokens: 32 | Candidates: 522]
+
+#1 [★★★★★] ✓ Verified
+   "Works great"
+   Don't buy the off brands, they DO NOT WORK.  This one works great
+
+#2 [★★★★☆] ✓ Verified
+   "Don't get it confused with the full size one"
+   If you are buying based off the infomercials, you might be disappointed.  This does not have the same air flow and you will need to flip your food half way through the process.  That being said.  It works well and browns the meat.<br /><br />One annoying thing is that the plexiglass middle seems to separate from the top piece that has the handle too easily.  It is supposed to come apart for washing it, but mine tends to come off whenever I take my food out.  Otherwise, it probably would have been 5/5 stars.
+
+#3 [★★★★★] ✓ Verified
+   "Keureg quality"
+   Designed for use with the “2.0”. Works well for using your own grinds.
+
+#4 [★★★★★] 
+   "Tastes great"
+   It's a UKF8001 replacement.<br /><br />All good.<br /><br />As advertised.
+
+#5 [★★★★☆] ✓ Verified
+   "as described"
+   as described and easy to install on my set up, but a little to big but will work okay
+
+======================================================================
+QUERY: food dehydrator for making beef jerky like store bought
+======================================================================
+[Client: 1257.3ms | Server: 225ms | Tokens: 32 | Candidates: 697]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   Great product!!!! Arrived on time and easy to put in my frig!  Thank you!!!!
+
+#2 [★★★★★] ✓ Verified
+   "Works great."
+   Awesome popper that is saving us money.  It is just as convenient as the pre-packaged stuff, tastier, and healthier.
+
+#3 [★★★★★] ✓ Verified
+   "Great Produce"
+   Great product - lot cheaper - cost more for just 2 anywhere else.  Will definitely by again
+
+#4 [★★★★★] ✓ Verified
+   "Great Product.  Excellent Value"
+   Works great!  Fits our refrigerator perfectly and does an excellent job.  A much better value than buying it from the appliance store.
+
+#5 [★★★★★] ✓ Verified
+   "Good deal"
+   Fit well and seems to work fine. A much better price than in store at Home Depot.
+
+======================================================================
+QUERY: looking for a portable countertop dishwasher that works in small apartment without permanent installation hooks up to sink faucet
+======================================================================
+[Client: 1354.6ms | Server: 230ms | Tokens: 32 | Candidates: 729]
+
+#1 [★★★★★] 
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#2 [★★★★★] 
+   "Made in China. Pricey but it comes in handy. Nice for small spaces."
+   This is a handy… Albeit kind of expensive… “Gadget”. Great for smaller places like studio apartments… Motorhomes… Dorm rooms… And so on. It connects to your faucet and loads from the top. Granted, handwashing can be much faster, but if you really don’t like washing dishes, then this is a cool item. It is easy to load from the top. You can also use it to wash fruits and vegetables.<br /><br />Keep in mind that this small dishwasher must be connected to a faucet. Some other models you pour water into them with a pitcher, but not this one.<br /><br />This dishwasher is made in China and being sold by Chinese company on Amazon. At the current price of 270 bucks I’m sure it’s at least 100 bucks overpriced, but again it comes in very handy.
+
+#3 [★★★★★] ✓ Verified
+   "Great little washer"
+   I've had this little gem now for ten months and I'm still as pleased as the day it arrived.  This is a great dishwasher for tiny apartments (like mine), and for those without a lot of dishes (so, probably not a family of six, let's say).  I find it holds the majority of my dishes (a few huge mixing bowls are a challenge, and my plates do have to tilt just a little to go in, but they are larger than normal plates, so I can't grade down on that), and that it has worked fantastically.  It hooks up easily to my sink, and I love that I can use cold water (which does heat in the washer, so your dishes are getting the benefit of very hot water in the wash!).  Would highly recommend this product.
+
+#4 [★★★★★] 
+   "Say bye bye to hand washing dishes"
+   If you are living in an apartment and don't have a dishwasher you might want to check this out. This is designed to sit on the countertop, draws its water source from the faucet via a included hose, and drains into the sink via provided hose. It plugs into a regular 110v outlet.<br /><br />This unit also has a fruits and veg washing setting which I found pretty interesting!  Remember to clean your filter each use.<br /><br />I wl update as the appliance gets more use
+
+#5 [★★★★★] ✓ Verified
+   "Made some adjustments to make it so worth it!"
+   We’ve been using this mini dishwasher for a few weeks now and I’m impressed with how well it cleans. Usually we just use the “eco” setting without any issue. We’ve made some small adjustments to make this dishwasher work for us. We no longer use dinner sized plates and sometimes our family of three runs it twice per day. I have to hand wash pans because they won’t fit but even so this dishwasher has been a lifesaver and has even helped with my depression. We’d like to get a splitter so we can leave it hooked up to the faucet but we have yet to find the right size for our sink. This appliance is worth it for us.
+
+======================================================================
+QUERY: need a water filter for refrigerator that removes chlorine taste and odor but is cheaper than the brand name filter
+======================================================================
+[Client: 817.4ms | Server: 221ms | Tokens: 32 | Candidates: 612]
+
+#1 [★★★★★] ✓ Verified
+   "Excellent option for refrigerator water filters"
+   This less expensive water filter for the refrigerator works perfectly to filter out bad taste and lasts over 6 months (one person household). I've been using them for years and will never again pay a small fortune for refrigerator water filters at a big box store.
+
+#2 [★★★★★] ✓ Verified
+   "Filters for refrigerator much cheaper then Home Depot"
+   Filters for refrigerator. Easy to install, no nasty taste no taste at all. Will buy again.
+
+#3 [★★★★★] ✓ Verified
+   "Great Replacement Filter"
+   They are just like the ones LG supplied with the refrigerator. The big plus is they are much cheaper through ClearWater. I will reorder when I need them. You should check them out for yourself.
+
+#4 [★★★★★] ✓ Verified
+   "LG LT600P 5231JA2006B Refrigerator Water Filter, 1 Pack"
+   After trying a lower priced &#34;green filter&#34;, I was not happy with the &#34; green filter&#34; taste and returned to using  this LG filter. There is a difference. The LG  LT600P filter produces cleaner tasting water and lasts much longer than the competitor's filter. Its an expensive filter but until I find something else that's equally good I'll stick with LG.
+
+#5 [★★★★☆] ✓ Verified
+   "Great so far"
+   I’ve tried many off brand filters trying to save money on my whirlpool refrigerator but always end up going back to the OEM Everydrop because the off brands give the water a weird taste and odor- chemically, plasticity, musty, etc. I’m thrilled to say that these have a crisp and clean taste that is as good or even better than the brand name. I also love that these have all 3 filtration certifications just like the brand name- 401, 53, and 42. They were easy to install. The flow is definitely less than the oem brand but for the price I am willing to deal with that one flaw. If they got these up to the same .8gpm flow rate these would be 5 star. Time will tell if they last as long but considering I got 3 filters for 2/3 the price of ONE brand name filter I think I will still come out ahead regardless.
+
+======================================================================
+QUERY: want an ice maker that makes the good nugget ice like you get at sonic drive-in not the regular hollow bullet shaped cubes
+======================================================================
+[Client: 841.8ms | Server: 240ms | Tokens: 32 | Candidates: 704]
+
+#1 [★☆☆☆☆] ✓ Verified
+   "Don't Waste Your Money!"
+   We really like nugget ice, so much that we would buy bags of it from Sonic, so we were excited to find the Opal Counter Top Nugget Ice Maker. It was awesome - made great, soft, nugget ice just like it was supposed to - until it didn't. Exactly one year and two weeks after purchase (right after the one-year warranty), it stopped making ice. We tried all of the trouble-shooting - reset it, unplug it and wait a few hours, clean with vinegar, check the water lines. Nothing helped. It will make about a tablespoon of ice and then quit. Disappointing that a $580 appliance is only good for one year (and two weeks). If you want to pay an average of $50/month for the good ice for about a year, go for it. Just don't be surprised when it breaks.<br /><br />Don't be fooled by all of the 5-star reviews. I would have given it a 5-star review as well for the first 12 months. Check out all of the 1-star reviews - plenty of other folks have had the same experience.
+
+#2 [★★★★☆] 
+   "The “good” ice."
+   I’ve been wanting a nugget ice maker for a while. I’m mostly happy with this one. It’s simple to operate, even though the manual makes it seem more complicated. It makes the ice pretty quickly. It has network capability to connect to your mobile device through a downloadable app. It also has a filter to help purify the water before freezing.<br /><br />A couple things dropped it to four stars. For one, the only way to retrieve the ice is through a front dispenser that takes a bit of time. There is a small flap at the top where you *could* scoop it out, but it wouldn’t be easy. My other issue is that once the ice is made, it isn’t kept cold so it needs to be removed soon. With a $400 price I think it should have a refrigerated compartment.
+
+#3 [★★★★★] ✓ Verified
+   "GE Opal for half the $"
+   I over-research all large purchases and this was no exception. Wanted a nugget ice maker for our new wet bar and was all set to buy the GE Opal but was concerned about all the lukewarm reviews given its hefty price tag. After reading reviews for every competitive offering on Amazon decided to get the Crownful and so glad I did. Works great - love the easy access tilt up door and removable basket. Also love that you pour additional water right into same compartment instead of messing with removable tank (like our keurig has). If you zoom in on the photos and compare to the Opal they make identical ice. And this thing makes LOTS of it. Started producing in about 20 minutes and even with me scooping it up as fast as it could make it to put in a couple of mixed drinks it filled its basket in no time and has had no trouble keeping up since. The ice storage must be well insulated because even overnight there’s still plenty of unmelted ice the next morning. I think what pushed me to pull the trigger on this one was several reviews from people who’d gone through 2 or 3 Opals in a very short period of time. I’m thinking you could buy 2 of these for what the Opal costs and literally have a spare. Oh and here’s what else my research revealed: this and the Opal are the only 2 nugget ice makers Amazon sells an extended warranty on but it was $90 on the Opal and $12 on this one - that’s a no brainer. But it gets better - if you register it with the manufacturer they upgrade the first year limited warranty to a one year replacement warranty. Buy this! You won’t be disappointed.
+
+#4 [★★★★☆] 
+   "Nice Ice"
+   This ice maker is very easy to use. It makes bullet shaped cubes that are great in blender drinks. It is efficient but a tad noisy. Have had no performance isdues. The self cleaning function is a plus. It is super simple and does a hooid job. The ice does not store in the maker, it mudt GB be removed. Otherwise it melts and the water is recycled to make more ice. The ice tastes good and is chewable if you are into that. The unit is vom pop act and does not take up too much counter space. The ice tastes clean and fresh. There is a handle so this can be transported without fuss. Nice.
+
+#5 [★★★★☆] 
+   "Nuggets"
+   This ice maker is easy to use. It is fairly quiet and very efficient. It makes nugget ice. The cubes are small, soft and chewable. No odd taste. It recycles melted ice and is simple to clean. Working well so far.
+
+======================================================================
+QUERY: searching for a vacuum cleaner that works well on both hardwood floors and thick carpet without switching settings manually
+======================================================================
+[Client: 871.1ms | Server: 223ms | Tokens: 32 | Candidates: 853]
+
+#1 [★★★★★] ✓ Verified
+   "5 stars"
+   Little different from my usual, but works just as well
+
+#2 [★★★★★] ✓ Verified
+   "Works great"
+   Don't buy the off brands, they DO NOT WORK.  This one works great
+
+#3 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#4 [★★★★★] ✓ Verified
+   "Great buy"
+   Works just like the original part and very eaSY TO INSTALL
+
+#5 [★★★★☆] ✓ Verified
+   "Four Stars"
+   It works perfectly and costs less than the one at Lowes
+
+======================================================================
+QUERY: need a quiet bedroom fan that oscillates and has a remote control so I don't have to get out of bed
+======================================================================
+[Client: 876.2ms | Server: 231ms | Tokens: 32 | Candidates: 723]
+
+#1 [★★★★★] ✓ Verified
+   "Good choice!"
+   Works fine and a lot cheaper than my previous replacements.
+
+#2 [★★★★★] ✓ Verified
+   "Works for me!"
+   Easy to install. Instructions included and works great.
+
+#3 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#4 [★★★★★] ✓ Verified
+   "Perfect fit."
+   Easy installation, all parts there and works great.
+
+#5 [★★★★★] ✓ Verified
+   "Easy to order and works great!"
+   Needed it and bought it on Amazon.  It is so easy to order things like this and not drive around looking for one.  It works great!
+
+======================================================================
+QUERY: looking for a space heater that is safe to leave on overnight and won't be a fire hazard
+======================================================================
+[Client: 847.0ms | Server: 226ms | Tokens: 32 | Candidates: 776]
+
+#1 [★★★★★] ✓ Verified
+   "Works fine."
+   Fit and worked perfectly.  Though I suspect not as hot as the original which took 40 years to burn out.
+
+#2 [★★★☆☆] ✓ Verified
+   "nothing amazing"
+   runs for about ten miuets then shuts off will come on again and run for a little while then shut off again if your looking for something defrost a spot bigger than ur fist look so where else.
+
+#3 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Great way not to just blow all that warm humidity out side. Perfect for winter!
+
+#4 [★★★★★] ✓ Verified
+   "Works perfect for my Kenmore"
+   Perfect and about a quarter of the cost from local dealer
+
+#5 [★★★★★] ✓ Verified
+   "Good choice!"
+   Works fine and a lot cheaper than my previous replacements.
+
+======================================================================
+QUERY: want a coffee maker that grinds beans fresh and brews directly into a thermal carafe not a glass pot
+======================================================================
+[Client: 839.1ms | Server: 235ms | Tokens: 32 | Candidates: 774]
+
+#1 [★★★★★] ✓ Verified
+   "Great product 😊"
+   Easy in, easy out. You don't have to put it in a certain way, just drop it in.  Works well with regular grounds or espresso.
+
+#2 [★★★★★] ✓ Verified
+   "Works perfect"
+   Works great with the Moccamaster Coffee maker. I love it!
+
+#3 [★★★★★] ✓ Verified
+   "An excellent addition to your Mr. Coffee setup."
+   I really like this product alternative to the common paper filter. Were saving some trees and paper. I bought my wife the Mr. Coffee BVMC-SJX33GT-AM 12-Cup Programmable Coffee Maker with Thermal Carafe Option. (I bought her the thermal carafe too). This fit perfectly in the coffee grind bale and will save us on future filter purchases. We had a simialer model in her previous Mr. Coffee machine and this one is superior. It's very economical and there are a few other sizes available that will fit your Mr. Coffee machine as well. I highly recommend the seller and manufacturer. I'm very pleased.
+
+#4 [★★★★★] ✓ Verified
+   "Best coffee maker (cone) I have ever found"
+   This is one of the best things for making coffee.  It fits in ALL of my thermal carafes, there may be some it doesn't but it has worked in all of mine.  It is more narrow than other drip coffee filters which makes a little stronger brew.  I have no idea why it works that way but it does. I use the size 6 coffee filters.  Yes you have to heat the water separately but, for me, it is worth it.  There is a rather zen thing about it all.<br /><br />Plus, you get to buy the carafe(s) you want so you can get a cool carafe.  I really can't recommend this simple thing high enough.  If you are a coffee nerd as opposed to a hipster -- just relax for 5 minutes and make better coffee.  Well that really is enough about that!
+
+#5 [★★★★★] ✓ Verified
+   "As good, less expensive!"
+   Bought for Kuerig, works as needed but for less money. Definitely recommend!
+
+======================================================================
+QUERY: need an air purifier for someone with severe allergies that removes pollen dust and pet dander
+======================================================================
+[Client: 837.9ms | Server: 223ms | Tokens: 32 | Candidates: 691]
+
+#1 [★★★★★] ✓ Verified
+   "... its keeping bacteria out of the air as its recommended."
+   Just started using this product and hopefully its keeping bacteria out of the air as its recommended.<br />Betty
+
+#2 [★★★★★] ✓ Verified
+   "better"
+   fits perfectly, seems to allow more hunidity into the air and is the staying cleaner longer than the previous one
+
+#3 [★★★★★] ✓ Verified
+   "Five Stars"
+   Great product, cuts down on cleaning time and odors.
+
+#4 [★★★★★] ✓ Verified
+   "Even Makes My Humidifier Work Better!"
+   Been using this for several years and would not be without it!
+
+#5 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+======================================================================
+QUERY: searching for a dehumidifier that can handle a damp basement and drains continuously through a hose
+======================================================================
+[Client: 879.0ms | Server: 221ms | Tokens: 32 | Candidates: 723]
+
+#1 [★★★★★] ✓ Verified
+   "Even Makes My Humidifier Work Better!"
+   Been using this for several years and would not be without it!
+
+#2 [★★★★★] ✓ Verified
+   "Good choice!"
+   Works fine and a lot cheaper than my previous replacements.
+
+#3 [★★★★★] ✓ Verified
+   "works great"
+   I bought this as a replacement for our humidifier and it fit in easily and works great.  I would highly recommend it.
+
+#4 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#5 [★★★★★] ✓ Verified
+   "Perfect!"
+   This seems to be perfect.  Works great so far and WAAAAY cheaper then going through over rated sears.<br />Thank you.
+
+======================================================================
+QUERY: looking for a chest freezer that is energy efficient and doesn't cost much to run all year
+======================================================================
+[Client: 1411.2ms | Server: 230ms | Tokens: 32 | Candidates: 721]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   Worked great for our fridge and cheaper than other brands.
+
+#2 [★★★★★] ✓ Verified
+   "Works perfect for my Kenmore"
+   Perfect and about a quarter of the cost from local dealer
+
+#3 [★★★★★] ✓ Verified
+   "Great buy"
+   Works great and at a much cheaper price than the branded one.
+
+#4 [★★★★★] ✓ Verified
+   "As good, less expensive!"
+   Bought for Kuerig, works as needed but for less money. Definitely recommend!
+
+#5 [★★★★★] ✓ Verified
+   "Good Freezer"
+   It works good, a little small but still works good.
+
+======================================================================
+QUERY: want a washing machine that handles large comforters and bulky items without getting off balance
+======================================================================
+[Client: 1171.4ms | Server: 225ms | Tokens: 32 | Candidates: 677]
+
+#1 [★★★★★] ✓ Verified
+   "Great washer, saving me from visiting the local laundromat"
+   I have a small cabin in the mountains that did not have connections for a large washer/dryer...so I bought this smaller machine and dryer to save me from having to go out to the laundromat.  Especially when we get a couple of feet of snow...doing laundry at home is so much better.  It fits everything nicely, even large 'thick' towels.  I have also done CalKing sheets in it too, full set w/ pillowcases at the same time.<br /><br />I notice the machine can get out of balance with heaver/larger items, so sometimes I need to split those up, but in general it works out very well.  No leaking (I have had it about 4 months so far), if it gets out of balance the machine automatically adjusts itself and sometimes I don't need to do anything at all.  I find it re-balances the load better than I can - it is pretty smart - which surprised me the first time it did that!<br /><br />It's a keeper and a lifesaver!  My one gripe is I should have bought the slightly larger version of this machine - I might have been able to get my quilts done in it.  Right now, I will have to still go to the laundromat a few times a year to get larger stuff like that washed.
+
+#2 [★★★★☆] ✓ Verified
+   "Great for Daily Use"
+   Because the laundromat is a 15 minute drive from my place, this tiny washing machine is a godsend. It can only handle up to a day's worth of laundry, but that's good enough for me. Larger clothing items like blankets and jackets are too big for it. A tip is to keep the spinning clothes centered to avoid loud noises.
+
+#3 [★★★★★] 
+   "Awesome little "machine""
+   I ordered this directly from the Laundry Alternative and I'm very happy with the purchase.  My biggest reason for purchasing it is the high electric rates we pay here in NH.  I've tried washing a variety of items in the WonderWash and have come to a &#34;compromise&#34; method.  Since they are heavy when wet and are bulky anyways, I still wash jeans and towels in the regular washing machine but everything else gets washed in the WonderWash.  I'll do a few loads (enough to equal what can go in the big washer), and then instead of wringing everything by hand, I'll squeeze out some water and put the items into a trash bag lined clothes basket and then pop all the items into the regular washer just for a drain and spin cycle.  Since my big washer is a front loader, this gets out most of the extra water while only using the machine for about 10 minutes.  For me, this method works great.<br /><br />Update:  Since reviewing this machine, I have purchased the Mini Countertop Spin Dryer from the Laundry Alternative.  I also have written a review on that dryer giving it a high rating also.  I do now wash jeans in the WonderWash, but towels still get put in the large washing machine.  This combination is saving me $40 per month over using my big washing machine and occasional use of my large full-sized dryer.  I also plan to take this on vacation this summer since I think I'd be lost without it now.  :-)<br /><br />This product was a personal purchase for myself at the normal retail price. I am reviewing it solely because I want to share my experience with other potential customers. I have received no compensation for my review nor do I have any relationship with the seller or manufacturer of this product.
+
+#4 [★★★★☆] 
+   "Small Spaces, Small Loads"
+   This compact washer is simple to set up. It works surprisingly well with a few caveats. First keep the loads small. This will handle underwear, socks, light tops, baby clothes not bedding, or heavily soiled items. It cleans and rinses efficiently. Clothes come out nice and clean. It is easy to use. There is a pump to help drain. It is portable and can be tucked away when not in use.
+
+#5 [★★★★★] 
+   "Fantastic for small loads"
+   [[VIDEOID:ccc097e5bd804d0eeecff2aeec3567a3]] This folding, portable washing machine is fantastic!! It is easy to set up, fill, wash and spin. It's suction cups on the bottom keep it from moving. My first load was a bunch of nasty masks from my husband that he uses at work. A small amount of Gain and about 20 minutes and they were super clean and in my little RV dryer. Great for underwear, kitchen towels, etc. I have a large RV washer but hate to set it up for little things. Problem solved. Worth every penny, to me. Fabulous product found on Amazon!!
+
+======================================================================
+QUERY: need a microwave that is simple to use for elderly parent with just a few buttons not too complicated
+======================================================================
+[Client: 1440.7ms | Server: 233ms | Tokens: 32 | Candidates: 793]
+
+#1 [★★★★★] ✓ Verified
+   "Easy to use!"
+   Easy to install and cheaper than buying from Whirlpool.
+
+#2 [★★★★★] ✓ Verified
+   "not much to say"
+   simple to use and comes with clear, easy to read instruction card.
+
+#3 [★★★★★] ✓ Verified
+   "Good choice!"
+   Works fine and a lot cheaper than my previous replacements.
+
+#4 [★★★★★] ✓ Verified
+   "Easy and simple to use."
+   Heat resistant, easy to use, easy to clean and easy to install.
+
+#5 [★★★★★] ✓ Verified
+   "Easy and simple"
+   worked great easy to install,  gives you everything you need.
+
+======================================================================
+QUERY: searching for a garbage disposal that can handle fibrous vegetables like celery and artichokes
+======================================================================
+[Client: 1187.6ms | Server: 229ms | Tokens: 32 | Candidates: 714]
+
+#1 [★★★★☆] ✓ Verified
+   "Great find"
+   Needed this part for our new disposal.  If course, found it on Amazon and was delivered 2 days later.  All fixed !
+
+#2 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#3 [★★★★☆] ✓ Verified
+   "works."
+   cheaper than the store's I saw when shopping. works just fine, easy to clean, tapped against waste basket and emptied almost completely.
+
+#4 [★★★★★] ✓ Verified
+   "Five Stars"
+   Great product, cuts down on cleaning time and odors.
+
+#5 [★★★★☆] ✓ Verified
+   "as described"
+   as described and easy to install on my set up, but a little to big but will work okay
+
+======================================================================
+QUERY: looking for a range hood that vents outside not recirculating and fits 30 inch range
+======================================================================
+[Client: 856.5ms | Server: 229ms | Tokens: 32 | Candidates: 711]
+
+#1 [★★★★★] ✓ Verified
+   "Love the range hood."
+   Love the product. Easy to install. I installed at 31 inches above range to get good head clearance. I'm 6ft tall. I have concrete walls so I had to burst a 6 inch hole in the wall with a hilti hammer drill. You have to purchase a vent for the outside wall separately.
+
+#2 [★★★★☆] ✓ Verified
+   "Fit well, however"
+   Could most likely get it cheaper at Home Depot; if go w/off brand
+
+#3 [★★★★★] ✓ Verified
+   "Five Stars"
+   Perfect. It is actually better than what came with the range hood
+
+#4 [★☆☆☆☆] ✓ Verified
+   "Definitely not universal."
+   Doesn't fit my machine by a long shot. Not universal as advertised.
+
+#5 [★★★★★] ✓ Verified
+   "A yes, buy it!"
+   Really nice vent attachment.  The negative comments about it being able to come off can be fixed by an additional screw through both inner and outer ring after installation.<br /><br />I would buy it again!
+
+======================================================================
+QUERY: want a refrigerator with adjustable shelves that can fit tall bottles and wide platters
+======================================================================
+[Client: 828.7ms | Server: 227ms | Tokens: 32 | Candidates: 693]
+
+#1 [★★★★★] ✓ Verified
+   "I recommend!"
+   Worked perfectly and much less expensive than at big box stores.
+
+#2 [★★★★☆] ✓ Verified
+   "Fit well, however"
+   Could most likely get it cheaper at Home Depot; if go w/off brand
+
+#3 [★★★★★] ✓ Verified
+   "Great purchase!"
+   I love that they're rectangle. They fit in the refrigerator so much better. Absolutely perfect!
+
+#4 [★★★★★] ✓ Verified
+   "Great buy"
+   Works great and at a much cheaper price than the branded one.
+
+#5 [★★★★★] ✓ Verified
+   "Works great"
+   Just like they ones you get in the store just a few dollars cheaper
+
+======================================================================
+QUERY: water filter better than Brita removes more contaminants
+======================================================================
+[Client: 771.8ms | Server: 214ms | Tokens: 32 | Candidates: 428]
+
+#1 [★★★☆☆] ✓ Verified
+   "Good filter but expensive"
+   Excellent at removing stuff from my water. Still expensive to replace.
+
+#2 [★★★★★] ✓ Verified
+   "Noticable improvement"
+   Th water is noticeably better than the the original filter.
+
+#3 [★★★★☆] ✓ Verified
+   "Better flow, less filling."
+   Fits perfectly and seems to work fine.  Better water flow than the previous filter.  Time will tell.
+
+#4 [★★★★★] ✓ Verified
+   "Filter works great."
+   Quickly installs, takes the chemical taste out of city water.
+
+#5 [★★★★★] ✓ Verified
+   "These are better than the paper filters"
+   Better than paper filters.  Last a few months depending on your water.
+
+======================================================================
+QUERY: vacuum cleaner comparable to Dyson but more affordable
+======================================================================
+[Client: 1120.0ms | Server: 223ms | Tokens: 32 | Candidates: 525]
+
+#1 [★★★★★] ✓ Verified
+   "Five Stars"
+   seems to work as good as the more expensive filters.
+
+#2 [★★★★★] ✓ Verified
+   "Five Stars"
+   A lot cheaper than the OEM ones and great water flow.
+
+#3 [★★★★★] ✓ Verified
+   "Great product Great Price"
+   Much less expensive than the name brand and does a great job.
+
+#4 [★★★★★] ✓ Verified
+   "Cheaper here"
+   Great deal for this money. Are use a damp microfiber to clean
+
+#5 [★★★★★] ✓ Verified
+   "Great buy"
+   Works great and at a much cheaper price than the branded one.
+
+======================================================================
+QUERY: coffee maker as good as Chemex pour over but automatic
+======================================================================
+[Client: 1531.2ms | Server: 222ms | Tokens: 32 | Candidates: 468]
+
+#1 [★★★★★] ✓ Verified
+   "Truly an outstanding coffee maker!"
+   I have used many a coffee maker, Chemex's, Moka Pot's, French Presses, and Siphon styles. This may not be quite my favorite as the Siphon, but it is excellent. I thought when I got it "This has got to be overhyped, it's just a thick plastic-y thing!" but it really is as good as people say. Looks are deceiving. It is wonderful to use, and dead simple. Put your filter in, put the grounds in, put the water in, stir it a bit, put the plunger on, and plunge. It makes excellent coffee, very full bodied, but still with good clarity due to the paper filter. Absolutely no sediment at the bottom of the cup either! Clean up is a breeze, just take the filter holder off, and pop the filter and most of the grounds out with the plunger, rinse, and it's clean. It's so simple and easy, absolutely zero fuss! I recommend this maker for anyone wanting for a quick and easy to clean maker, or for getting into manual coffee making. It requires very little skill, but it has alot you can do, so you'll never truly master it. I bought one, and recommended it highly enough that a friend of mine did too.
+
+#2 [★★★★★] ✓ Verified
+   "Filters"
+   works well. made for years specificly for this Chemex coffee maker
+
+#3 [★★★★★] ✓ Verified
+   "Excellent Product."
+   We have had many types of coffee makers but the Chemex out shines them all.  Simple to use and these filters work very well.
+
+#4 [★★★★★] 
+   "better than expected"
+   good to use for multiple time + good for pour-over setting with chemex
+
+#5 [★★★★★] ✓ Verified
+   "Five Stars"
+   Chemex method makes the best coffee, hands down, but the filters can be hard to find.
+
+======================================================================
+QUERY: blender alternative to Vitamix similar performance lower price
+======================================================================
+[Client: 1361.5ms | Server: 222ms | Tokens: 32 | Candidates: 609]
+
+#1 [★★★☆☆] ✓ Verified
+   "Cheaper"
+   Found a cheaper generic one. Seems to be as good for half the price.
+
+#2 [★★★★★] ✓ Verified
+   "I recommend!"
+   Worked perfectly and much less expensive than at big box stores.
+
+#3 [★★★★★] ✓ Verified
+   "As good, less expensive!"
+   Bought for Kuerig, works as needed but for less money. Definitely recommend!
+
+#4 [★★★★★] ✓ Verified
+   "Works great"
+   Just like they ones you get in the store just a few dollars cheaper
+
+#5 [★★★★★] ✓ Verified
+   "Will buy again!"
+   Price is good, ease of use is good. Cheaper than at the store by a considerable amount.
+
+======================================================================
+QUERY: air purifier equivalent to Molekule but without subscription
+======================================================================
+[Client: 1426.3ms | Server: 223ms | Tokens: 32 | Candidates: 548]
+
+#1 [★★★★★] ✓ Verified
+   "Seems to be a good value"
+   Good price and seems to be just as effective as the original GE filter.
+
+#2 [★★★★★] ✓ Verified
+   "Better filter, good price."
+   An upgrade from the older filter, and a good price.
+
+#3 [★★★★★] ✓ Verified
+   "great filter"
+   works great without the high expense of a name brand filter.
+
+#4 [★★★★★] ✓ Verified
+   "Works great!"
+   Works as advertised. Much cheaper than the LG filter!
+
+#5 [★★★★★] ✓ Verified
+   "good deal"
+   I have not noticed any difference from the more expensive filters
+
+======================================================================
+QUERY: robot vacuum as smart as Roomba j7 but cheaper
+======================================================================
+[Client: 822.9ms | Server: 223ms | Tokens: 32 | Candidates: 557]
+
+#1 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#2 [★★★★★] ✓ Verified
+   "Great buy"
+   Works great and at a much cheaper price than the branded one.
+
+#3 [★★★★★] ✓ Verified
+   "I recommend!"
+   Worked perfectly and much less expensive than at big box stores.
+
+#4 [★★★★★] ✓ Verified
+   "Great product Great Price"
+   Much less expensive than the name brand and does a great job.
+
+#5 [★★★★☆] ✓ Verified
+   "Much Cheaper than original"
+   Same functionality as original, 30% cheaper, same functionality and environmentally friendly.  I would buy again and recommend to friends and family.
+
+======================================================================
+QUERY: stand mixer comparable to KitchenAid but lighter weight
+======================================================================
+[Client: 1134.2ms | Server: 226ms | Tokens: 32 | Candidates: 471]
+
+#1 [★★★★★] ✓ Verified
+   "Works well"
+   Bought it for a Kitchen aid which died right after I got it.  I bought a Bosch dishwasher and it fits that too.  I like it better than the one that came with the Bosch.
+
+#2 [★★★★★] ✓ Verified
+   "As good, less expensive!"
+   Bought for Kuerig, works as needed but for less money. Definitely recommend!
+
+#3 [★★★★★] ✓ Verified
+   "Works perfectly"
+   Just what I needed for my Kitchen Aid refrigerator.
+
+#4 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#5 [★★★★★] ✓ Verified
+   "Kitchenaid Superba"
+   Inexpensive. Pretty easy to install w YouTube video once we opened up the washer guts. Sure beats the annoyance of the appliance parts store.<br /><br />Thanks Amazon
+
+======================================================================
+QUERY: espresso machine like Breville Barista but easier to use
+======================================================================
+[Client: 772.0ms | Server: 217ms | Tokens: 32 | Candidates: 483]
+
+#1 [★★★★★] ✓ Verified
+   "Great product 😊"
+   Easy in, easy out. You don't have to put it in a certain way, just drop it in.  Works well with regular grounds or espresso.
+
+#2 [★★★★★] ✓ Verified
+   "Same for Baristas"
+   I purchased this for my home espresso machine. It works just like the one at the coffee shop! And now I'm an a barista at home too!
+
+#3 [★☆☆☆☆] ✓ Verified
+   "Definitely not as easy to use as the original"
+   Takes way too long to line up slots. Constantly irritating me while I'm trying to use it. Wait till the bottom falls off inside the coffee maker and you have to fish it out with your fingers. The one that comes with the machine is a wayyy better design
+
+#4 [★★★☆☆] ✓ Verified
+   "Overpriced"
+   These worked fine for my Breville espresso machine but the price is a bit expensive.
+
+#5 [★★★☆☆] ✓ Verified
+   "Three Stars"
+   Works better than the brew and save, but the keurig still gets plugged easy
+
+======================================================================
+QUERY: food processor similar to Cuisinart but quieter motor
+======================================================================
+[Client: 820.5ms | Server: 218ms | Tokens: 32 | Candidates: 513]
+
+#1 [★★★★☆] ✓ Verified
+   "Same as original."
+   Seems to be a perfect replacement for the Cuisinart product.
+
+#2 [★★★★★] ✓ Verified
+   "Five Stars"
+   Purchased for a Cuisinart SS10 and they work great!!
+
+#3 [★★★★★] ✓ Verified
+   "Worthy"
+   Works in my Cuisinart DCC-500 coffee maker.  Satisfied with this product.
+
+#4 [★★★★★] ✓ Verified
+   "Bringing it clean"
+   This is a good machine. It gets the dishes clean, it is quiet, and efficient.  Great value!
+
+#5 [★★★★★] ✓ Verified
+   "Original equipment replacement"
+   Stick with Cuisinart; you will never lose on quality.
+
+======================================================================
+QUERY: pressure cooker like Instant Pot but with better sealing
+======================================================================
+[Client: 1001.8ms | Server: 221ms | Tokens: 32 | Candidates: 587]
+
+#1 [★★★★★] ✓ Verified
+   "As good, less expensive!"
+   Bought for Kuerig, works as needed but for less money. Definitely recommend!
+
+#2 [★★★★★] ✓ Verified
+   "Fit perfectly"
+   Looks great. Have my instant pot and air fryer on it, on my glasstop stove.
+
+#3 [★★★☆☆] ✓ Verified
+   "Works as advertised"
+   It was a bit of a hassle removing the old one but the water tastes better and the flow/pressure is much better.
+
+#4 [★★★★★] ✓ Verified
+   "Quick and Easy!"
+   Every Rosewill product I've bought has always been phenomenal.<br />This one also lives up to its reputation.<br />It's simple to use and heats up very quickly.<br />It's also super easy to clean and portable.<br />I highly recommend this.<br /><br />Update: I bought a second one for hotpot. It gets hot really fast. This thing is a BEAST
+
+#5 [★★★★★] ✓ Verified
+   "Nothing like an aeropress!"
+   I have one at home and one at work, so I buy a two pack every 6 months or so. I can't be caught without!
+
+
+============================================================
+BENCHMARK SUMMARY
+============================================================
+
+Query Statistics:
+  Total user queries:     100
+  Total tpuf API queries: 6400
+  Queries per user query: 64.0
+  Avg query tokens:       32.0
+  Avg candidates (stage1): 555.0
+
+Client-Side Latency (includes network + embedding):
+  P50: 971.12 ms
+  P90: 1531.43 ms
+  P99: 2329.74 ms
+  Avg: 1064.46 ms
+
+Server-Side Latency (sum of tpuf server_total_ms across stages):
+  P50: 221 ms
+  P90: 229 ms
+  P99: 240 ms
+  Avg: 221 ms
+
+  First stage avg:  92 ms
+  Second stage avg: 129 ms
+
+Billing:
+  Total bytes queried:  3,825,468,320,000
+  Total bytes returned: 14,643,929
+
+============================================================
+Benchmark Complete!
+============================================================

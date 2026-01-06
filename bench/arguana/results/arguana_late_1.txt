@@ -1,0 +1,43 @@
+============================================================
+Two-Stage Late Interaction Benchmark - ArguAna Dataset
+============================================================
+
+Configuration:
+  Dataset:            arguana
+  Namespace:          arguana-late-bench
+  Jina Model:         jina-colbert-v2
+  Embedding Dim:      128
+  Batch Size:         8
+  Top K:              10
+  First Stage Top K:  50
+  Second Stage Top K: 256
+  Timestamp:          2026-01-03T14:54:59.119079
+
+Loading ArguAna dataset...
+  Corpus:  8674 documents
+  Queries: 1406
+  QRels:   1406 query-relevance pairs
+
+----------------------------------------
+Resuming from checkpoint: 8674 docs already indexed
+Indexing 0 documents (multi-vector)...
+  All documents already indexed!
+Total indexing time: 0.00s
+
+----------------------------------------
+Searching 1406 queries (two-stage late interaction)...
+
+Latency Statistics (search only, excludes embedding):
+  Average: 919.88 ms
+  P50:     878.72 ms
+  P95:     1310.40 ms
+  P99:     1542.22 ms
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.2919
+  Recall@10: 0.6102
+
+============================================================
+Benchmark Complete!
+============================================================

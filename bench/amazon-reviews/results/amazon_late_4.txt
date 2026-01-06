@@ -1,0 +1,290 @@
+============================================================
+Late Interaction Search - Amazon Reviews Dataset
+============================================================
+
+Configuration:
+  Dataset:            amazon-reviews
+  Namespace:          amazon-reviews-late-bench
+  Jina Model:         jina-colbert-v2
+  Embedding Dim:      128
+  Num Reviews:        15000
+  Batch Size:         8
+  Top K:              5
+  First Stage Top K:  50
+  Second Stage Top K: 256
+  Num Queries:        10
+  Timestamp:          2026-01-05T16:15:41.680466
+
+----------------------------------------
+Found 1 data file(s)
+  Loading Appliances.jsonl.gz...
+  Loaded 15000 reviews
+
+----------------------------------------
+Skipping indexing (SKIP_INDEXING=True)
+Total indexing time: 0.00s
+
+----------------------------------------
+
+Searching 10 queries...
+
+======================================================================
+QUERY: countertop dishwasher with fruit and vegetable wash cycle
+======================================================================
+[Latency: 882.5ms, Candidates: 435]
+
+#1 [★★★★★] 
+   "Wonderful"
+   This portable dishwasher is amazing. Perfect for small spaces it is simple to set up and use. It does a terrific job. There are a number of settings: normal, rapid, fruit, steam and glass. ,The fruit option insures your produce is free of dirt. No detergent needed for this cycle.  It uses powdered dishwasher detergent or those dishwasher tabs. The capacity is small but it saves you from running the full sized washer. It is portable and ideal for rvs or camping. My kitchen isa disaster due to a pandemic interrupted andcpostponed rennovation. This countertop appliance makes life easier.
+
+#2 [★★★★★] 
+   "Say bye bye to hand washing dishes"
+   If you are living in an apartment and don't have a dishwasher you might want to check this out. This is designed to sit on the countertop, draws its water source from the faucet via a included hose, and drains into the sink via provided hose. It plugs into a regular 110v outlet.<br /><br />This unit also has a fruits and veg washing setting which I found pretty interesting!  Remember to clean your filter each use.<br /><br />I wl update as the appliance gets more use
+
+#3 [★★★★★] 
+   "Made in China. Pricey but it comes in handy. Nice for small spaces."
+   This is a handy… Albeit kind of expensive… “Gadget”. Great for smaller places like studio apartments… Motorhomes… Dorm rooms… And so on. It connects to your faucet and loads from the top. Granted, handwashing can be much faster, but if you really don’t like washing dishes, then this is a cool item. It is easy to load from the top. You can also use it to wash fruits and vegetables.<br /><br />Keep in mind that this small dishwasher must be connected to a faucet. Some other models you pour water into them with a pitcher, but not this one.<br /><br />This dishwasher is made in China and being sold by Chinese company on Amazon. At the current price of 270 bucks I’m sure it’s at least 100 bucks overpriced, but again it comes in very handy.
+
+#4 [★★★★★] 
+   "Excellent buy"
+   I purchased the dishwasher 1 month ago to replace a Kenmore dishwasher.<br />Pros: The dishwasher is very well constructed. The fill, rinse and wash cycles are very quiet. The dishes come out clean with no water spots. Thee dishwasher uses a combination of a very hot rinse cycle and Rinse Aid which results in dry spot free dishes.<br />Cons: None
+
+#5 [★★★★★] ✓ Verified
+   "2 for 1"
+   Works best as 2 separate baskets for my dishwasher.
+
+======================================================================
+QUERY: water filter removes chlorine AND fluoride contaminants
+======================================================================
+[Latency: 678.9ms, Candidates: 469]
+
+#1 [★★★★★] ✓ Verified
+   "Adequate filtration"
+   We have always appreciated the great job this filter does removing chlorine and particulates.
+
+#2 [★★★★★] ✓ Verified
+   "Good taste, perfect fit."
+   It did take two tries to get a perfect fit, but there was no significant mess made. Once it was in, it was solid, and has remained that way for this first month of use. The filter gives a nice fresh tasting water, removing all the chlorine and other &#34;flavors&#34; I get from the tap.
+
+#3 [★★★★★] ✓ Verified
+   "Waterspecialists DA29-00020b Water Filter"
+   Nice product, shipped promptly, great value. highly recommend
+
+#4 [★★★★★] ✓ Verified
+   "Excellant product"
+   Exact fit for my fridge filter. And filters out all the chlorine and tastes in our city water
+
+#5 [★★★★★] ✓ Verified
+   "Great Filter - Lasts a Long Time"
+   Works great to filter the water and ice in our refrigerator/freezer.
+
+======================================================================
+QUERY: ice maker makes nugget ice pebble style like Sonic
+======================================================================
+[Latency: 674.0ms, Candidates: 523]
+
+#1 [★★★★★] 
+   "Made in China. Make sure you know how this machine works before purchasing."
+   If you have a look around Amazon, you will see that there are lots… And lots… And lots of these icemakers listed by Chinese companies on Amazon right now. Some of them look a little different from each other, but they all basically work the same. As long as you have the right expectations, they work very well. But if your expectations are too high, you will be very disappointed.<br /><br />Some of the basic things you need to know about this icemaker… First of all, it is not connected to a water source. You pour water into the reservoir. Next, the ice is not kept frozen inside. The machine will make ice until the bin is full. Then the ice will melt, if not removed from the bin, and will be recycled again and again and again. Freezing… Melting… Freezing… Melting… And so on. For this reason, you really need to turn it off at night when you’re sleeping or when you leave the office, if you are using it in an office environment.<br /><br />When the bin is full, which takes about an hour, you will have enough ice to fill a 32 ounce water bottle. Though the listing shows that it will make 26 pounds of ice within twenty-four hours, that is only possible if someone is going to remove the ice each time the bin is full… Day and night. If you want to make ice and save it, then you will need to place it into your own freezer. But keep in mind that the ice will be “wet” so when you place it into your own freezer it will freeze together and you will need to break it apart to use it.<br /><br />This icemaker is made in China and being sold by Chinese company on Amazon.
+
+#2 [★★★★★] 
+   "Made in China. Nice with the right expectations. Does not keep the ice frozen."
+   This is the white option of this icemaker. It also comes in black, sold by the same company.<br /><br />There are lots and lots of different Chinese companies which are selling icemakers on Amazon which are very similar or the same as this one. There are a couple of differences between this one and many of the others. One is the fact that this one makes ten bullets of ice instead of nine… The other is the fact that this one has a timer so that it will not continue to run at times when you do not need it to, like when you’re sleeping.<br /><br />The listing shows that this particular icemaker can make up to 33 pounds of ice in a twenty-four hour period. This might be true, but that is only if you continually remove the ice from the basket as it is being made. The ice maker makes the ten bullets of ice… Then place them into a basket. If you do not remove the ice from the basket, then it simply melts and refreeze is. Once the ice is in the basket, the machine will not keep the ice frozen. If you need a lot of ice, then you will need to manually remove the ice from the basket and place it into your own freezer.<br /><br />This icemaker is made in China and being sold by Chinese coming on Amazon. It works quite well as long as you have the right expectations.
+
+#3 [★★★★★] 
+   "Made in China.  Nice, if you have the proper expectations."
+   You really have to make sure you have the right expectations with this ice maker.<br /><br />There are a few important things to keep in mind<br /><br />#1.  This ice maker does NOT keep the ice which is made frozen.  It drops into the bin. .. then melts and is recycled if you do not use it.  If you want to keep it frozen. . . You'll need to place it into your own freezer.<br /><br />#2.  Though the listing shows that this ice maker can make 26# of ice in 24-hours. . .  That's only if you have someone standing there to empty the bin each time it is full. . .  day-and-night.  So that part is really no realistic.<br /><br />#3.  "Self-Cleaning" is a misnomer.  When you turn-on the "self-cleaning" cycle. .. All that happens is that the water is cycled through again and again until you stop it.  So there's really not a lot of cleaning going on unless you add something to the water.  There's no information about what to add.  You can do your own research. .  but. . . I actually use the same cleaner I use with my espresso maker for descaling.<br /><br />This ice maker is Made in China and being sold by a Chinese company on Amazon.  There are lots of these same machines being sold by Chinese companies right now on Amazon, so make sure you look around for the best price before purchasing.
+
+#4 [★★★★★] ✓ Verified
+   "Nice ice maker and very easy to use"
+   This is a great ice maker for your countertop.  It’s really easy and straight forward to use.<br /><br />Let’s start with the control panel - it’s a few simple buttons.  You turn the machine on and say if you want small or large ice cubes.  That’s it!  Personally I preferred the large cubes.<br /><br />It’s got a light for when your ice bin is full.  It’s clear to see.  There’s also a light to add water if it’s running low.  I filled the water bin up and I think it made 2-3 gallon bags of ice.
+
+#5 [★★★★★] 
+   "Anytime Ice"
+   Get ready for holiday parties, no more running last minute to get a bag of ice.<br /><br />This ice maker cranks out the cubes, and you can select the size. No need to worry about ice overflowing, it will beep and stop making the ice when it's full, or when the water runs out.<br /><br />The display is easy and 'talks' you through the process.<br />Definitely one of those purchases that you don't realize how much you'll use it until you have one.<br /><br />DISCLOSURE: Product received to test, with the option to review. No financial compensation is EVER accepted.<br />Views and opinions are my own. I have no affiliation with any manufacturer or distributor other than choosing to review their item.<br />After six months, most review products are donated, destroyed or returned to the vendor. Nonprofits are encouraged to inquire.
+
+======================================================================
+QUERY: range hood under cabinet 30 inch with charcoal filter recirculating
+======================================================================
+[Latency: 652.6ms, Candidates: 542]
+
+#1 [★★★★★] ✓ Verified
+   "Arrived quickly. Fits perfectly."
+   Gives older ranges/cooktops an inexpensive facelift.
+
+#2 [★★★★★] ✓ Verified
+   "Works great!"
+   No issues.  Easy install. Much cheaper than name brand
+
+#3 [★★★★★] ✓ Verified
+   "Works great."
+   We installed this ourself and saved tons of money. Easy to install too.
+
+#4 [★★★★★] ✓ Verified
+   "Works perfect for my Kenmore"
+   Perfect and about a quarter of the cost from local dealer
+
+#5 [★★★★★] ✓ Verified
+   "Perfect fit."
+   Easy installation, all parts there and works great.
+
+======================================================================
+QUERY: pour over coffee dripper fits on thermal carafe no paper filter
+======================================================================
+[Latency: 683.8ms, Candidates: 599]
+
+#1 [★★★★☆] ✓ Verified
+   "Four Stars"
+   Very nice and easy to use with my pour over unit that fits over the coffee cup.
+
+#2 [★★★★★] ✓ Verified
+   "Fits perfect."
+   I had to replace my filter and this one fits and works perfectly.
+
+#3 [★★★★★] ✓ Verified
+   "Excellent for traveling and at home"
+   We prefer pour over coffee. This is fast, convenient, easy to clean and sturdy onto of a cup. With it being stainless steel I don't have to worry about it breaking like the ceramic ones. You do not even have to use a separate filter. I do but my husband doesn't. The pour over coffee dripper is an excellent purchase and we are happy with it.
+
+#4 [★★★★★] ✓ Verified
+   "good"
+   these work,BUT you have to use a filter with it for coffee.
+
+#5 [★★★☆☆] ✓ Verified
+   "Fit but inhibits proper brewing"
+   I haveva 4-cup drip coffee maker and too often the filter collapses and allows groups to get into the carafe.<br /><br />These fit well into the basket of the coffee maker but didn't allow the dripper spring to function properly allowing the water to run through too quickly naking very week, pate coffee.<br /><br />Not a total waste as I will repurpose them for straing bacon grease and beef tallow.
+
+======================================================================
+QUERY: Samsung French door refrigerator water filter replacement
+======================================================================
+[Latency: 670.0ms, Candidates: 385]
+
+#1 [★★★★★] ✓ Verified
+   "Refrigerator Water Filter Replacement"
+   Perfect replacement for my Samsung water filter. Works great.
+
+#2 [★★★★★] ✓ Verified
+   "PERFECT Replacement filter for Samsung refrigerator model number RFG297"
+   The Waterdrop DA29-00003G is an EXACT match to my Samsung french door refrigerator filter model #RFG297 , purchased 10 years ago.<br /><br />After purchasing a "Samsung " replacement filter a few days ago, which was NOT a match,  I started researching this filter #..... it appears a lot of consumers are experiencing difficulties finding the correct version for their "out dated" fridge.  Many people have even created creative alterations to make it fit.<br /><br />Save yourself some money,  time,  frustration,  etc. ; THIS WATERDROP REPLACEMENT REPLACEMENT FILTER; IT FITS AND IT WORKS !<br /><br />NO I AM NOT AFFILIATED,  NOR DID I RECEIVE A FREE PROMOTION TO WRITE THIS REVIEW.
+
+#3 [★★★★★] ✓ Verified
+   "Great price"
+   The filter fit my Samsung refrigerator perfectly . The price was excellent in comparison to other sellers. I'ma get very pleased.
+
+#4 [★★★★★] 
+   "Samsung water filter"
+   This is a very good water replacement filter.  Functions exactly as stated.
+
+#5 [★★★★★] ✓ Verified
+   "Great replacement filter for your fridge"
+   Great replacement filter set for my Samsung refrigerator.
+
+======================================================================
+QUERY: portable dishwasher built-in water tank no hookup required
+======================================================================
+[Latency: 689.2ms, Candidates: 577]
+
+#1 [★★★★★] ✓ Verified
+   "perfect!"
+   easy to install and works perfectly to keep my dishwasher rack in place
+
+#2 [★★★★★] 
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#3 [★★★★★] ✓ Verified
+   "Perfect if you need one!"
+   Works great, exactly what i needed. Make sure you get the right model for your portable dishwasher... That is all =)
+
+#4 [★★★★★] ✓ Verified
+   "Yup. This works."
+   Easy to install. Doesn't leak. Hooks over my utility sink and drains the water out of my washing machine.<br /><br />After my initial installation, I put a bucket underneath the connection, just in case it leaked. It didn't.
+
+#5 [★★★★★] ✓ Verified
+   "Works great and easy to install"
+   These installed perfectly, are quiet and the water tastes great.  Not sure what else is needed.  :-)
+
+======================================================================
+QUERY: ice maker clear ice not cloudy transparent cubes
+======================================================================
+[Latency: 666.4ms, Candidates: 465]
+
+#1 [★★★★★] 
+   "Great ice maker"
+   You can pick the size ice cubes big or small and so fast only takes minutes to have ice. Very quick and easy to use
+
+#2 [★★★★★] ✓ Verified
+   "Nice ice maker and very easy to use"
+   This is a great ice maker for your countertop.  It’s really easy and straight forward to use.<br /><br />Let’s start with the control panel - it’s a few simple buttons.  You turn the machine on and say if you want small or large ice cubes.  That’s it!  Personally I preferred the large cubes.<br /><br />It’s got a light for when your ice bin is full.  It’s clear to see.  There’s also a light to add water if it’s running low.  I filled the water bin up and I think it made 2-3 gallon bags of ice.
+
+#3 [★★★★☆] ✓ Verified
+   "Love this ice maker"
+   The flavor of the ice is crisp and clean, no after taste. Very easy to use and maintain.
+
+#4 [★★★★★] ✓ Verified
+   "Works as advertised."
+   The ice cubes are small but this ice maker is a workhorse.  It is a bit noisy but not so much that it bothers me.
+
+#5 [★★★★☆] ✓ Verified
+   "it makes ice"
+   ice cubes are a little wet when they come out of the ice maker so when you place them in a freezer they stick or freeze together and have to be broken apart to use
+
+======================================================================
+QUERY: range hood delay shut off timer auto turn off feature
+======================================================================
+[Latency: 837.0ms, Candidates: 482]
+
+#1 [★★★★★] ✓ Verified
+   "Works great and good price"
+   I am very pleased with this hood range and the price was very fair.
+
+#2 [★★★☆☆] ✓ Verified
+   "It works"
+   But it only works in my range hood with the stripe down instead of the nice side--which isn't that bad when you're standing next to it, but further way, like sitting at the dinner table, I can see it when sitting down.
+
+#3 [★★☆☆☆] ✓ Verified
+   "Not impressed"
+   Arrived late!  finally received,  has no on off switch. plug in on automatically, I do not like that ,  because late seller finally gifted to me for trouble
+
+#4 [★★★☆☆] ✓ Verified
+   "nothing amazing"
+   runs for about ten miuets then shuts off will come on again and run for a little while then shut off again if your looking for something defrost a spot bigger than ur fist look so where else.
+
+#5 [★★★★★] ✓ Verified
+   "Just right"
+   Fits my range hood perfectly, good price and quality
+
+======================================================================
+QUERY: dishwasher stainless steel tub interior not plastic
+======================================================================
+[Latency: 666.5ms, Candidates: 490]
+
+#1 [★☆☆☆☆] ✓ Verified
+   "*NOT* STAINLESS STEEL !!!"
+   *NOT* truly stainless steel! Plastic, made to look like a "stainless steel finish". Would not recommend!!
+
+#2 [★★★★★] 
+   "Works ike it supposed to and not made of plastic..win - win"
+   Saw this in the store and took a chance. Main reason I bought it was cause it’s stainless steel and not pastic. Trying to use less plastic when cooking my foods/beverages. Works great! Liked it so much I bought a spare and two for my daughter! Note: because it is metal it WILL be hot after use.
+
+#3 [★★★★★] ✓ Verified
+   "Would buy again"
+   Very pleased.  I love that it's stainless steel, which gets cleaner than your standard, plastic reusable filter, and being reusable, it does not create waste.  I have not had any problems with overflow or flavor.
+
+#4 [★★☆☆☆] 
+   "It only last a few months"
+   Fist few months great  then it tarnished from the inside 😟.<br />Had to throw out the inside is not stainless steel
+
+#5 [★★★★★] ✓ Verified
+   "Unexpected features are a plus"
+   I ordered this because it does not have halogen lights and also the profile is small enough that I shouldn't be hitting my head on it constantly when cooking.  I love it because the fans are quiet and it looks quite stylist--at least for me since my kitchen is in transition.  The stainless steel matches my dishwasher while the black control panel ties in with my stove and refrigerator.
+
+
+============================================================
+Latency Statistics (search only, excludes embedding):
+  Average: 710.10 ms
+  P50:     676.49 ms
+  P95:     862.03 ms
+
+============================================================
+Benchmark Complete!
+============================================================

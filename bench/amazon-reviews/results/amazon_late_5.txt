@@ -1,0 +1,290 @@
+============================================================
+Late Interaction Search - Amazon Reviews Dataset
+============================================================
+
+Configuration:
+  Dataset:            amazon-reviews
+  Namespace:          amazon-reviews-late-bench
+  Jina Model:         jina-colbert-v2
+  Embedding Dim:      128
+  Num Reviews:        15000
+  Batch Size:         8
+  Top K:              5
+  First Stage Top K:  50
+  Second Stage Top K: 256
+  Num Queries:        10
+  Timestamp:          2026-01-05T17:01:43.972011
+
+----------------------------------------
+Found 1 data file(s)
+  Loading Appliances.jsonl.gz...
+  Loaded 15000 reviews
+
+----------------------------------------
+Skipping indexing (SKIP_INDEXING=True)
+Total indexing time: 0.00s
+
+----------------------------------------
+
+Searching 10 queries...
+
+======================================================================
+QUERY: quiet dishwasher that actually cleans well
+======================================================================
+[Latency: 1313.5ms, Candidates: 405]
+
+#1 [★★★★★] ✓ Verified
+   "Best Dishwashers Ever"
+   Wonderful product!!!  These dishwasher drawers are the best!  Energy efficient, cleans well, extremely quiet.  It is so quiet that I forget it's on!  Large capacity!  GREAT product!!!
+
+#2 [★★★★★] 
+   "Excellent buy"
+   I purchased the dishwasher 1 month ago to replace a Kenmore dishwasher.<br />Pros: The dishwasher is very well constructed. The fill, rinse and wash cycles are very quiet. The dishes come out clean with no water spots. Thee dishwasher uses a combination of a very hot rinse cycle and Rinse Aid which results in dry spot free dishes.<br />Cons: None
+
+#3 [★★★★★] 
+   "This is a great dishwasher. Saves energy and gets the dishes very clean."
+   This dishwasher is doing an excellent job for us.  I too was used to a dishwasher with a &#34;drying element&#34;, however I had turned it off due to the extreme energy usage.  Condensation drying is working well, except for the plastics mentioned by others, which would have melted in the old dishwasher with the dry cycle.  The sanitize cycle helps and only containers I reuse that food came in (like peanut butter jars) can't 'seem to take the heat.  This dishwasher gets my dishes amazingly clean with no pre-washing, and is so quiet I keep checking to see if it's on.  Times have changed since by dishwasher of 1998 and I'm glad!  I would recommend this unit and would buy it again.
+
+#4 [★★★★★] ✓ Verified
+   "Very happy with this dishwasher"
+   This is a wonderful appliance and suits my needs perfectly. My kitchen doesn't have room for a built-in or a large portable dishwasher. I am thrilled with how well this unit cleans my dishes, even on the lighter cycles. I also appreciate having so many wash options, from a rinse to a full heavy wash.
+
+#5 [★★★★★] 
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+======================================================================
+QUERY: ice maker that makes sonic style nugget ice
+======================================================================
+[Latency: 824.6ms, Candidates: 454]
+
+#1 [★★★★★] 
+   "Made in China. Make sure you know how this machine works before purchasing."
+   If you have a look around Amazon, you will see that there are lots… And lots… And lots of these icemakers listed by Chinese companies on Amazon right now. Some of them look a little different from each other, but they all basically work the same. As long as you have the right expectations, they work very well. But if your expectations are too high, you will be very disappointed.<br /><br />Some of the basic things you need to know about this icemaker… First of all, it is not connected to a water source. You pour water into the reservoir. Next, the ice is not kept frozen inside. The machine will make ice until the bin is full. Then the ice will melt, if not removed from the bin, and will be recycled again and again and again. Freezing… Melting… Freezing… Melting… And so on. For this reason, you really need to turn it off at night when you’re sleeping or when you leave the office, if you are using it in an office environment.<br /><br />When the bin is full, which takes about an hour, you will have enough ice to fill a 32 ounce water bottle. Though the listing shows that it will make 26 pounds of ice within twenty-four hours, that is only possible if someone is going to remove the ice each time the bin is full… Day and night. If you want to make ice and save it, then you will need to place it into your own freezer. But keep in mind that the ice will be “wet” so when you place it into your own freezer it will freeze together and you will need to break it apart to use it.<br /><br />This icemaker is made in China and being sold by Chinese company on Amazon.
+
+#2 [★★★★★] ✓ Verified
+   "ICE MAKER"
+   I'm happy with the product,fast making ice. I would recommend this product.
+
+#3 [★★★★★] ✓ Verified
+   "Worth EVERY PENNY and AMAZING!"
+   This product IS WONDERFUL!!! Met my expectations and then some. Comes with app, programmable, and the ice are little round nuggets JUST like Sonic. Best purchase I've made this year! At the time of purchase, it was $589.00. It has since come down, but I really would pay even more for this amazing product. I've had it over a month now and my sister and mom want one, also. I don't post many reviews at all, but I just had to about this product. It isn't a bogus review.  If you are on fence or worried it is not worth the money, I PROMISE you will love it. I have an ice-maker on my fridge door, but this is just SO much better. So EASY! Pour water in and voila! That is it. Just a great, GREAT PRODUCT!
+
+#4 [★★★★★] ✓ Verified
+   "Great ice maker"
+   I've been very pleased with this Euhomy ice maker. It is not very noisy, easy to use and produces ice quickly.
+
+#5 [★★★★★] 
+   "Made in China. Works well as long as you have proper expectations for the machine."
+   There are quite a few of these icemakers being sold by assorted Chinese companies on Amazon right now. They are all virtually the same thing, though some of them look a little bit different. As long as your expectations meet what the icemaker can do, then it’s fine. But if your expectations exceed what the icemaker can do, then you will be disappointed.<br /><br />Things to keep in mind…<br /><br />First of all, this icemaker does not keep the ice frozen. The ice goes into a basket and then, if it is not used, it will melt and the water will fall to the bottom water reservoir and then it will be refrozen again and again through the machine. The only way to keep the ice frozen is if you remove it from the basket and place the ice into a freezer. But when you do that, the ice will be “wet” so it will freeze together and you will need to “bang” it apart.<br /><br />Second… To say that this icemaker will make 26 pounds of ice each day is a bit of a misnomer. Because the only way for it to do that is if you continuously remove the ice from the basket each time the basket is full. It takes about an hour for the basket to fill up completely. So you would have to have someone removing the ice… Day and night… For it to make 26 pounds of ice. Of course you will have to continually fill the reservoir with water as well. So unless you are working in a factory or elsewhere that someone is there twenty-four hours a day, then you will not get 26 pounds of ice.<br /><br />You should stop the icemaker from making ice when you are not using it. For example, in the evenings when you go to bed. Otherwise the ice will just continually melt and be recycled over and over and over.<br /><br />This icemaker is made in China and being sold by Chinese company on Amazon. At the current price of 100 bucks it’s certainly twice the price it should be, but overall it is fine… Again… As long as you have the right expectations.
+
+======================================================================
+QUERY: portable dishwasher for apartment no installation required
+======================================================================
+[Latency: 860.0ms, Candidates: 461]
+
+#1 [★★★★★] 
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#2 [★★★★★] 
+   "Wonderful"
+   This portable dishwasher is amazing. Perfect for small spaces it is simple to set up and use. It does a terrific job. There are a number of settings: normal, rapid, fruit, steam and glass. ,The fruit option insures your produce is free of dirt. No detergent needed for this cycle.  It uses powdered dishwasher detergent or those dishwasher tabs. The capacity is small but it saves you from running the full sized washer. It is portable and ideal for rvs or camping. My kitchen isa disaster due to a pandemic interrupted andcpostponed rennovation. This countertop appliance makes life easier.
+
+#3 [★★★★★] 
+   "Made in China. Pricey but it comes in handy. Nice for small spaces."
+   This is a handy… Albeit kind of expensive… “Gadget”. Great for smaller places like studio apartments… Motorhomes… Dorm rooms… And so on. It connects to your faucet and loads from the top. Granted, handwashing can be much faster, but if you really don’t like washing dishes, then this is a cool item. It is easy to load from the top. You can also use it to wash fruits and vegetables.<br /><br />Keep in mind that this small dishwasher must be connected to a faucet. Some other models you pour water into them with a pitcher, but not this one.<br /><br />This dishwasher is made in China and being sold by Chinese company on Amazon. At the current price of 270 bucks I’m sure it’s at least 100 bucks overpriced, but again it comes in very handy.
+
+#4 [★★★★★] ✓ Verified
+   "Perfect if you need one!"
+   Works great, exactly what i needed. Make sure you get the right model for your portable dishwasher... That is all =)
+
+#5 [★★★★★] ✓ Verified
+   "Saved me so much money"
+   Perfect saved me from spending 1$60 on a new dishwasher rack, really easy to install
+
+======================================================================
+QUERY: range hood powerful but quiet for gas stove
+======================================================================
+[Latency: 763.4ms, Candidates: 424]
+
+#1 [★★★★★] 
+   "Five Stars"
+   Great looking, very sleek Range Hood.  Lighting choices were exceptionally good & fan is pretty quiet.
+
+#2 [★★★★★] ✓ Verified
+   "Loud and strong"
+   This replaced an under cabinet microwave rangehood that was absolutely useless.<br /><br />The chef is super strong, it’s also super loud, but for $200 this is a great purchase. For Chinese cooking, you’d be hard pressed to find a ranghood with the power of this one for less than $500.<br /><br /> I can see where he concerns about the orientation of the power cables lies, fortunately my power is situated above the hood inside the cabinet, so I didn’t have to end up DIYing it to the rear.<br /><br />And finally, as other reviewers have said, corners and edges are sharp, wear gloves!
+
+#3 [★★★★★] ✓ Verified
+   "Great design."
+   The best range hood on the market. Good suction power and fairly quiet. Looks good in the modern kitchen. Little pricey but it’s a long time investment.
+
+#4 [★★★★★] ✓ Verified
+   "Quiet and efficient! Looks great!"
+   Such an improvement! We replaced an old 42" vented hood.  It took less than an hour!<br />This model is convertible for either vented or not and has access panels for the vent on the top and the back.  We ordered one and it arrived all dented. It was replaced and we're very happy with this one. It has great suction, is quiet and the black finish is easy to clean.
+
+#5 [★☆☆☆☆] ✓ Verified
+   "Unit looks good, but it's definitely not as powerful as some ..."
+   Unit looks good,  but it's definitely not as powerful as some of the review claims,  also the motor vibrates when in low and medium settings,  it's really annoying.  my 7 year old cheap chinese range hood was rated much lower CFM, but it runs much smoother, exhaust more .  Do yourself a favor,  spend more and get a better unit,  it's worth it since it will last you forever.  stay away from this junk
+
+======================================================================
+QUERY: coffee maker with thermal carafe no hot plate
+======================================================================
+[Latency: 858.1ms, Candidates: 540]
+
+#1 [★★★★★] ✓ Verified
+   "Works perfect"
+   Works great with the Moccamaster Coffee maker. I love it!
+
+#2 [★★★★★] ✓ Verified
+   "Excellent"
+   Makes good coffee, and the stand allows you to fill the cup up to the brim if you feel like it.
+
+#3 [★★★★★] ✓ Verified
+   "Nice little coffee maker!"
+   Works as advertised and makes pretty good tasting coffee.
+
+#4 [★★★★☆] ✓ Verified
+   "as described"
+   as described and easy to install on my set up, but a little to big but will work okay
+
+#5 [★★★★★] ✓ Verified
+   "Fit perfectly"
+   Excellent product for my coffee maker. No complaints.
+
+======================================================================
+QUERY: water filter that removes chlorine and bad taste
+======================================================================
+[Latency: 1062.3ms, Candidates: 411]
+
+#1 [★★★★★] ✓ Verified
+   "Slean and no chemical taste"
+   Excellent water filter for clean filtered water and ice from my refrigerator
+
+#2 [★★★★★] ✓ Verified
+   "Good Value"
+   The Swift water filter did an outstanding job of removing the swampy smell and taste from our city water. It works well, it’s made in the USA, and it’s affordable.
+
+#3 [★★★★★] ✓ Verified
+   "Good taste, perfect fit."
+   It did take two tries to get a perfect fit, but there was no significant mess made. Once it was in, it was solid, and has remained that way for this first month of use. The filter gives a nice fresh tasting water, removing all the chlorine and other &#34;flavors&#34; I get from the tap.
+
+#4 [★★★★★] ✓ Verified
+   "Excellant product"
+   Exact fit for my fridge filter. And filters out all the chlorine and tastes in our city water
+
+#5 [★★★★★] ✓ Verified
+   "Filter works great."
+   Quickly installs, takes the chemical taste out of city water.
+
+======================================================================
+QUERY: countertop ice maker for RV camping travel
+======================================================================
+[Latency: 1072.4ms, Candidates: 466]
+
+#1 [★★★★★] 
+   "Great little ice maker"
+   This machine is very handy when we entertain friends and family. It makes ice cubes quickly in two sizes, small and large in under 20 minutes. The large ice cube size is actually average size cubes. The machine makes a little humming sound but it is not loud.<br /><br />It is easy to install and operate. It fits in well sitting on the kitchen counter and looks awesome with stainless steel finish. It's not heavy and certainly portable. You can carry this in an RV or when you are traveling or camping. But there is no direct line connection to water source.<br /><br />The package was delivered on time and the product was intact. I have rated five stars for overall satisfaction.
+
+#2 [★★★★★] 
+   "Nice Ice"
+   This appliance is terrific. Fast and easy to use it produces bullet shaped ice. It fits easily on the counter and would be at home in a camper or rv. It has a semi automatic self clean feature. It is a time saver and works well. This ice maker is not excessively noisy. Completely satisfied.
+
+#3 [★★★★★] ✓ Verified
+   "Great Highly Productive Ice Maker"
+   Purchased one for house and was pleased so I purchased another for the RV.  Better that other vendor model that quit after 6 months.  Holds more Ice.
+
+#4 [★★★★★] ✓ Verified
+   "Great for RV"
+   Placed in my RV.  Tied of buying ice while traveling.  Slow but effective
+
+#5 [★★★★★] ✓ Verified
+   "Ice Maker for countertop"
+   We love this ice maker so much  We recommend it for sure.
+
+======================================================================
+QUERY: dishwasher with stainless steel tub not plastic
+======================================================================
+[Latency: 1650.7ms, Candidates: 472]
+
+#1 [★★★★★] 
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+#2 [★★★★★] ✓ Verified
+   "Perfect Fix"
+   Perfect fit for my Whirlpool dishwasher and about half the price from Whirlpool!
+
+#3 [★★★★★] ✓ Verified
+   "Perfect fit"
+   Stopped the leak (bottom edge at the door) in my 14 year old dishwasher.
+
+#4 [★★★★★] 
+   "Excellent buy"
+   I purchased the dishwasher 1 month ago to replace a Kenmore dishwasher.<br />Pros: The dishwasher is very well constructed. The fill, rinse and wash cycles are very quiet. The dishes come out clean with no water spots. Thee dishwasher uses a combination of a very hot rinse cycle and Rinse Aid which results in dry spot free dishes.<br />Cons: None
+
+#5 [★★★★★] ✓ Verified
+   "BEST DISHWASHER EVER"
+   I bought this dishwasher in October of 2014 and it has worked PERFECTLY for us for the past 4 years.
+
+======================================================================
+QUERY: refrigerator water filter for Samsung french door
+======================================================================
+[Latency: 1027.1ms, Candidates: 366]
+
+#1 [★★★★★] ✓ Verified
+   "PERFECT Replacement filter for Samsung refrigerator model number RFG297"
+   The Waterdrop DA29-00003G is an EXACT match to my Samsung french door refrigerator filter model #RFG297 , purchased 10 years ago.<br /><br />After purchasing a "Samsung " replacement filter a few days ago, which was NOT a match,  I started researching this filter #..... it appears a lot of consumers are experiencing difficulties finding the correct version for their "out dated" fridge.  Many people have even created creative alterations to make it fit.<br /><br />Save yourself some money,  time,  frustration,  etc. ; THIS WATERDROP REPLACEMENT REPLACEMENT FILTER; IT FITS AND IT WORKS !<br /><br />NO I AM NOT AFFILIATED,  NOR DID I RECEIVE A FREE PROMOTION TO WRITE THIS REVIEW.
+
+#2 [★★★★★] ✓ Verified
+   "It's a Filter"
+   Appears to be a standard Samsung refrigerator water filter just like the one's they sell at Home Depot and Lowes for more $$$.
+
+#3 [★★★★★] ✓ Verified
+   "Refrigerator Water Filter Replacement"
+   Perfect replacement for my Samsung water filter. Works great.
+
+#4 [★★★★★] ✓ Verified
+   "Water filters"
+   These last good and are the correct brand for our Samsung refrigerator.
+
+#5 [★★★★★] ✓ Verified
+   "Works Perfectly"
+   A water filter that fits my Samsung Refrigerator at less than half the price is a great find.  Highly recommend.
+
+======================================================================
+QUERY: ice maker that makes clear ice not cloudy
+======================================================================
+[Latency: 1181.6ms, Candidates: 483]
+
+#1 [★★★★☆] ✓ Verified
+   "Love this ice maker"
+   The flavor of the ice is crisp and clean, no after taste. Very easy to use and maintain.
+
+#2 [★★★★☆] 
+   "Very nice ice maker.  quick and clear ice if you use Distilled water."
+   I have wanted clear ice cubes FOREVER.  finally with this Ice Maker.. I  can pour DIstilled water into the reservoir and it will make clear ice bullets.  Yes you can drink distilled water.. there just is no minerals in it.
+
+#3 [★★★★★] ✓ Verified
+   "Great ice maker"
+   We love this ice maker; it is easy to use and let's you know when we need to add more water
+
+#4 [★★★★★] 
+   "Anytime Ice"
+   Get ready for holiday parties, no more running last minute to get a bag of ice.<br /><br />This ice maker cranks out the cubes, and you can select the size. No need to worry about ice overflowing, it will beep and stop making the ice when it's full, or when the water runs out.<br /><br />The display is easy and 'talks' you through the process.<br />Definitely one of those purchases that you don't realize how much you'll use it until you have one.<br /><br />DISCLOSURE: Product received to test, with the option to review. No financial compensation is EVER accepted.<br />Views and opinions are my own. I have no affiliation with any manufacturer or distributor other than choosing to review their item.<br />After six months, most review products are donated, destroyed or returned to the vendor. Nonprofits are encouraged to inquire.
+
+#5 [★★★★☆] ✓ Verified
+   "Great Ice"
+   Love this ice maker. It can be tricky. Don't overfill!
+
+
+============================================================
+Latency Statistics (search only, excludes embedding):
+  Average: 1061.37 ms
+  P50:     1044.69 ms
+  P95:     1498.95 ms
+
+============================================================
+Benchmark Complete!
+============================================================

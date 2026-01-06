@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "1",
+    "query_text": "0-dimensional biomaterials show inductive properties.",
+    "top_3_results": [
+      "21456232",
+      "14492964",
+      "17388232"
+    ]
+  },
+  {
+    "query_id": "3",
+    "query_text": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+    "top_3_results": [
+      "23389795",
+      "2739854",
+      "4378885"
+    ]
+  },
+  {
+    "query_id": "5",
+    "query_text": "1/2000 in UK have abnormal PrP positivity.",
+    "top_3_results": [
+      "13734012",
+      "18617259",
+      "27063470"
+    ]
+  },
+  {
+    "query_id": "13",
+    "query_text": "5% of perinatal mortality is due to low birth weight.",
+    "top_3_results": [
+      "1263446",
+      "7662395",
+      "4791384"
+    ]
+  },
+  {
+    "query_id": "36",
+    "query_text": "A deficiency of vitamin B12 increases blood levels of homocysteine.",
+    "top_3_results": [
+      "16252863",
+      "18557974",
+      "3215494"
+    ]
+  },
+  {
+    "query_id": "42",
+    "query_text": "A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.",
+    "top_3_results": [
+      "18174210",
+      "27889071",
+      "45218443"
+    ]
+  },
+  {
+    "query_id": "48",
+    "query_text": "A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",
+    "top_3_results": [
+      "13734012",
+      "27063470",
+      "18617259"
+    ]
+  },
+  {
+    "query_id": "49",
+    "query_text": "ADAR1 binds to Dicer to cleave pre-miRNA.",
+    "top_3_results": [
+      "5953485",
+      "5702790",
+      "9091863"
+    ]
+  },
+  {
+    "query_id": "50",
+    "query_text": "AIRE is expressed in some skin tumors.",
+    "top_3_results": [
+      "12580014",
+      "25738896",
+      "18488986"
+    ]
+  },
+  {
+    "query_id": "51",
+    "query_text": "ALDH1 expression is associated with better breast cancer outcomes.",
+    "top_3_results": [
+      "45638119",
+      "24249915",
+      "20839751"
+    ]
+  }
+]

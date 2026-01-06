@@ -1,0 +1,16 @@
+{
+  "name": "script",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@turbopuffer/turbopuffer": "^1.10.0",
+    "openai": "^6.15.0",
+    "zod": "^4.2.1"
+  }
+}

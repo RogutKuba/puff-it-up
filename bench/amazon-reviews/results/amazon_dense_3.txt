@@ -1,0 +1,287 @@
+============================================================
+Dense Vector Search - Amazon Reviews Dataset
+============================================================
+
+Configuration:
+  Dataset:         amazon-reviews
+  Namespace:       amazon-reviews-dense-bench
+  Embedding Model: openai/text-embedding-3-small
+  Num Reviews:     15000
+  Batch Size:      32
+  Top K:           5
+  Num Queries:     10
+  Timestamp:       2026-01-05T16:08:46.487328
+
+----------------------------------------
+Found 1 data file(s)
+  Loading Appliances.jsonl.gz...
+  Loaded 15000 reviews
+
+----------------------------------------
+Skipping indexing (SKIP_INDEXING=True)
+Total indexing time: 0.00s
+
+----------------------------------------
+
+Searching 10 queries...
+
+======================================================================
+QUERY: dishwasher quiet enough to run at night without waking anyone
+======================================================================
+[Latency: 288.8ms]
+
+#1 [★★☆☆☆] ✓ Verified (sim: 0.602)
+   "poor performer"
+   as some others have indicated, this dishwasher seems to do very little, if anything, in the way of actually cleaning dishes.  :(  i don't mind the noise level a bit; i guess i grew up with noisier dishwashers than some people did. but running it at all is kind of pointless if it's not going to get the dishes clean.
+
+#2 [★★★★★] ✓ Verified (sim: 0.582)
+   "Amazing small dishwasher - so quiet!"
+   We use this as a second dishwasher for our cat dishes. It is quiet and gets the dishes really clean. We are a Danby repeat customer and I can highly recommend their dishwashers. This little dishwasher holds a surprising amount of dishes. I have to say again, it is very, very quiet. Our old Danby from 2004 was an 18" portable and sounded like a thunderstorm. But worked superbly for years. We are even more pleased with this new one.
+
+#3 [★★★★★]  (sim: 0.561)
+   "Small Space Help"
+   This small dishwasher is ideal for small spaces. Set up was straightforward, not easy but not difficult either. It is reasonably quiet and simple to use. I use pods or tablets. It is a compact unit. If you spend a week waiting to have a full load, this is for you. One of my brothers loves the fruit/veggie washing function.  It handles standard sizes, ie., ten inch dinner plates, regular cups, but nothing extra large. Pleased so far.
+
+#4 [★★★★★] ✓ Verified (sim: 0.552)
+   "Relatively easy. The dishwasher is nice and quiet again"
+   Used a youtube video for how to install. Relatively easy. The dishwasher is nice and quiet again.
+
+#5 [★★★★★]  (sim: 0.545)
+   "Compact and Convenient Dishwasher"
+   This is an excellent compact dishwasher that is perfect for a small space. It is about the size of a large microwave. I found that it is light enough for one person to maneuver, but it's easier with two people. It has a good capacity for such a compact unit. It's easy to operate and comes with a power cord and connection hoses. It's likely that you'll have to purchase an additional adapter to fit your faucet.<br /><br />The dishwasher looks nice and operates with minimal noise. The item comes securely packaged in Styrofoam to ensure it will arrive in good working order. This is a convenient and practical dishwasher for a small living space.
+
+======================================================================
+QUERY: water filter removes chlorine smell and fits Samsung refrigerator
+======================================================================
+[Latency: 94.1ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.729)
+   "Simple replacement water filter for our Samsung Refrigerator"
+   Althought these filters do not have any elemental silver to hinder bacteria growth, these do have excellent activated carbon filter media to adequately remove the chlorine from your tap water.  The result is fresh and clean tasting ice and chilled water, for much less than the OEM cartridges.  Just replace them close to when the indicator notifies you, and you'll be good to go.
+
+#2 [★★★★☆] ✓ Verified (sim: 0.706)
+   "Fit my fridge and removes chlorine taste"
+   We just installed this the other night and the water quality is very good. We tend to have a chlorine taste if we don't filter and this removes that. I'm very happy with the purchase.
+
+#3 [★★★★★] ✓ Verified (sim: 0.699)
+   "Water filters"
+   These last good and are the correct brand for our Samsung refrigerator.
+
+#4 [★★★★★] ✓ Verified (sim: 0.687)
+   "replaced the filter in the fridge."
+   The filter that came in my new LG refrigerator is just awful.  This filter works great!! no chlorine taste.
+
+#5 [★★★★★] ✓ Verified (sim: 0.684)
+   "Great replacement!"
+   Great replacement for our Samsung refrigerator. In Florida the water tastes like chlorine and with this filter it tastes normal. Easy install.
+
+======================================================================
+QUERY: ice maker bullet shaped ice cubes and self cleaning feature
+======================================================================
+[Latency: 62.8ms]
+
+#1 [★★★★☆]  (sim: 0.717)
+   "Nice Ice"
+   This ice maker is very easy to use. It makes bullet shaped cubes that are great in blender drinks. It is efficient but a tad noisy. Have had no performance isdues. The self cleaning function is a plus. It is super simple and does a hooid job. The ice does not store in the maker, it mudt GB be removed. Otherwise it melts and the water is recycled to make more ice. The ice tastes good and is chewable if you are into that. The unit is vom pop act and does not take up too much counter space. The ice tastes clean and fresh. There is a handle so this can be transported without fuss. Nice.
+
+#2 [★★★★★]  (sim: 0.664)
+   "Nice Ice"
+   This appliance is terrific. Fast and easy to use it produces bullet shaped ice. It fits easily on the counter and would be at home in a camper or rv. It has a semi automatic self clean feature. It is a time saver and works well. This ice maker is not excessively noisy. Completely satisfied.
+
+#3 [★★★★★]  (sim: 0.655)
+   "Outstanding"
+   This is a great addition to any kitchen, especially if you don't have an ice-maker in the freezer. Setting it up is simple, as is the initial cleaning (it mostly self-cleans). The ice it produces is perfect: smaller, cylindrical cubes that are not overly-solid. It is like the ice you would find at Sonic and some other fast food places. It makes ice quickly and always keeps the drawer full. It's just great.
+
+#4 [★★★★★]  (sim: 0.632)
+   "A fine performer but has the same limitations as other bullet ice machines"
+   This is a fine performing bullet ice machine. The controls are easy to use, it works quickly, and ejects the ice neatly and properly each time. But, as with any bullet ice machine, the ice itself is not of ideal quality. It's cloudy and melts quicker than clear ice. Clear ice machines do cost a fair amount more (the Frigidaire model is probably the least expensive one but it costs nearly twice as much as this) but the ice quality is better. Still, for the price, this is a good performer in the bullet ice category.<br /><br />The overall fit and finish is decent. The gearing for the ice ejection is all plastic, but that's to be expected for the price. The manual is pretty poor, but it's not hard to figure out how to use the machine. Operating sounds are hushed (other than the loud bang the ice makes when it is ejected and hits the catch container). It has a self-cleaning function but I can't tell what it actually cleans -- it seems to just recirculate the water a few times. I imagine it is cleaning (or attempting to clean) hard water deposits on the innards of the machine, but can't be sure.<br /><br />There's a drain plug which is handy for getting rid of the water when you're done with the machine. It is located on the bottom, so you have to position the machine so the front half is hanging over a sink so it can drain without making a mess. Not the most convenient place for a drain plug, but it works.<br /><br />Although this has all the limitations of other bullet ice machines, it works well and is easy to use.  For the price it's a five star performer. If you are willing to spend a bit more, however, it's worth looking at clear ice machines since the ice quality is better.
+
+#5 [★★★★☆]  (sim: 0.629)
+   "I'm up and down about this ice maker"
+   When I first used it I noticed that the ice cubes were little hollow bullets with thin walls that melted as soon as they hit the basket. But as the ice maker kept working, the cubes got sturdier and I thought "yeah, this is great!" I made enough to fill my ice tray, not realizing that the bullets would freeze together since they come out of the maker with a lot of surface dampness.  No matter, I can break up the clumps pretty easily.  Unfortunately, the bullets melt very fast in any liquid, which means that unless you down your beverage quickly, you're going to end up with a cool, watered down drink.<br /><br />Bottom line for me: Convenient way to make extra ice, but nothing to rely on for a permanent solution.
+
+======================================================================
+QUERY: portable dishwasher hooks up to faucet without leaking
+======================================================================
+[Latency: 63.2ms]
+
+#1 [★★★★★]  (sim: 0.631)
+   "Say bye bye to hand washing dishes"
+   If you are living in an apartment and don't have a dishwasher you might want to check this out. This is designed to sit on the countertop, draws its water source from the faucet via a included hose, and drains into the sink via provided hose. It plugs into a regular 110v outlet.<br /><br />This unit also has a fruits and veg washing setting which I found pretty interesting!  Remember to clean your filter each use.<br /><br />I wl update as the appliance gets more use
+
+#2 [★★★★★] ✓ Verified (sim: 0.593)
+   "Yup. This works."
+   Easy to install. Doesn't leak. Hooks over my utility sink and drains the water out of my washing machine.<br /><br />After my initial installation, I put a bucket underneath the connection, just in case it leaked. It didn't.
+
+#3 [★★★★★]  (sim: 0.588)
+   "Wonderful"
+   This portable dishwasher is amazing. Perfect for small spaces it is simple to set up and use. It does a terrific job. There are a number of settings: normal, rapid, fruit, steam and glass. ,The fruit option insures your produce is free of dirt. No detergent needed for this cycle.  It uses powdered dishwasher detergent or those dishwasher tabs. The capacity is small but it saves you from running the full sized washer. It is portable and ideal for rvs or camping. My kitchen isa disaster due to a pandemic interrupted andcpostponed rennovation. This countertop appliance makes life easier.
+
+#4 [★★★★★] ✓ Verified (sim: 0.588)
+   "Saved our dishwasher"
+   Easy to put on & now we don't need a new dishwasher!<br />The thing kept coming off the faucet & now it's secure.
+
+#5 [★★★☆☆]  (sim: 0.581)
+   "Not so compact, but works."
+   I've used portable dishwashers before and they are AWESOME for people who travel or have dietary restrictions (Kosher, for example, need separate washers for milk and meat dishes). The good news is, this actually seems like it does a decent job and even comes with some complimentary detergent and jet dry in the box, so you can get up and running right away... in some cases, at least. I say that because depending on how you hook it up, you may need additional hardware to connect to your water lines and/or sink.<br />Here's my problem with it- they claim it is a "countertop" style washer, but the thing is actually too big for my counter! I don't have enough clearance under the cabinets to fit, and it has a lot of hoses and tubing to connect as well. I was considering drilling into my counter to feed the tubes to the water supply and drain, but decided to try connecting to the sink instead when we saw it wasn't fitting well under the cabinets. But then it is too close to the sink and with the hoses etc connected, it looks like it is taking over the kitchen more than just an appliance on the counter like a toaster.<br />I've seen smaller counter-top dishwashers that would easily fit better in our space. Perhaps this one does a better job, but at this point I feel like it is too big to fit the way I intended to use it, but too small to be one we install permanently in the cabinet space. Perhaps someone else will find this size useful, I'm a little disappointed because I was so excited for this to work.
+
+======================================================================
+QUERY: range hood LED lights and stainless steel with quiet fan
+======================================================================
+[Latency: 68.4ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.670)
+   "Very nice Range Hood"
+   We purchased this range hood with the LED light option for our kitchen remodel and could not be happier. It looks great in the kitchen. The LED lights illuminate the range perfectly. The fan can be a bit loud on the higher settings, but lower speeds have minimal noise. Highly recommended.
+
+#2 [★★★★★] ✓ Verified (sim: 0.655)
+   "Excellent Range Hood"
+   Excellent Range hood and easy to install.  Love that is has 3 settings for both fan speed and lights.
+
+#3 [★★★★☆] ✓ Verified (sim: 0.646)
+   "Great slimline range hood"
+   I recently converted from an electric range to gas and needed a slimline range hood that could move a lot of air. This product fits the bill nicely. It looks good, works great, was relatively easy to install with a 7&#34; exhaust pipe (they recommend a minimum of 6&#34; for this airflow) and matches the new brushed stainless range very nicely. The lights work surprisingly well too. They use 430 stainless which is magnetic, so I'm assuming that it could rust if left in the wrong condition, yet I have encountered no problems to date. The only downside is that it's a bit louder than I'd like, but for 600 CFM I really can't complain. And, I mostly use the quiet setting which still allows for normal voice conversations whereas on the high setting you pretty much can't hear yourself think. Overall I'm quite satisfied with the purchase.
+
+#4 [★★★★★]  (sim: 0.644)
+   "Really affordable for the final product"
+   Typical these range hoods can get quite expensive at the big box stores. At the time of writing this review this range hood is $190. Installation takes less than an hour if you're handy with tools and it provides and clean end result that looks modern and functions well. The exhaust fan is not very loud, but comparable to many others. The listing says 70 dB at 600 CFM, but there are three different fan levels so it isn't on full blast all the time. You need to get fumes out somehow. The dimensions in the product listing we're accurate. You need to cognizant of the height of your ceilings, which may require additional duct covering to extend all the way. Typical ceiling heights shouldn't have an issue. The aluminum filter screens could be more securely attached but provide the freedom to easily remove and clean if necessary. It has push buttons for the fan and the LED lights. It. Am be converted to a ductless recirculating fan, but you have to purchase some additional parts. It is nice to have that functionality. Quite happy with the product at the price.
+
+#5 [★★★★★] ✓ Verified (sim: 0.635)
+   "Nice Stainless Steel Broan non-ducted Range Hood"
+   Great stainless steel hood for this price. Easy to install. Looks great with my Samsung stainless steel range.
+
+======================================================================
+QUERY: garbage disposal quiet operation and handles chicken bones
+======================================================================
+[Latency: 64.7ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.562)
+   "Really good choice for a low-cost disposal"
+   This is a bare-bones disposal that is working very well.  Installation was straightforward although there was one step that was confusing and has been discussed in other reviews.  There is not insulation around the body of this disposal as there is on many other models but the noise, though noticeable, is not particularly obnoxious nor pound.  We do not use the disposal heavily but for occasional, light-to-medium duty I believe this is an excellent choice.
+
+#2 [★★★★★] ✓ Verified (sim: 0.505)
+   "... keep our spoons out of the disposal and is easy to lift out"
+   Works to keep our spoons out of the disposal and is easy to lift out.  Food particles get stuck in the little holes and I have to use my hands to clean it out and rinse it down the drain but I don't mind because it saves my utensils!
+
+#3 [★★☆☆☆] ✓ Verified (sim: 0.498)
+   "Returned"
+   These don't work very well, water was going down very slowly.  If you don't want anything to go down the garbage disposal, then get this item but it actually defeats the purpose of the garbage disposal.
+
+#4 [★★★★★] ✓ Verified (sim: 0.474)
+   "Quiet and efficient"
+   Very quiet and efficient.  Cleans larger loads than I expected. Having a little difficulty with discharge hose but I will figure it out.
+
+#5 [★★★★★] ✓ Verified (sim: 0.474)
+   "Five Stars"
+   did the trick of fixing my loud and then stuck trash compactor.. has held up well since installing
+
+======================================================================
+QUERY: coffee maker thermal carafe keeps coffee hot without burning
+======================================================================
+[Latency: 68.8ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.553)
+   "Making a pot of coffee easy in my keurig carafe"
+   Works perfect in my K2, opened new menu for carafe, saving a lot of money.
+
+#2 [★★★★★] ✓ Verified (sim: 0.538)
+   "Worked much better than I thought it might"
+   I have an old 4-cup drip coffee maker. The plastic lid on the carafe cracked with age, so the top part that held the coffee filter/grounds to drip through would not sit right on top of the carafe any more. Rather than get a new pot, I thought, I will try this. It worked like a CHARM! Sits right on top of the carafe. The heated water drips down from the top, and voila, I have 2 cups of great coffee. I think I could get 3 scoops of grounds in there if needed, but 4 could be pushing it. I am very pleased with this item!
+
+#3 [★★★★★] ✓ Verified (sim: 0.524)
+   "Best coffee maker (cone) I have ever found"
+   This is one of the best things for making coffee.  It fits in ALL of my thermal carafes, there may be some it doesn't but it has worked in all of mine.  It is more narrow than other drip coffee filters which makes a little stronger brew.  I have no idea why it works that way but it does. I use the size 6 coffee filters.  Yes you have to heat the water separately but, for me, it is worth it.  There is a rather zen thing about it all.<br /><br />Plus, you get to buy the carafe(s) you want so you can get a cool carafe.  I really can't recommend this simple thing high enough.  If you are a coffee nerd as opposed to a hipster -- just relax for 5 minutes and make better coffee.  Well that really is enough about that!
+
+#4 [★★★★★] ✓ Verified (sim: 0.512)
+   "great for camping and for home single cup"
+   great for camping and for home single cup. coffee taste smooth and not bitter.  The key is to Make sure to only heat your water to 175degrees F. and don't press to fast and don't let it sit to long in press before pressing.. And you do not drink it straight way to strong.. press in your cup then I add 205degree water to the concentrate and makes super hot full bodied coffee..
+
+#5 [★★★★★]  (sim: 0.510)
+   "Works flawlessly, coffee tastes great!"
+   This is a great single cup pour over! No filter needed. Simply add ground coffee into cone and add hot water. I “bloom” the grounds 1st, then finish pouring all the water thru. It all drips down into coffee mug with no spilling. It has a little helper handle so you don’t burn your fingers when unit it hot. I love the compact size too. It makes it easier to store and to travel with. Reasonable price too!
+
+======================================================================
+QUERY: refrigerator filter compatible with LG and removes odor
+======================================================================
+[Latency: 66.6ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.765)
+   "This filter is compatible with the LG Refrigerator."
+   I have tried to purchase a filter to a higher standard and this one seems to meet the requirement. I have used it for several weeks and it filters out the smell and taste of chlorine and other chemicals that may be in the water. With this item we have no sediment of other pollutants.
+
+#2 [★★★★★] ✓ Verified (sim: 0.678)
+   "replaced the filter in the fridge."
+   The filter that came in my new LG refrigerator is just awful.  This filter works great!! no chlorine taste.
+
+#3 [★★★★★] ✓ Verified (sim: 0.649)
+   "Water filter for refrigerator"
+   This filter works great for my LG refrigerator and it’s a better price for you than what it is if you were to purchase it at Home Depot
+
+#4 [★★★★★] ✓ Verified (sim: 0.644)
+   "Great replacement filter for LG fridge"
+   Works as well as the original brand for less money.  Same quality taste and longevity.
+
+#5 [★★★★☆] ✓ Verified (sim: 0.640)
+   "LG Water Filter"
+   This is the filter that LG makes for their refrigerator.  The filter fits fine and works fine.  I do believe that LG could make the price a little more reasonable.
+
+======================================================================
+QUERY: countertop ice maker portable lightweight for RV camping
+======================================================================
+[Latency: 75.3ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.696)
+   "Perfect for RV living"
+   [[VIDEOID:a9b641d44630c8ca138da61ddf123205]] We are on a 2 week trip and didn’t have enough room to make ice cubes. We lasted 3 days before we started looking for a counter top ice maker. After much debate, we ordered this one. We love it! We start it when we wake up and have a whole basket ice to add to our 2 gallon Stanley water dispenser in about an hour. We use it throughout the day to put in our and 4 kids’ waters, then turn it off before we go to bed.<br />You can not store ice in the unit for long, but we go through about a gallon worth of ice a day, so we are constantly keeping it emptied.
+
+#2 [★★★★★] ✓ Verified (sim: 0.656)
+   "Portable ice maker for your countertop"
+   Great ice maker for the money. If your planning a party or just want some extra ice, this will do the job. It does require that you add water to start the cycle and when it's full, you have to use it or bag it, but I can live with that. The only problem is that it doesn't store ice. If the basket has ice in it, and you turn it off, the ice will melt back to water.
+
+#3 [★★★★☆]  (sim: 0.634)
+   "Perfect for entertsining"
+   The ice maker on the refrigerator tends to act up and only make ice when it feels like it. This portable ice maker suits the need when you need it. It won’t store the ice so it is important to know you will have to remove and place in freezer ice bin or ice bucket or whatever else you need to use it for. My daughter entertains often so this machine has saved time by not having to store huge amounts of ice. Makes ice fast (within 10 minutes) so packing the kids lunch boxes has been a breeze. It does have a fan that runs so you would have to have a space that accommodates the flow of air, and it is about as noisy asan older microwave or dishwasher, but we treat it as just temporary white noise.
+
+#4 [★★★★★] ✓ Verified (sim: 0.630)
+   "Perfect"
+   Exactly what we needed to get an ice maker for our RV. The RV manufacturer removes the ice maker before delivery and we wanted an ice maker. Fit perfectly and quickly made a tray full of ice. Removing the freezer slide drawer is necessary unless you are a tiny person or contortionist but that is easy to do.
+
+#5 [★★★★★] ✓ Verified (sim: 0.627)
+   "Super fast and convenient ice maker."
+   So far we are enjoying having this ice maker. We use it in our rv for our weekend getaways. It makes ice super fast. Sometimes I think the ice has a odd taste but I haven’t been able to pinpoint it to the ice maker. Could be the water. I do wish they had a drain though because we turn ours off when we leave the camper and I like to drain the water so it doesn’t just sit for days and it’s heavy to handle so a drain would be nice.
+
+======================================================================
+QUERY: dishwasher sanitize cycle kills bacteria and germs
+======================================================================
+[Latency: 67.6ms]
+
+#1 [★★★★★]  (sim: 0.553)
+   "This is a great dishwasher. Saves energy and gets the dishes very clean."
+   This dishwasher is doing an excellent job for us.  I too was used to a dishwasher with a &#34;drying element&#34;, however I had turned it off due to the extreme energy usage.  Condensation drying is working well, except for the plastics mentioned by others, which would have melted in the old dishwasher with the dry cycle.  The sanitize cycle helps and only containers I reuse that food came in (like peanut butter jars) can't 'seem to take the heat.  This dishwasher gets my dishes amazingly clean with no pre-washing, and is so quiet I keep checking to see if it's on.  Times have changed since by dishwasher of 1998 and I'm glad!  I would recommend this unit and would buy it again.
+
+#2 [★★★★★]  (sim: 0.509)
+   "My favorite appliance.  Terrific cleaning, gentle to dishes, energy efficient, quiet operation."
+   I am loving this choice.  Installed over a year ago.  Gets near-daily use.<br /><br />The only thing even remotely wrong so far: a modest amount of residual soap buildup, easily solved by occasional use of readily available dishwasher cleaning products, run through as a separate cycle.  Normal for any dishwasher, I guess.<br /><br />This is an energy efficient model without a drying heater.  It does a great job of drying using residual heat after the wash/rinse cycle is done.  Once in a while a few select pieces go into the sinkside rack after the load, to finish drying, but that's nominal.  Most of the time everything is fully dry to the touch and goes directly to cupboard.<br /><br />Tip:  Read the manual and you'll really benefit from this model's features.  Learn:<br />* Which settings to use for different cleaning tasks.<br />* How to silence the beep after the load is done.<br />* Which setting selects advanced dish drying.<br />* When, how to use the Sanitize setting (short answer:  it also promotes better dish drying, so use it regularly).<br />* How to optimally load the system before washing.<br />* How to periodically check the rotary arms and the filters as recommended in the manual.  (So far, only the filters have required occasional rinse out, in my own experience.)<br /><br />This model was an upgrade from what my local appliance retailer normally stocks, but I chose it for its multi-level filtration and other upgrade features:  figuring that, for a few bucks more, you install it, then you live with your choice almost every day of your life for several years, so it makes sense to buy a good performer.  This model is.
+
+#3 [★★★★★] ✓ Verified (sim: 0.502)
+   "A life changer!"
+   I can't believe I lived so long without this marvel! I'm happy to sacrifice my limited counter space to make room for this machine (plus you can put stuff on top of it if you so desire).<br /><br />It accepts regular caps or powder. I am not using the rinsing/drying agent (whatever that thing is) and it works well for me.<br /><br />The images where they load the dishwasher are extremely optimistic, there's no way you can put all this dishware in there, and you probably shouldn't anyway. My 12&#34; plates fit just fine, but they steal a space on the other side.<br /><br />This machine is very silent, except for the few times where it flushes water, but really, it's not disturbing at all. The adapter fits perfectly on my faucet and it's easy to connect and disconnect. I just run water until it gets hot, then plug it in, turn on the dishwasher and sometime later, when it beeps 8 times, turn off the faucet, press the red button to relieve the water pressure, disconnect the water, open the door ajar, come back later when it's all dry and cold and voilà!<br />Don't handle the content after it's done, it's much too hot and might break, that's valid for all dishwashers...<br /><br />You do want to get rid of large chunks of food by rinsing your plates first, to not risk clogging up the filter.<br /><br />I REALLY LOVE my dishwasher. The sight of an empty sink is almost as beautiful as the Sixtine Chapel.
+
+#4 [★★★★★]  (sim: 0.500)
+   "Wonderful"
+   This portable dishwasher is amazing. Perfect for small spaces it is simple to set up and use. It does a terrific job. There are a number of settings: normal, rapid, fruit, steam and glass. ,The fruit option insures your produce is free of dirt. No detergent needed for this cycle.  It uses powdered dishwasher detergent or those dishwasher tabs. The capacity is small but it saves you from running the full sized washer. It is portable and ideal for rvs or camping. My kitchen isa disaster due to a pandemic interrupted andcpostponed rennovation. This countertop appliance makes life easier.
+
+#5 [★★★★★] ✓ Verified (sim: 0.496)
+   "I'm a fan"
+   We actually bought this for the trailer we've had to move into after a fire in our home. At first it was kind of a lark but the machine turns out to be pretty awesome. Some of the cycles can take up to an hour and a half but it is really quiet (to the  point, where at first, I kept opening it to see if it was actually working - it was). It cleans dishes, glasses and flatware beautifully and sterilizes them. The downside is, well, it's a countertop dishwasher so it doesn't fit large dishes or pots. But circumstances being what they are, while we are rebuilding, this dishwasher is a lifesaver and I am tickled with my purchase!
+
+
+============================================================
+Latency Statistics:
+  Average: 92.03 ms
+  P50:     68.00 ms
+  P95:     201.19 ms
+
+============================================================
+Benchmark Complete!
+============================================================

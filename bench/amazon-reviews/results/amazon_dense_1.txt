@@ -1,0 +1,287 @@
+============================================================
+Dense Vector Search - Amazon Reviews Dataset
+============================================================
+
+Configuration:
+  Dataset:         amazon-reviews
+  Namespace:       amazon-reviews-dense-bench
+  Embedding Model: openai/text-embedding-3-small
+  Num Reviews:     15000
+  Batch Size:      32
+  Top K:           5
+  Num Queries:     10
+  Timestamp:       2026-01-05T11:15:44.491943
+
+----------------------------------------
+Found 1 data file(s)
+  Loading Appliances.jsonl.gz...
+  Loaded 15000 reviews
+
+----------------------------------------
+Indexing 15000 reviews...
+Total indexing time: 179.24s
+
+----------------------------------------
+
+Searching 10 queries...
+
+======================================================================
+QUERY: quiet dishwasher that actually cleans dishes well
+======================================================================
+[Latency: 98.0ms]
+
+#1 [★★★★★]  (sim: 0.648)
+   "My favorite appliance.  Terrific cleaning, gentle to dishes, energy efficient, quiet operation."
+   I am loving this choice.  Installed over a year ago.  Gets near-daily use.<br /><br />The only thing even remotely wrong so far: a modest amount of residual soap buildup, easily solved by occasional use of readily available dishwasher cleaning produc...
+
+#2 [★★★★★] ✓ Verified (sim: 0.647)
+   "Very happy with this dishwasher"
+   This is a wonderful appliance and suits my needs perfectly. My kitchen doesn't have room for a built-in or a large portable dishwasher. I am thrilled with how well this unit cleans my dishes, even on the lighter cycles. I also appreciate having so ma...
+
+#3 [★★★★★] ✓ Verified (sim: 0.639)
+   "Great dishwasher for the size"
+   This product works very well (do not expect it to eat away dried or crusted on food, but most full-sized dishwashers I have had won't either). It has enough room for all I need but pots and pans, and it cleans well and works with ease. The price poin...
+
+#4 [★★★★☆]  (sim: 0.637)
+   "Live alone in a place with a broken full-size dishwasher"
+   Apartments...you see a dishwasher built in and think, woo-hoo, no more washing dishes by hand, right?  I don't have a clue what is wrong with that dishwasher other than it deposits rather greasy white streaks on dishes.  I tried CLR, vinegar, and a f...
+
+#5 [★★★★★] ✓ Verified (sim: 0.634)
+   "I'm a fan"
+   We actually bought this for the trailer we've had to move into after a fire in our home. At first it was kind of a lark but the machine turns out to be pretty awesome. Some of the cycles can take up to an hour and a half but it is really quiet (to th...
+
+======================================================================
+QUERY: energy efficient refrigerator that keeps food fresh longer
+======================================================================
+[Latency: 75.5ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.623)
+   "works as intended"
+   just what i was needing for my fridge to keep my fruits and veggies fresh longer
+
+#2 [★★★★☆]  (sim: 0.584)
+   "No frills modern necessity."
+   Replaced an old fridge about 20 years old.  The size of the new fridge meets my needs since I am single, and don't need to stock it full for a family.<br /><br />I selected the fridge based on size and energy star rating.  The fridge uses a little ov...
+
+#3 [★★★★★]  (sim: 0.582)
+   "Perfect after two years."
+   I have had two of these coolers in my office and a third at home for a little over two years. They all work flawlessly.<br /><br />The compressors are a little noisy compared to a standard refrigerator. But I'm just used to it. It wont make you deaf ...
+
+#4 [★★☆☆☆]  (sim: 0.572)
+   "Samsung RB195AC 18 Cubic Foot Bottom Freezer Energy Star Refrigeratior"
+   We had our fridge about five years when water began to collect inside and underneath the storage bins.  The water froze and there was a sheet of ice along the bottom (where the bins sit) and the back wall of the fridge.  Food in the bins also froze. ...
+
+#5 [★★★★★]  (sim: 0.562)
+   "Works well."
+   My husband keeps this refrigerator in his room at work. It helps keep his things more private, so it's less likely other people are eating his food or getting germs in it. It's worked well for him, and it does keep his food cold. He especially loves ...
+
+======================================================================
+QUERY: blender powerful enough to crush ice but easy to clean
+======================================================================
+[Latency: 79.0ms]
+
+#1 [★★★★☆]  (sim: 0.629)
+   "Nice Ice"
+   This ice maker is very easy to use. It makes bullet shaped cubes that are great in blender drinks. It is efficient but a tad noisy. Have had no performance isdues. The self cleaning function is a plus. It is super simple and does a hooid job. The ice...
+
+#2 [★★★★★]  (sim: 0.628)
+   "Ice, Ice, Baby"
+   This is a terrific machine. Easy to use it is quick and quiet. You can select different sizes of ice to suit your purpose. Large is great for cocktails, medium for smoothies and blender drinks a nab and small for keeping foods chilled. The instructio...
+
+#3 [★★★★★] ✓ Verified (sim: 0.572)
+   "awesome"
+   easy to use makes great ice bye to picking up bags of ice all the time lol
+
+#4 [★★★★★] ✓ Verified (sim: 0.565)
+   "Easy to use and clean!"
+   I was having a hard time using filters and cheese clothes to make my ice coffee, this saves a lot of hassle and works great. I love it. Easy to use and to clean.
+
+#5 [★★★★★] ✓ Verified (sim: 0.565)
+   "Works great, makes ice fast"
+   This thing works great, makes ice very quickly. Cleaning is easy but it is pretty heavy to move around.
+
+======================================================================
+QUERY: slow cooker with programmable timer and keep warm function
+======================================================================
+[Latency: 77.6ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.428)
+   "LOVE it."
+   To keep it warm by using this warming rack by Dualit. LOVE it.
+
+#2 [★★★★★] ✓ Verified (sim: 0.402)
+   "Turkish coffee warmer"
+   It was way bigger then I expected but it gets the job done. I have made coffe in this a few times already. It is easy to clean.
+
+#3 [★★★★★] ✓ Verified (sim: 0.401)
+   "Great Product"
+   This was a replacement for an older unit that failed. The more I use the Cuisinart unit the more I like it. The menu system is a bit cumbersome but the user doesn't have to interact with often. The unit is instant on with no warm up. The water reserv...
+
+#4 [★★★★★] ✓ Verified (sim: 0.398)
+   "Perfect for under lower cabinets!  Beauty and power"
+   Beautiful!  We needed a short vent.  This is super powerful and lovely.  I love the 3 minute timer feature.  Just push the button and it continues for 3 minutes while you serve dinner!
+
+#5 [★★★★★] ✓ Verified (sim: 0.386)
+   "Great for warming latte milk quickly"
+   I really like this for warming milk for my latte. It's just big enough and does the job well while looking nice.
+
+======================================================================
+QUERY: vacuum cleaner lightweight but strong suction for pet hair
+======================================================================
+[Latency: 87.7ms]
+
+#1 [★★★☆☆]  (sim: 0.517)
+   "No better than my vacuum crevice tool."
+   As others pointed out, the hose section is very wimpy.  Long enoguh to be useful, but too flexible to be pushed any further than about a foot without curling and stopping.  I could not get it to bend into the cavity exhaust pipe beyond what was visib...
+
+#2 [★★★★★] ✓ Verified (sim: 0.503)
+   "Multiple uses for this tool!"
+   Lightweight plastic tool provides multiple options for use. I use for cleaning under seats in car, window seals, cobwebs on porch, greater suction power and easy to clean.
+
+#3 [★★★☆☆]  (sim: 0.498)
+   "Great suction, but vibration on low speed, and really lights are very dim"
+   The unit has strong venting which is good, but there is vibration on lowest and highest speed, even though the fan motor is solidly attached to the unit and are using a 6 inch vent, and the light is very dim where it has no purpose, and just on/off.
+
+#4 [★★★★☆] ✓ Verified (sim: 0.497)
+   "Awsome"
+   New filters kept me from having to purchase a new vacuum.  The suction is back and cleans better than ever.
+
+#5 [★★★★★] ✓ Verified (sim: 0.495)
+   "Economy for  cleaner vacuum"
+   Its tighter than the original but it vacuums powerfully to catch more dust. I just notice tt when i empty the bin now, alot more dust has been sucked up compared to my worn original filter. Also, i find vacuuming slightly less noisy perhaps due to th...
+
+======================================================================
+QUERY: air fryer that cooks evenly without preheating
+======================================================================
+[Latency: 81.7ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.500)
+   "and nice even cooking finally"
+   No more wobbly range, and nice even cooking finally!
+
+#2 [★★★★★] ✓ Verified (sim: 0.491)
+   "Quick to heat up and evenly heats"
+   They heat up super quickly and heat very evenly. They don't have a piece on the opposite side from the plugs to keep the burners down. They pop up a little because of that. But when you put on the pan, the weight of the pan keeps them down, so not re...
+
+#3 [★★★★★] ✓ Verified (sim: 0.459)
+   "Great buy"
+   I really like this cooker, It gets hot very quickly and cooks evenly. It's also very easy to clean up afterwards. Great alternative if you don't have a stovetop available. You just have to buy the right pans for this thing. I only have one I use for ...
+
+#4 [★★★★★]  (sim: 0.448)
+   "Great for most things"
+   Heating food up and basic cooking has been convenient, though I've only used it a few times so far. It heats up very quickly and puts out a lot of heat. I have stainless steel pots and pans and the heat dissipation is good.<br />I couldn't get a pot ...
+
+#5 [★★★★★] ✓ Verified (sim: 0.434)
+   "Induction with a 30" oven with Air Fry!  Great value.  Loving it more each week."
+   Had a Maytag five burner which was a bit older and perfectly working, but showing some sign of aging.  Not too bad though.  Fount this range and had to get it, HAD TO!  . . . and DID!<br />Almost like the Maytag except push button controls instead of...
+
+======================================================================
+QUERY: coffee maker that keeps coffee hot without burning it
+======================================================================
+[Latency: 83.0ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.560)
+   "This model has been upgraded in features"
+   Out previous purchase of this K Cup coffee maker ran for many years.  This one has been upgraded in that it does not have to remain on and water kept hot.  It will make hot coffee in a couple of minutes after bring turned on.  We think this is a supe...
+
+#2 [★★★★★] ✓ Verified (sim: 0.542)
+   "Sturdy, makes great coffee, no waste"
+   I love my new coffee maker: just heat water (I nuke it, less power), pour over, a minute or two later, rinse out with sprayer and good to go for tomorrow’s cup! EZ, no waste, fast, no plastic carcinogenic cup or reservoir, no counter space! Perfect!
+
+#3 [★★★★★]  (sim: 0.538)
+   "Works flawlessly, coffee tastes great!"
+   This is a great single cup pour over! No filter needed. Simply add ground coffee into cone and add hot water. I “bloom” the grounds 1st, then finish pouring all the water thru. It all drips down into coffee mug with no spilling. It has a little helpe...
+
+#4 [★★★★★] ✓ Verified (sim: 0.529)
+   "I like this coffee maker so much better than the Keurig ..."
+   I like this coffee maker so much better than the Keurig coffee makers that we have owned. It makes a hotter cup of coffee. I just really like it.
+
+#5 [★★★★☆]  (sim: 0.526)
+   "Neat gadget"
+   I like that you don't need any other tools to make your coffee with this straw. You just add the ground straight to your cup, and the straw filters it for you.<br /><br />Notes: it is harder to tell how hot your coffee until it hits your mouth, so be...
+
+======================================================================
+QUERY: toaster with wide slots for thick bagels and frozen waffles
+======================================================================
+[Latency: 78.3ms]
+
+#1 [★★★★★] ✓ Verified (sim: 0.446)
+   "Sturdy and efficient"
+   At first, I thought it was a tab bit wide. But as I starting using it -I like the way that you only need remove the tray to reload your eggs & how the eggs roll down as you take the front ones out.  The storage unit is extremely sturdy and the width ...
+
+#2 [★★★★☆] ✓ Verified (sim: 0.434)
+   "Put this under my small toaster oven for a little ..."
+   Put this under my small toaster oven for a little insulation between toaster and the wood shelf and it fits perfectly.
+
+#3 [★★★★★] ✓ Verified (sim: 0.419)
+   "Get it!"
+   Holds almost 36 eggs and gently rolls eggs to the front. I don’t know why I didn’t switch to it sooner. The only problem is that it’s bulky, but it’s worth sacrificing a bit of space on either your countertop or in your refrigerator.
+
+#4 [★★★★★] ✓ Verified (sim: 0.412)
+   "I can now bake an extra pizza"
+   This one worked perfectly for my Whirlpool electric range. I wanted an additional rack to be able to bake three pizzas at the same time.  Works perfectly for my needs.
+
+#5 [★★★★★] ✓ Verified (sim: 0.411)
+   "JUST WHAT I WANTED"
+   This rack fits my oven perfectly! Now I can bake a lot more at the same time.
+
+======================================================================
+QUERY: instant pot replacement for multiple kitchen appliances
+======================================================================
+[Latency: 86.2ms]
+
+#1 [★★★★☆]  (sim: 0.477)
+   "I have a two-burner plug-in portable induction unit"
+   I use that two-burner unit in my outdoor kitchen and love it!  (I do have a two-burner propane gas unit, but on windier days, instead of erecting a wind barrier, I just get the induction unit out).  I had an old coil style electric stove/oven unit th...
+
+#2 [★★★★★] ✓ Verified (sim: 0.472)
+   "Good Replacements"
+   These were perfect to replace the drip pans for our oven at our rental house
+
+#3 [★★★★★]  (sim: 0.471)
+   "Great for most things"
+   Heating food up and basic cooking has been convenient, though I've only used it a few times so far. It heats up very quickly and puts out a lot of heat. I have stainless steel pots and pans and the heat dissipation is good.<br />I couldn't get a pot ...
+
+#4 [★★★★★] ✓ Verified (sim: 0.471)
+   "Great replacement for stovetop"
+   These were great replacements for our stovetop.  We bought new burners and needed new drip pans and they work great.  Makes stove look like new!
+
+#5 [★★★★★] ✓ Verified (sim: 0.462)
+   "Works great for Instant Pot parts"
+   All the small bits on the instant pot fit perfectly in this bag. Put it on the top shelf of the dishwasher, no more lost bits.
+
+======================================================================
+QUERY: water filter that removes chlorine taste and is easy to install
+======================================================================
+[Latency: 77.9ms]
+
+#1 [★★★★☆] ✓ Verified (sim: 0.755)
+   "Fit my fridge and removes chlorine taste"
+   We just installed this the other night and the water quality is very good. We tend to have a chlorine taste if we don't filter and this removes that. I'm very happy with the purchase.
+
+#2 [★★★☆☆] ✓ Verified (sim: 0.684)
+   "Easy to Install"
+   This is a good replacement filter that is really easy to replace. Doesn't change the taste of water at all.
+
+#3 [★★★★★] ✓ Verified (sim: 0.665)
+   "Filter works great."
+   Quickly installs, takes the chemical taste out of city water.
+
+#4 [★★★★★]  (sim: 0.664)
+   "Great tasting water."
+   I got this to replace a no name brand water filter I usually purchase on amazon. I love the taste of this water with the filter and the quality. It was easy to install. No fuss just install purge a few glasses of water and you are ready to go!
+
+#5 [★★★★★] ✓ Verified (sim: 0.649)
+   "Makes our water taste so much better!"
+   Easy to install and makes our water taste so much better.
+
+
+============================================================
+Latency Statistics:
+  Average: 82.49 ms
+  P50:     80.33 ms
+  P95:     93.37 ms
+
+============================================================
+Benchmark Complete!
+============================================================

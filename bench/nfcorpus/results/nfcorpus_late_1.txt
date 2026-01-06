@@ -1,0 +1,42 @@
+============================================================
+Two-Stage Late Interaction Benchmark - NFCorpus Dataset
+============================================================
+
+Configuration:
+  Dataset:            nfcorpus
+  Namespace:          nfcorpus-late-bench
+  Jina Model:         jina-colbert-v2
+  Embedding Dim:      128
+  Batch Size:         8
+  Top K:              10
+  First Stage Top K:  5
+  Second Stage Top K: 256
+  Timestamp:          2026-01-02T12:30:54.625526
+
+Loading NFCorpus dataset...
+  Corpus:  3633 documents
+  Queries: 323
+  QRels:   323 query-relevance pairs
+
+----------------------------------------
+Indexing 3633 documents (multi-vector)...
+  Total token vectors indexed: 1001786
+Total indexing time: 906.10s
+
+----------------------------------------
+Searching 323 queries (two-stage late interaction)...
+
+Latency Statistics (search only, excludes embedding):
+  Average: 689.81 ms
+  P50:     578.46 ms
+  P95:     1272.18 ms
+  P99:     1775.63 ms
+
+----------------------------------------
+Evaluation Metrics:
+  NDCG@10:   0.3230
+  Recall@10: 0.1566
+
+============================================================
+Benchmark Complete!
+============================================================
