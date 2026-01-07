@@ -1,0 +1,90 @@
+export const metadata = {
+  title: "Late Interaction Roadmap",
+};
+
+# Late Interaction Roadmap
+
+This document outlines how Turbopuffer could better natively support late interaction. There are a couple options on making late interaction easier,
+and it depends on the route you want users to take.
+
+**1. Raise concurrent query limit**
+
+Big reason why performing late interaction queries was so slow was due to the large number of sub-queries per search exceeding the max number of concurrent queries.
+This resulted in having to perform multiple batches of queries, instead of being able to perform one big one at once.
+
+**2. Extend FTS Operators and aggregations to Vector Search**
+
+**A. FTS Operators for ANN**
+
+Turbopuffer's FTS already supports `MAX` and `SUM` [operators](https://turbopuffer.com/docs/query#fts-operators) to combine scores from multiple clauses. 
+Extending `Sum` and `Max` to ANN would let users express "sum of similarities across query tokens" in a single query.
+
+
+```python
+ns.query(rank_by=["Sum", [["vector", "ANN", emb1], ["vector", "ANN", emb2]]])
+```
+
+
+**B. `group_by` for Ranking Queries**
+
+Today, [`group_by`](https://turbopuffer.com/docs/query#group-by) only works with `aggregate_by` for computing aggregations. It cannot be combined with `rank_by`. For late interaction, 
+it would be extremely helpful to not have to aggregate client-side.
+
+Combining both extensions, a single query could compute MaxSim server-side:
+
+```python
+ns.query(
+    rank_by={
+        "Sum": [  # Sum across query tokens
+            ["Max", "ANN", query_token_1_embedding],
+            ["Max", "ANN", query_token_2_embedding],
+            # ... one Max clause per query token
+        ]
+    },
+    group_by=["doc_id"],  # Aggregate scores per document
+    top_k=10,
+)
+```
+
+Today's client-side approach requires choosing a `top_k_per_token` for each query token's ANN search. If a document's best-matching token vector ranks outside this cutoff (e.g., position 101 when `top_k_per_token=100`), that similarity score is lost. The client computes MaxSim using a suboptimal match, and these errors compound across query tokens.
+
+>I understand that Turbopuffer uses ANN indexing, so even server-side computation wouldn't do exhaustive comparison of all query-document token pairs. However, server-side `Max`/`Sum` operators would remove the *additional* `top_k_per_token` cutoff that sits on top of the ANN approximation. The server could also potentially traverse the index more intelligently—knowing it needs the max per `doc_id` rather than a flat top-k—allowing for smarter early termination or candidate pruning.
+
+This also greatly reduces the number of queries the user has to do each perform. My previous benchmark had 64 sub-queries each billed for processing the entire namespace data, where this server-side computation could greatly reduce that.
+
+**3. Native Two-Stage Late Interaction**
+
+This is a larger change that combines two new primitives to enable seamless late interaction:
+
+**A. `multi_vector` Attribute Type**
+
+Allow nested arrays (`[[float]]`) as an attribute type, so users can store all token vectors alongside a dense vector in a single row:
+
+```python
+ns.upsert(
+    rows=[{
+        "id": "doc1",
+        "vector": [0.1, 0.2, ...],  # Dense vector for first-stage retrieval
+        "multi_vector": [[0.1, ...], [0.2, ...], ...],  # Token vectors for reranking
+    }],
+    schema={
+        "multi_vector": {"type": "multi_vector"}
+    }
+)
+```
+
+**B. `rerank_by` Query Parameter**
+
+A new query parameter that performs server-side reranking on first-stage candidates.
+
+```python
+ns.query(
+    rank_by=("vector", "ANN", query_dense_embedding),
+    rerank_by=("multi_vector", "MaxSim", query_token_embeddings),
+    top_k=10,
+    rerank_k=100,
+)
+```
+
+This would obviously be the easiest and simplest way of adding late interaction, but it makes Turbopuffer a lot more opinionated about reranking logic,
+and would probably need to support a lot of things out of the box.

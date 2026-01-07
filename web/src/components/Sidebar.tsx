@@ -1,12 +1,12 @@
 'use client';
 
-import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useCallback, useRef, useState } from 'react';
 
 type SidebarItem = {
   label: string;
   href: string;
-  active?: boolean;
+  local?: boolean;
 };
 
 type SidebarSection = {
@@ -40,9 +40,10 @@ const sections: SidebarSection[] = [
       { label: 'Hybrid Search', href: '/docs/hybrid' },
       {
         label: 'Late Interaction',
-        href: '/docs/late-interaction',
-        active: true,
+        href: '/late-interaction',
+        local: true,
       },
+      { label: 'Late Interaction Roadmap', href: '/roadmap', local: true },
       { label: 'Testing', href: '/docs/testing' },
     ],
   },
@@ -63,6 +64,7 @@ const sections: SidebarSection[] = [
 ];
 
 export function Sidebar() {
+  const pathname = usePathname();
   const [isAtBottom, setIsAtBottom] = useState(false);
   const scrollRef = useRef<HTMLElement>(null);
 
@@ -92,7 +94,7 @@ export function Sidebar() {
             <div className='grid grid-flow-row auto-rows-max text-xs'>
               {section.items.map((item) => (
                 <div key={item.label} className='flex flex-row items-center'>
-                  {item.active && (
+                  {pathname === item.href && (
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       width='12'
@@ -109,9 +111,14 @@ export function Sidebar() {
                     </svg>
                   )}
                   <a
-                    href={`https://turbopuffer.com${item.href}`}
+                    target={item.local ? '_self' : '_blank'}
+                    href={
+                      item.local
+                        ? item.href
+                        : `https://turbopuffer.com${item.href}`
+                    }
                     className={`flex w-full flex-row items-start rounded-md border border-transparent py-1 hover:underline ${
-                      item.active
+                      pathname === item.href
                         ? 'font-semibold text-orange-600'
                         : 'text-slate-600'
                     }`}

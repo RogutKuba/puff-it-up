@@ -3,11 +3,15 @@ import { TableOfContents } from './TableOfContents';
 
 interface DocsLayoutProps {
   children: React.ReactNode;
-  tocItems: { label: string; href: string }[];
+  tocItems?: { label: string; href: string }[];
   title?: string;
 }
 
-export function DocsLayout({ children, tocItems, title }: DocsLayoutProps) {
+export function DocsLayout({
+  children,
+  tocItems = [],
+  title,
+}: DocsLayoutProps) {
   return (
     <div className=''>
       <div className='container mx-auto px-4 md:px-6 relative flex flex-col items-start md:flex-row md:gap-6 relative'>
@@ -26,7 +30,7 @@ export function DocsLayout({ children, tocItems, title }: DocsLayoutProps) {
                 )}
                 <div className='max-w-full break-words prose'>{children}</div>
               </div>
-              <TableOfContents items={tocItems} />
+              {tocItems.length > 0 && <TableOfContents items={tocItems} />}
             </div>
           </div>
         </div>
